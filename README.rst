@@ -1,12 +1,7 @@
 The Beavers hut
 ===============
 
-.. toctree::
-	caption: Topics
-	
-	*
-
-That is all
+#. `Web Development <web_dev/web_dev.rst>`_
 
 
 
