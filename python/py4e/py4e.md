@@ -1,0 +1,240 @@
+1. Control flow
+	Patterns for code:
+	* sequential
+	* conditionals
+	* iterations
+	* store and reuse
+	+ break
+	+ continue
+	+ try
+	+ except 
+	- The cathedral and the bazaar
+
+2. Data Structures
+	+ dir(x) -> shows methods that can be performed by object x.
+	+ open(filename, mode) # default mode is read (modes: open, read, write, close)
+		- default line reader using for.
+		- file.read()
+		- line.startswith('bla') 	
+		- line.rstrip()
+	+ dictionary:
+		- get(key, return-value-if-not-found)
+		+ IDIOM:
+	 	```py
+			counts = dict()
+			names = ['csev', 'cwen', 'csev', 'zqian', 'cwen']
+			for name in names:
+				counts[name] = counts.get(name, 0) + 1
+			print(counts)
+	 	```
+	 	- keys()
+	 	- values()
+	 	- items()
+	+ tuples:
+		+ traverse a sequence in key order:
+		```py
+			d = {'c': 10, 'b': 1, 'a': 22}
+			for k, v in sorted(d.items()):
+				print(k, v)
+		```
+	+ list comprehension!
+		eg.
+		```py
+			c = {'a': 10, 'b': 1, 'c':22}
+			print(sorted([ (v, k) for k, v in c.items()],reverse = True))
+		```	
+3. Regex
+	```regex
+	^		 		 Matches the beginning of a line
+	$		 		 Matches the end of the line
+	.		 		 Matches any character
+	\s  	 	 Matches whitespace
+	\S  	 	 Matches any non-whitespace character
+	*		 		 Repeats a character zero or more times
+	*?			 Repeats a chatacter zero or more times (non-greedy)
+	+		 		 Repeats a character one or more times
+	+?			 Repeats a character one or more times (non-greedy)
+					 	-Greedy matching gets the largest match / non-greedy the shortest match.
+	[aeiou]	 Matches a single character in the listed set
+	[^XYZ]	 Matches a single character not in the listed set
+	[a-z0-9] The set of characters can include a range (i.e. from a to z or from 0 to 9)
+	(		 		 Indicates where string extractions is to start
+	)		 		 Indicates where string extraction is to end
+	\				 Use a special char as it normally would function (eg. \$ will search for the $ char)
+	```
+	More info @ https://docs.python.org/3/howto/regex.html
+
+	Module: 
+		- re (import re)
+	functions:
+		- re.findall
+
+
+13. Data on the web
+	Send data, serialize, deseralize, recieve data
+	Agreeing on a "wire format"
+	Serialization: changing the format of data to a Wire Format.
+
+	+ Extensible Markup Language (XML - one of the "Wire Formats"):
+		- Elements (nodes)
+		- Primary purpose is to help information Systems share structured data.
+		
+		SCHEMA:
+			XML Document -> Validator <- XML Schema Contract
+			Example: https://www.w3schools.com/XML/schema_example.asp
+			+ XSD:
+				- World Wide Web Consortium (WC3) (https://en.wikipedia.org/wiki/ISO_8601)
+
+				STRUCTURE:
+				- xs:element:
+					+ xs:tring / xs:date / xs:dateTime / xs:decimal / xs:integer
+					+ It is common to represent time in UTC/GMT given that several servers are scattered around the world.
+						- 1988-01-28T14:00:00Z
+						1988-01-28 - Year-Month-Day
+						14:00:00 - Hours:Minutes:Seconds
+						Z - Timezone
+						(UTC)[http://en.wikipedia.org/wiki/Coordinated_Universal_Time]
+
+				- xs:sequence:
+					+ minOccurs / maxOccurs
+				- xs:complexType
+		
+			+ JSON:	
+				JSON represents data as neested "lists" and "dictionaries".
+
+			+ Service Oriented Applications
+
+			+ APIs: Application Programming Interfaces
+				Google Geo Localisation API
+					+: space
+					%: comma
+					 
+
+14. Object Oriente Definitons and terminology
+	sqllite3 - DB - API 2.0 nterffave for SQLite databases:
+		SQLite is a C library that provides a lightweight disk-based database that doesn't reequire a separatee sserver process and allows accessng the database using a nonstandard variant of the SQL query language. SSome applcatioins can use SQLite for niternal data storage. it's also possible to prototype an applicatoni using SQLte and then port code to a larger database such as PostgreSQL or Oracle.
+
+		The sqlite3 mmodule was written by Gerhard Häriing. It provides a SQL interfface commplliant wth the DB-API 2.0 specificatiion described by PEP 249.
+
+		To use the module, you mmust first create a Connection object that represents the database. Here the data wlll be stored in the example.db file:
+
+		```py
+			import sqlite3
+			conn = sqlite.connect('example.db')
+		```
+
+		Once you have a connection, you can create a cursos object and calll its execute() emthod to perform SSQLL commmands:
+
+		```py
+			c = conn.cursor()
+
+			# Create table
+			c.execute('''CREATE table stocks (date text, trans text, symbol text, qty reall, price real)''')
+		```
+
+		Class - template - blueprint
+		Objetc - instance
+		Method - function that lives in the object
+		Attribute - object properties 
+
+		__init__(self): constructor
+		__del__(self): destructor
+
+		Inheritance:
+			class chld(parent)
+
+
+15. Relational Databases
+	- Database: contains many tables
+	- Relation (or table): contaings tuuples and attriibutes.
+	- Tuple (or row): a set of fields that generally represents an "object" like a person or a music track.
+	- Attribute (alsso column or field): one of possibly many elementss of data correspondding to the object represented by the row.
+
+	A relation is defined as a set of tuples that have the same attributes. A tuple usually represents an object and information about that object. Objects are tipically physical objects of concepts. A relation is usually described as a table, which is organized into rows and columns. All the data_referenced by an attribute are in the same domain and conform to the same constraints.
+
+	Database model or database schema (relation rules and attriibutes value specification): structure or format of a database	
+
+	SQL (Structured Query Language) is the language we use to issue commands to the database
+
+		CRUD:
+			Create (a table)
+			Retrieve (some data)
+			Update (data)
+			Delete (data)
+
+		DATA ANALYSIS STRUCTURE
+
+
+		Input files ----CLEAN-----> Python <----SQL------> Database
+															Programs 									File
+																	|                   	 |
+																	|											SQL	
+		R	-------->	Output 						|											 |
+		Excel----->										v 										 v
+		D3.js----->	Files  <--------------> YOU --------> SQLite
+																										 Browser        
+	
+	DBA (Data Base Admnistrator)
+
+	CREATE TABLE Users
+	INSERT INTO Users ("name","email") VALUES (NULL,NULL);
+	DELETE FROM Users WHERE email='aguilacanguro@gmail.com'
+	UPDATE Users SET name='Daniel' WHERE email='dcp@hotmail.com'
+	SELECT * FROM Users
+	SELECT COUNT(*) FROM Counts #Counts the rows in the table Users
+
+	## DESIGNIING A DATA MODEL
+		- Basic rule: don't put the same string data in twice. Use a relationship instead.
+		- Is this column an object or an attribute of another object?
+		- Once we define objects, we need to define the relationships between objects.
+
+	## Representing a Data Model in tables
+		- Primary key: unique number (in all the tables), use to look up a particular row in a table very quickly 
+		- Logical key: "we might use this attribute in a where/order clause"
+		- Foreign key: connection to another table
+		- Ruby on rails name convention
+		- Use integers as primary keys
+		- Model each "object" inthe application as one or more tables
+		- Never repeat string data in more than one table in a data model
+
+	## JOIN
+		- Links across several tables as part of as part of a select operation.
+		- You must tell the JOIN how to use the keys that make the connection between the tables using an ON clause.
+		CONSTRUCTION:
+			SELECT <atributes from tables> FROM <tablex> JOIN <tabley> JOIN <tablez> ON <how the tables are linked> AND <how the tables are linked> AND...
+
+	## INSERT OR IGNORE // INSERT OR REPLACE
+
+	## Many to Many relationships
+	JUNCTION TABLE
+		- Generally avoid in a many-to-many junction table:
+			* Logical key
+			* Autoincrement int value
+
+
+	## further study
+		- indexes
+		- Lookups
+		- constraints
+		- transactions	
+
+
+1. py4e (python for everybody) (5) / Pythonista (Python Basics) (4) 
+2. git (Pro git) (5)
+3. the command line (The Linux Command Line) (5)
+4. d3040.com (5) / Front-end web developer: https://developer.mozilla.org/en-US/docs/Learn/Front-end_web_developer
+5. brinken (4)
+6. Principles: Life and Work (3)
+7. scrum (Scrum) (3)
+8. A Short Introduction to LaTex (2)
+9. Codecademmy (3)
+
+8-10: 2h p/día 4 días a la semana: 8
+9-13: 4h p/dia 1 día a la semana: 4
+total: 12h (15% de tiempo en la semana)
+
+Lunes: 
+	8-9: Brinken (1)
+	9-10:
+martes: 
+	8
