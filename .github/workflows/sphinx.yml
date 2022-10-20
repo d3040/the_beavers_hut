@@ -1,0 +1,26 @@
+name: Sphinx build
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+      # action details @ https://github.com/marketplace/actions/checkout
+    - name: Build HTML
+      uses: ammaraskar/sphinx-action@master
+      # action details @ https://github.com/ammaraskar/sphinx-action
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v3
+      # action details @ https://github.com/marketplace/actions/upload-a-build-artifact
+      with:
+        name: html-docs
+        path: docs/build/html/
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      # action details @ https://github.com/marketplace/actions/github-pages-action
+      if: github.ref == 'refs/heads/main'
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: docs/build/html
