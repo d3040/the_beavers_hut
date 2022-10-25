@@ -9,5 +9,6 @@ Welcome to The Beaver's Hut's documentation!
 .. toctree::
    :maxdepth: 2
    :caption: Books
+   :glob:
 
-   */*
+   *
