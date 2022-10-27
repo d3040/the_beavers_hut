@@ -16,7 +16,7 @@ release = '1'
 
 extensions = []
 
-templates_path = ['_templates']
+templates_path = ['_templates/']
 exclude_patterns = []
 
 
@@ -26,3 +26,12 @@ exclude_patterns = []
 
 html_theme = 'sphinx_book_theme'
 html_static_path = ['_static']
+html_title = 'd3040'
+html_theme_options = {
+    'use_download_button': False,
+    'use_fullscreen_button': False,
+    'repository_url': 'https://github.com/d3040/the_beavers_hut',
+    'use_repository_button': True,
+    'show_navbar_depth': 2,
+    'announcement': ""
+}
