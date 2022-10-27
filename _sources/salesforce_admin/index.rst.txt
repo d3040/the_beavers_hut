@@ -1,0 +1,7 @@
+Awesome Admin
+=============
+
+.. toctree::
+    :glob:
+
+    *
