@@ -2,10 +2,12 @@ Essential Habits for Salesforce Admins
 ======================================
 
 Core responsibilities as an Admin:
-    1. User management
+#. `user_management`_.
     2. Data management
     3. Security
     4. Actionable analytics
+
+.. _user_management:
 
 1. User management
 ------------------
