@@ -1,5 +1,5 @@
-Awesome Admin
-=============
+Salesforce
+==========
 
 .. toctree::
     :glob:

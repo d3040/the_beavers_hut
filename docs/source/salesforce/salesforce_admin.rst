@@ -1,5 +1,7 @@
-Salesforce admin [#]_
-=====================
+Salesforce admin
+================
+
+[#]_
 
 .. contents::
     :depth: 1
