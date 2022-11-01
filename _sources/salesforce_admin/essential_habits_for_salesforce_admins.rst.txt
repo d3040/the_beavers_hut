@@ -1,7 +1,7 @@
 Essential Habits for Salesforce Admins
 ======================================
 
-.. contents::
+.. contents::  Core responsibilities as an Admin
     :depth: 2
     :local:
 
