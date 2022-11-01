@@ -4,10 +4,10 @@ Essential Habits for Salesforce Admins
 .. toctree::
     :caption: Core responsibilities as an Admin:
 
-    `User management <user_management>`_
-    `Data management <data_management>`_
-    `Security <actionable_analytics>`_
-    `Actionable analytics <actionable_analytics>`_
+    `User management <user_management>`
+    `Data management <data_management>`
+    `Security <actionable_analytics>`
+    `Actionable analytics <actionable_analytics>`
 
 .. _user_management:
 
