@@ -1,12 +1,13 @@
 Essential Habits for Salesforce Admins
 ======================================
 
-Core responsibilities as an Admin:
+..toctree::
+    :caption: Core responsibilities as an Admin:
 
-#. `User Management <user_management>`_.
-    2. Data management
-    3. Security
-    4. Actionable analytics
+    `User management <user_management>`_
+    `Data management <data_management>`_
+    `Security <actionable_analytics>`_
+    `Actionable analytics <actionable_analytics>`_
 
 .. _user_management:
 
@@ -27,6 +28,9 @@ Core responsibilities as an Admin:
   * MON|TUE: Gather information.
   * WED|THU: What we have and how well we are using it.
   * THU|FRI: Add documentation.
+
+
+.. _data_management:
 
 2. Data management
 ------------------
@@ -58,3 +62,13 @@ Core responsibilities as an Admin:
   * MON|TUE: Soliciting feedback and observing users.
   * WED|THU: Designing and configuring solutions.
   * THU|FRI: Communicating and deploying changes.
+
+.. _security:
+
+3. Security
+-----------
+
+.. _actionable_analytics:
+
+4. Actionable analytics
+-----------------------
