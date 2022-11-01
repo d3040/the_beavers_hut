@@ -6,7 +6,7 @@ Salesforce admin
 .. contents::
     :depth: 1
     :local:
-    :backlinks: top
+    :backlinks: entry
 
 Essential Habits for Salesforce Admins
 --------------------------------------
