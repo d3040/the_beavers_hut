@@ -1,13 +1,16 @@
-Essential Habits for Salesforce Admins
-======================================
+Salesforce admin [#]_
+=====================
 
-.. contents::  Core responsibilities as an Admin
-    :depth: 2
+.. contents::
+    :depth: 1
     :local:
+    :backlinks: top
 
+Essential Habits for Salesforce Admins
+--------------------------------------
 
 1. User management
-------------------
+..................
 
 - Observe your users (30 min p/week MON|TUE)
 - Review and report on adoption (60 min p/week WED|THU)
@@ -26,7 +29,7 @@ Essential Habits for Salesforce Admins
 
 
 2. Data management
-------------------
+..................
 
 - Create and maintain backup solution (30 min p/month MON)
   - Weekly data export
@@ -57,8 +60,11 @@ Essential Habits for Salesforce Admins
   * THU|FRI: Communicating and deploying changes.
 
 3. Security
------------
+...........
 
 
 4. Actionable analytics
------------------------
+.......................
+
+
+.. [#] `Build Your Admin Career on Salesforce <https://trailhead.salesforce.com/es-MX/users/strailhead/trailmixes/build-your-admin-career-on-salesforce>`_
