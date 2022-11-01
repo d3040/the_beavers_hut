@@ -1,7 +1,7 @@
 Essential Habits for Salesforce Admins
 ======================================
 
-..toctree::
+.. toctree::
     :caption: Core responsibilities as an Admin:
 
     `User management <user_management>`_
