@@ -81,7 +81,7 @@ Essential Habits for Salesforce Admins
   - Automated scripts
   - Multifactor authentication
 
-- Review access and visibility on users.
+- Review access and visibility on users (60 min per week).
 
   - 4 layers controls access and visibility:
 
@@ -100,16 +100,25 @@ Essential Habits for Salesforce Admins
 
     - Run Health Check:
 
-      - Measure your Org's security against Salesforce's standard basesline.
+      - Measure your Org's security against Salesforce's standard baseline.
       - Easily identify at-risk security settings.
       - Fix with one click for immediate results.
       - Customize based on your company's compliance needs.
 
-- Stay up to date on security features (learn continuously).
+- Stay up to date on security features (learn continuously at leat 60 min per week):
+
+  - Visit Salesforce security websites:
+
+    * trust.salesforce.com/en/security
+    * admin.salesforce.com/security
+
+  - Subscribe to the Admin Digest.
+  - Read latest release notes security section.
+  - Activate security-focused release updates in Setup.
 
 .. note::
 
-  On ``MON`` or ``TUE`` solicit feedback and observe users. Design and configure solutions on ``WED`` or ``THU``, and communicate with IT on ``FRI``.
+  Deepening knowledge on security early on the week (``TUE``). Review access and visibility for users on ``WED``, and communicate with IT on ``FRI``.
 
 ----
 
