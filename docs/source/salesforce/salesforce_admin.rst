@@ -67,10 +67,57 @@ Essential Habits for Salesforce Admins
 
 .. note::
 
-  On ``MON`` or ``TUE`` solicit feedback and observe users. Design and configure solutions on ``WED`` or ``THU``, and communicate and deploy changes con ``THU`` or ``FRI``.
+  On ``MON`` or ``TUE`` solicit feedback and observe users. Design and configure solutions on ``WED`` or ``THU``, and communicate and deploy changes on ``THU`` or ``FRI``.
 
 3. Security
 ...........
+
+- Salesfroce:
+
+  - Provide solutions that enable the customer to keep their data secure.
+  - Educate customers on the need for security and how to enable it.
+
+- Admin:
+
+  - Adopt evolving security controls and features.
+  - Continually monitor user behaviors and event logs.
+  - Protect sensitive data in alignment with compliance standards.
+
+- Salesforce releases 3 updates each year.
+- Ensure users have the least level of access to the system and data necessary to perform their job functions.
+- Users have access to applications, objects, fields and pages their required.
+
+- Managing communication with partners and IT (60 min per week).
+
+  - Compliance policies
+  - User onboarding and off-boarding procedures
+  - Updates to data structures for integrations (data dictionaries)
+  - Sandbox provisioning
+  - Automated scripts
+  - Multifactor authentication
+
+- Review access and visibility on users.
+
+  - 4 layers controls access and visibility:
+
+  .. hint::
+
+    Compile access related notes each week and organize them according this 4 layers.
+
+    #. Organization:
+      Single sign-on, Multi-factor authentication, password policies, certificate & key management.
+    #. Persona:
+      Profile, permission sets, permission set groups, IP restrictions & login hours.
+    #. Record
+      OrgWide defaults, sharing rules, sets & groups, role hierarchy, manual & programmatic sharing, teams, territories.
+    #. Field:
+      Field level security.
+
+- Stay up to date on security features (learn continiously).
+
+.. note::
+
+  On ``MON`` or ``TUE`` solicit feedback and observe users. Design and configure solutions on ``WED`` or ``THU``, and communicate with IT on ``FRI``.
 
 
 
