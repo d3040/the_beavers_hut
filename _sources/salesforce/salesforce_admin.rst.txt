@@ -89,14 +89,10 @@ Essential Habits for Salesforce Admins
 
       Compile access related notes each week and organize them according this 4 layers.
 
-    #. Organization:
-      Single sign-on, Multi-factor authentication, password policies, certificate & key management.
-    #. Persona:
-      Profile, permission sets, permission set groups, IP restrictions & login hours.
-    #. Record
-      OrgWide defaults, sharing rules, sets & groups, role hierarchy, manual & programmatic sharing, teams, territories.
-    #. Field:
-      Field level security.
+    #. Organization: :kbd:`Single sign-on` :kbd:`Multi-factor authentication` :kbd:`Password policies` :kbd:`Certificate & key management`
+    #. Persona: :kbd:`Profile` :kbd:`Permission sets` :kbd:`Permission set groups` :kbd:`IP restrictions & login hours`
+    #. Record: :kbd:`OrgWide defaults` :kbd:`Sharing rules, sets & groups` :kbd:`Role hierarchy` :kbd:`Manual & programmatic sharing` :kbd:`Teams` :kbd:`territories`
+    #. Field: :kbd:`Field level security`
 
 - Stay up to date on security features (learn continuously).
 
