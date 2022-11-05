@@ -72,21 +72,6 @@ Essential Habits for Salesforce Admins
 3. Security
 ...........
 
-- Salesfroce:
-
-  - Provide solutions that enable the customer to keep their data secure.
-  - Educate customers on the need for security and how to enable it.
-
-- Admin:
-
-  - Adopt evolving security controls and features.
-  - Continually monitor user behaviors and event logs.
-  - Protect sensitive data in alignment with compliance standards.
-
-- Salesforce releases 3 updates each year.
-- Ensure users have the least level of access to the system and data necessary to perform their job functions.
-- Users have access to applications, objects, fields and pages their required.
-
 - Managing communication with partners and IT (60 min per week).
 
   - Compliance policies
@@ -119,6 +104,24 @@ Essential Habits for Salesforce Admins
 
   On ``MON`` or ``TUE`` solicit feedback and observe users. Design and configure solutions on ``WED`` or ``THU``, and communicate with IT on ``FRI``.
 
+----
+
+- Salesfroce:
+
+  - Provide solutions that enable the customer to keep their data secure.
+  - Educate customers on the need for security and how to enable it.
+
+- Admin:
+
+  - Adopt evolving security controls and features.
+  - Continually monitor user behaviors and event logs.
+  - Protect sensitive data in alignment with compliance standards.
+
+----
+
+- Salesforce releases 3 updates each year.
+- Ensure users have the least level of access to the system and data necessary to perform their job functions.
+- Users have access to applications, objects, fields and pages their required.
 
 
 4. Actionable analytics
