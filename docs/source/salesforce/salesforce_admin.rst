@@ -100,10 +100,9 @@ Essential Habits for Salesforce Admins
 
   - 4 layers controls access and visibility:
 
-  .. hint::
+    .. hint::
 
-    Compile access related notes each week and organize them according this 4 layers.
-
+      Compile access related notes each week and organize them according this 4 layers.
 
     #. Organization:
       Single sign-on, Multi-factor authentication, password policies, certificate & key management.
@@ -114,7 +113,7 @@ Essential Habits for Salesforce Admins
     #. Field:
       Field level security.
 
-- Stay up to date on security features (learn continiously).
+- Stay up to date on security features (learn continuously).
 
 .. note::
 
