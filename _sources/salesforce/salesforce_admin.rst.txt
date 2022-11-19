@@ -90,7 +90,12 @@ Essential Habits for Salesforce Admins
       Compile access related notes each week and organize them according this 4 layers.
 
     #. Organization:
-      :guilabel:`Single sign-on`, :guilabel:`Multi-factor authentication` :guilabel:`Password policies` :guilabel:`Certificate & key management`
+      .. hlist::
+
+        - Single sign-on
+        - Multi-factor authentication
+        - Password policies
+        - Certificate & key management
     #. Persona:
       :guilabel:`Profile` :guilabel:`Permission sets` :guilabel:`Permission set groups` :guilabel:`IP restrictions & login hours`
     #. Record:
