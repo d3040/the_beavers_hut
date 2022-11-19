@@ -26,7 +26,7 @@ Essential Habits for Salesforce Admins
   - Other admins
   - Descriptions, Help Text, and In-Apss Guidance
 
-.. note::
+.. admonition:: Summary
 
    Gather information on ``MON`` or ``TUE``, study what we have and how well we are using it on ``WED`` or ``THU``, and on ``THU`` or ``FRI`` add documentation.
 
@@ -65,7 +65,7 @@ Essential Habits for Salesforce Admins
   - Integrations or Dependencies
   (Try the nonprofit starter pack `data dictionary template <sforce.co/NPSPDataDictionary>`_)
 
-.. note::
+.. admonition:: Summary
 
   On ``MON`` or ``TUE`` solicit feedback and observe users. Design and configure solutions on ``WED`` or ``THU``, and communicate and deploy changes on ``THU`` or ``FRI``.
 
@@ -90,12 +90,14 @@ Essential Habits for Salesforce Admins
       Compile access related notes each week and organize them according this 4 layers.
 
     1. Organization:
+
     .. hlist::
 
       - Single sign-on
       - Multi-factor authentication
       - Password policies
       - Certificate & key management
+
     2. Persona:
     .. hlist::
 
@@ -135,7 +137,7 @@ Essential Habits for Salesforce Admins
   - Read latest release notes security section.
   - Activate security-focused release updates in Setup.
 
-.. note::
+.. admonition:: Summary
 
   Deepening knowledge on security early on the week (``TUE``). Review access and visibility for users on ``WED``, and communicate with IT on ``FRI``.
 
@@ -154,7 +156,7 @@ Essential Habits for Salesforce Admins
 
 ----
 
-.. note::
+.. important::
 
   - Salesforce releases 3 updates each year.
   - Ensure users have the least level of access to the system and data necessary to perform their job functions.
