@@ -90,21 +90,21 @@ Essential Habits for Salesforce Admins
       Compile access related notes each week and organize them according this 4 layers.
 
     1. Organization:
-      .. hlist::
+    .. hlist::
 
       - Single sign-on
       - Multi-factor authentication
       - Password policies
       - Certificate & key management
     2. Persona:
-      .. hlist::
+    .. hlist::
 
       - Profile
       - Permission sets
       - Permission set groups
       - IP restrictions & login hours
     3. Record:
-      .. hlist::
+    .. hlist::
 
       - OrgWide defaults
       - Sharing rules, sets & groups
@@ -113,7 +113,7 @@ Essential Habits for Salesforce Admins
       - Teams
       - Territories
     4. Field:
-      .. hlist::
+    .. hlist::
 
       - Field level security
 
@@ -154,9 +154,11 @@ Essential Habits for Salesforce Admins
 
 ----
 
-- Salesforce releases 3 updates each year.
-- Ensure users have the least level of access to the system and data necessary to perform their job functions.
-- Users have access to applications, objects, fields and pages their required.
+.. note::
+
+  - Salesforce releases 3 updates each year.
+  - Ensure users have the least level of access to the system and data necessary to perform their job functions.
+  - Users have access to applications, objects, fields and pages their required.
 
 
 4. Actionable analytics
