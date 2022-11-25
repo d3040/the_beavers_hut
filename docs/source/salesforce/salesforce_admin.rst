@@ -91,38 +91,38 @@ Essential Habits for Salesforce Admins
 
     1. Organization:
 
-.. hlist::
+    .. hlist::
 
-  - Single sign-on
-  - Multi-factor authentication
-  - Password policies
-  - Certificate & key management
+      - Single sign-on
+      - Multi-factor authentication
+      - Password policies
+      - Certificate & key management
 
     2. Persona:
-    
-.. hlist::
+        
+    .. hlist::
 
-  - Profile
-  - Permission sets
-  - Permission set groups
-  - IP restrictions & login hours
+      - Profile
+      - Permission sets
+      - Permission set groups
+      - IP restrictions & login hours
 
     3. Record:
-    
-.. hlist::
+        
+    .. hlist::
 
-  - OrgWide defaults
-  - Sharing rules, sets & groups
-  - Role hierarchy
-  - Manual & programmatic sharing
-  - Teams
-  - Territories
-    
+      - OrgWide defaults
+      - Sharing rules, sets & groups
+      - Role hierarchy
+      - Manual & programmatic sharing
+      - Teams
+      - Territories
+        
     4. Field:
 
-.. hlist::
+    .. hlist::
 
-  - Field level security
+      - Field level security
 
 - Run Health Check:
 
@@ -171,6 +171,15 @@ Essential Habits for Salesforce Admins
 4. Actionable analytics
 .......................
 
+Actionable analytics allow your company to drive business decisions by using your Salerfoce data.
+
+- Conduct quarterly business review ``QBR`` (several hours per quarter).
+
+  - Business reviews are meetings in which business leaders and individual contributors discuss business goals and the progress the've made so far.
+
+- Confirm and update KPIs
+
+- Review and update key reports and dashboards
 
 
 
