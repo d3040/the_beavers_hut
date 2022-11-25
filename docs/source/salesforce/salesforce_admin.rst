@@ -91,37 +91,38 @@ Essential Habits for Salesforce Admins
 
     1. Organization:
 
-      .. hlist::
+.. hlist::
 
-      - Single sign-on
-      - Multi-factor authentication
-      - Password policies
-      - Certificate & key management
+- Single sign-on
+- Multi-factor authentication
+- Password policies
+- Certificate & key management
 
     2. Persona:
     
-      .. hlist::
+.. hlist::
 
-      - Profile
-      - Permission sets
-      - Permission set groups
-      - IP restrictions & login hours
+- Profile
+- Permission sets
+- Permission set groups
+- IP restrictions & login hours
+      
     3. Record:
     
-      .. hlist::
+.. hlist::
 
-      - OrgWide defaults
-      - Sharing rules, sets & groups
-      - Role hierarchy
-      - Manual & programmatic sharing
-      - Teams
-      - Territories
+- OrgWide defaults
+- Sharing rules, sets & groups
+- Role hierarchy
+- Manual & programmatic sharing
+- Teams
+- Territories
     
     4. Field:
-      
-      .. hlist::
 
-      - Field level security
+.. hlist::
+
+- Field level security
 
 - Run Health Check:
 
