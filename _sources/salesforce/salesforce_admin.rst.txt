@@ -91,7 +91,7 @@ Essential Habits for Salesforce Admins
 
     1. Organization:
 
-    .. hlist::
+      .. hlist::
 
       - Single sign-on
       - Multi-factor authentication
@@ -99,14 +99,16 @@ Essential Habits for Salesforce Admins
       - Certificate & key management
 
     2. Persona:
-    .. hlist::
+    
+      .. hlist::
 
       - Profile
       - Permission sets
       - Permission set groups
       - IP restrictions & login hours
     3. Record:
-    .. hlist::
+    
+      .. hlist::
 
       - OrgWide defaults
       - Sharing rules, sets & groups
@@ -114,8 +116,10 @@ Essential Habits for Salesforce Admins
       - Manual & programmatic sharing
       - Teams
       - Territories
+    
     4. Field:
-    .. hlist::
+      
+      .. hlist::
 
       - Field level security
 
