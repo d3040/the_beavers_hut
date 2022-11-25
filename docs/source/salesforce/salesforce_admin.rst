@@ -93,36 +93,36 @@ Essential Habits for Salesforce Admins
 
 .. hlist::
 
-- Single sign-on
-- Multi-factor authentication
-- Password policies
-- Certificate & key management
+  - Single sign-on
+  - Multi-factor authentication
+  - Password policies
+  - Certificate & key management
 
     2. Persona:
     
 .. hlist::
 
-- Profile
-- Permission sets
-- Permission set groups
-- IP restrictions & login hours
-      
+  - Profile
+  - Permission sets
+  - Permission set groups
+  - IP restrictions & login hours
+
     3. Record:
     
 .. hlist::
 
-- OrgWide defaults
-- Sharing rules, sets & groups
-- Role hierarchy
-- Manual & programmatic sharing
-- Teams
-- Territories
+  - OrgWide defaults
+  - Sharing rules, sets & groups
+  - Role hierarchy
+  - Manual & programmatic sharing
+  - Teams
+  - Territories
     
     4. Field:
 
 .. hlist::
 
-- Field level security
+  - Field level security
 
 - Run Health Check:
 
@@ -170,6 +170,9 @@ Essential Habits for Salesforce Admins
 
 4. Actionable analytics
 .......................
+
+
+
 
 
 .. [#] `Build Your Admin Career on Salesforce <https://trailhead.salesforce.com/es-MX/users/strailhead/trailmixes/build-your-admin-career-on-salesforce>`_
