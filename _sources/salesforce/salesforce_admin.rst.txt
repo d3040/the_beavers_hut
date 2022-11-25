@@ -91,12 +91,12 @@ Essential Habits for Salesforce Admins
 
     1. Organization:
 
-    .. hlist::
+      .. hlist::
 
-      - Single sign-on
-      - Multi-factor authentication
-      - Password policies
-      - Certificate & key management
+        - Single sign-on
+        - Multi-factor authentication
+        - Password policies
+        - Certificate & key management
 
     2. Persona:
         
