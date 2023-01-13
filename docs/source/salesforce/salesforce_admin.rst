@@ -1,15 +1,53 @@
-Salesforce admin
-================
-
-[#]_
+Salesforce admin [#]_
+=====================
 
 .. contents::
     :depth: 1
     :local:
     :backlinks: entry
 
+Learn About the Salesforce Admin Role
+-------------------------------------
+
+Salesforce Administration is an operational role. Salesforce Admins solve business problems by customizing the Salesforce Platform. They build, configure, and automate techonology solutions to deliver business value. Core responsibilities include supporting users, managing data, maintaining security standards, and delivering actionable analytics.
+
+Required Skills
+...............
+
+Communication:
+  Collaborate with busines and technical stakeholders to design, configure, adn implement Salesforce.
+Problem solving: 
+  Solve business problems using the Salesforce Platform. Helps being ``detail-oriented`` and to have ``analytical skills``.
+Security management: 
+  Proactively set up processes to manage and protect customer and business data.
+Data analysis:
+  Provide reporting on a regular basis to help users and executives gain insights and make decisions from Salesforce data.
+Designer's mindset:
+  Create huma-centered user experiences in Salesforce.
+Process automation:
+  Create, maintain, and enhance automated business processes.
+Project management:
+  Plan and overse Salesforce projects to ensure they're completed on time and within budget.
+
+Key Responibilites
+..................
+
+User Management:
+  The Salesforce Admin serves as a subject matter expert for user and team needs. They desing a Salesforce solution that is customized and ensures a good user experience. Behind this is the goal to ``improve productivity`` and ``increase adoption``.
+
+Data Management:
+  Salesforce Admins use their expertise to ``ensure the data is high quality`` (no duplications), that the data can be reported on for key business decisions, and that ``users get the information they need easily``.
+
+Security:
+  The Salesforce Admin collaborates with the company's IT and security teams to ensure the Salesforce solution aligns with compliance needs and policies. The admin ensures Salesforce is configured so that users see only what they need to see.
+
+Actionable Analytics:
+  The Salesforce Admin takes building reports a step further by ensuring the reports and dashboards built for their company are ``easy to read`` an that users can ``make critical decisions based on the information they're seeing``.
+
 Essential Habits for Salesforce Admins
 --------------------------------------
+
+`Create your own Calendar Habits Kit <https://org62.my.salesforce.com/sfc/p/#000000000062/a/3y000001UL0V/vMgMiOnP9L.5hI5AY544xrCLLyxbwt9Tp0_PYH.Ym3A>`_
 
 1. User management
 ..................
@@ -28,7 +66,7 @@ Essential Habits for Salesforce Admins
 
 .. admonition:: Summary
 
-   Gather information on ``MON`` or ``TUE``, study what we have and how well we are using it on ``WED`` or ``THU``, and on ``THU`` or ``FRI`` add documentation.
+  Gather information on ``MON`` or ``TUE``, study what we have and how well we are using it on ``WED`` or ``THU``, and on ``THU`` or ``FRI`` add documentation.
 
 2. Data management
 ..................
@@ -63,6 +101,7 @@ Essential Habits for Salesforce Admins
   - Sample result
   - Business purpose
   - Integrations or Dependencies
+  
   (Try the nonprofit starter pack `data dictionary template <sforce.co/NPSPDataDictionary>`_)
 
 .. admonition:: Summary
@@ -144,7 +183,7 @@ Essential Habits for Salesforce Admins
 
 .. admonition:: Summary
 
-  Deepening knowledge on security early on the week (``TUE``). Review access and visibility for users on ``WED``, and communicate with IT on ``FRI``.
+  Deepening knowledge on security early on the week ``TUE``. Review access and visibility for users on ``WED``, and communicate with IT on ``FRI``.
 
 ----
 
@@ -173,13 +212,49 @@ Essential Habits for Salesforce Admins
 
 Actionable analytics allow your company to drive business decisions by using your Salerfoce data.
 
-- Conduct quarterly business review ``QBR`` (several hours per quarter).
+- Conduct quarterly Business Review ``QBR`` (several hours per quarter).
 
-  - Business reviews are meetings in which business leaders and individual contributors discuss business goals and the progress the've made so far.
+  - Business reviews are meetings in which business leaders and individual contributors discuss business goals and the progress they've made so far.
+  - You are there to listen and observe.
+  - Take notes about complaints and wins, and how well your org is configured to assist in those plans.
 
-- Confirm and update KPIs
+- Confirm and update KPIs (1 hour per quarter).
 
-- Review and update key reports and dashboards
+- Review and update key reports and dashboards (few hours per quarter / after KPIs).
+
+  - Document reporting changes and related business initiatives.
+  - Explain changes to how KPIs are masured.
+  - Share pain points that have been removed.
+  - Communicate across multiple messaging channels.
+  - Include a method to capture feedback and questions.
+
+.. admonition:: Summary
+
+  Quaterly Business Review ``MON``, confirm KPIs ``TUE`` and review reports and dashboards ``WED``. (Once a quarter)
+
+Salesforce Platform Basics
+--------------------------
+
+APP: 
+  A set of objects, fields, adn other functionality that supports a business process. (switch between apps using the APP Launcger a.k.a. the waffle).
+Objects: 
+  Tables in the Salesforce database that sotre a particular kind of information. There are ``standard objects``like Accounts and Contacts and ``custom objects``.
+Records:
+  Rows in object database tables. Records are the actual data assotiated with an object.
+Fields:
+  Columns in object database tables.
+Org: 
+  A specific instance of Salesforce.
+
+Trailhead Playground (TP)
+.........................
+
+A safe environment where you can practice the skills you're learning before you take them to your real work. You can have up to 10 at a time.
+
+Customizing the Salesforce Platform
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Developing without code is known as no-code (or declarative) development. With no-code development, you use forms and drag-and-drop tools to perform powerful customization tasks. The platfomr also offers ``programmatic development``, which uses things like Lightning components.
 
 
 
