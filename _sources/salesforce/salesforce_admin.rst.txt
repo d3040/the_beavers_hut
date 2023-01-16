@@ -256,6 +256,37 @@ Customizing the Salesforce Platform
 
 Developing without code is known as no-code (or declarative) development. With no-code development, you use forms and drag-and-drop tools to perform powerful customization tasks. The platfomr also offers ``programmatic development``, which uses things like Lightning components.
 
+Every time you create a custom objecto, you automatically get something called ``Chatter`` feed tracking. As you start building with the platform, keep your eye out for process with:
+  
+  - Heavy email collaboration
+  - Reliance on spreadsheets
+  - Shared local documents
+  - Time-intensive, repetitive manual steps
+  - Impact on only a few departments (you want to minimize the number of stakeholders while you're still learning)
+
+  Processes with these traits are great candidates for early projects on the Salesforce platform.
+
+Understand the Salesforce Architecture
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Salesforce is a cloud company. Everything we offer resides in the trusted, multitenant cloud.
+* The Salesforce platform is the foundation of our services. It's powered by metadata and made up of different parts, like data services, artificial intelligence, and a robust APIs for development.
+* All our apps sit on top of the platform. Our prebuilt offerings like Sales Cloud and Marketing Cloud, along with apps you build using the platform, have consistent, powerful functionality.
+* Eveything is integrated. Our platform tehcnologies like predictive analytics and the development framework are built into everything we offer and everything you build.
+
+
+
+Glossary
+--------
+
+.. glossary::
+  
+  Add custom field to std object
+    :menuselection:`Setud --> Object Manager --> Object --> Details panel: Fields & Relationships --> New
+
+  Use :term:`Add custom field to std object`
+
+
 
 
 
