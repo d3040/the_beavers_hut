@@ -238,7 +238,7 @@ Salesforce Platform Basics
 APP: 
   A set of objects, fields, adn other functionality that supports a business process. (switch between apps using the APP Launcger a.k.a. the waffle).
 Objects: 
-  Tables in the Salesforce database that sotre a particular kind of information. There are ``standard objects``like Accounts and Contacts and ``custom objects``.
+  Tables in the Salesforce database that sotre a particular kind of information. There are ``standard objects`` like Accounts and Contacts and ``custom objects``.
 Records:
   Rows in object database tables. Records are the actual data assotiated with an object.
 Fields:
