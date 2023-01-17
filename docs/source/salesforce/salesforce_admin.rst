@@ -258,13 +258,13 @@ Developing without code is known as no-code (or declarative) development. With n
 
 Every time you create a custom objecto, you automatically get something called ``Chatter`` feed tracking. As you start building with the platform, keep your eye out for process with:
   
-  - Heavy email collaboration
-  - Reliance on spreadsheets
-  - Shared local documents
-  - Time-intensive, repetitive manual steps
-  - Impact on only a few departments (you want to minimize the number of stakeholders while you're still learning)
+- Heavy email collaboration
+- Reliance on spreadsheets
+- Shared local documents
+- Time-intensive, repetitive manual steps
+- Impact on only a few departments (you want to minimize the number of stakeholders while you're still learning)
 
-  Processes with these traits are great candidates for early projects on the Salesforce platform.
+Processes with these traits are great candidates for early projects on the Salesforce platform.
 
 Understand the Salesforce Architecture
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
