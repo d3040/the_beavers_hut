@@ -274,6 +274,28 @@ Understand the Salesforce Architecture
 * All our apps sit on top of the platform. Our prebuilt offerings like Sales Cloud and Marketing Cloud, along with apps you build using the platform, have consistent, powerful functionality.
 * Eveything is integrated. Our platform tehcnologies like predictive analytics and the development framework are built into everything we offer and everything you build.
 
+Trust
+~~~~~
+
+In the `trust site <trust.salesforce.com>`_ you can view perormance data and get more information about how we secure your data. It also shows you any planned maintenance we'll be performing that might impact your access to Salesforce.
+
+Multitenancy
+~~~~~~~~~~~~
+
+Salesforce provides a core set of services to all out customers in the multitenant cloud. No matter the size of your business, you get access to the same computing power, data storage, and core features (multitenancy = shared resources). With this, you never have to install new features or worry about your hardware.
+
+Metadata
+~~~~~~~~
+
+Data about data, custom configurations, functionality, and code in your org are metadata. Part of the reason you can move so fast on the platform is that Salesforce knows how to store and serve you that metadata immediately after you create it.
+
+Application Programming Interface (a.k.a. API)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The Salesforce API is like a contract between two pieces of software, allowing them to connect and exchange information. When you add a custom object or field, the platform automatically creates an API name that serves as an access point between your org and the database. Salesforce uses that API name to retrieve the metadata and data you're looking for.
+
+The core of the API's power is that all your data and metadata is API enabled. Every time you use Salesforce, whether you're using standard functionality or building a custom app, you're interacting with the API.
+
 
 
 Glossary
@@ -282,7 +304,7 @@ Glossary
 .. glossary::
   
   Add custom field to std object
-    :menuselection:`Setud --> Object Manager --> Object --> Details panel: Fields & Relationships --> New
+    :menuselection:`Setud --> Object Manager --> Object --> Details panel: Fields & Relationships --> New`
 
   Use :term:`Add custom field to std object`
 
