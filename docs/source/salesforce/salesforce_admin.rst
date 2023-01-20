@@ -296,6 +296,66 @@ The Salesforce API is like a contract between two pieces of software, allowing t
 
 The core of the API's power is that all your data and metadata is API enabled. Every time you use Salesforce, whether you're using standard functionality or building a custom app, you're interacting with the API.
 
+Navigate Setup
+^^^^^^^^^^^^^^
+
+.. figure:: img/setup_area.png
+  :alt: the setup area navigation parts. Image downloaded from: Salesforce org.
+
+  From the gear menu at the top of the screen, click :strong:`Setup`.
+
+  +-------------------+-----------------------------------------------+
+  | 1. Object Manager | Customize standard and custom objects.        |
+  +-------------------+-----------------------------------------------+
+  | 2. Setup Menu     | Quick links to a collection of pages.         |
+  +-------------------+-----------------------------------------------+
+  | 3. Main Window    | Displaying area.                              |
+  +-------------------+-----------------------------------------------+
+
+There are 3 main categories in the Setup menu:
+
+* :strong:`Administration`: where you can manage your users and data (add users, change permissions, import and export data, and create email templates). 
+* :strong:`Platform Tools`: You do most of your customization in Platform Tools. You can view and manage your data model, create apps, modify the user interface, and deploy new features to your users. Also is where you can manahe your code when using programmatic development.
+* :strong:`Settings`: manage your company information and org security (add business hours, change your locale, and view your org's history).
+
+Power Up with AppExchange
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Salesforce has a community of partners that use the flexibility of the Salesforce platform to build amazing apps and other solutions that anyone can use. These offerings are available for installation on AppExchange.
+
+Strategies for Success:
+~~~~~~~~~~~~~~~~~~~~~~~
+
+A solid AppExcanche strategy helps ensure that you're getting the highest value apps without duplicating functionality or investing in something that you don't need.
+
+Follow these steps to develop a good AppExchange strategy:
+
+1. Identify departments that use or plan to use Salesforce. These are your primary stakeholders.
+2. Research what's available on AppExchange that best meets your stakeholder requirements. Discuss business cases with department heads to determine exact needs. Questions you may ask:
+  
+   a) What business problem are you trying to solve?
+   b) What are your main pain points right now?
+   c) How many users need this app?
+   d) What's your budget?
+   e) What's your timeline?
+
+3. When you find an app tht you think meets your needs, download the app in a test environment (like a free Developer Edition or sandbox). Ensure that the app you're installing doesn't interfere with any other apps you've installed or customizations you've made.
+4. If you're choosing between multiple apps, take some time toevaluate what you've tested. Determine whether ther are feature gaps or unwanted funtionality. Make demos.
+5. Install and deploy in production environment. Make sure you keep your users in the loop about whats changing, and provide training and documentation as necessary.
+
+  :emphasis:`Word of the wise: testing the app first helps you avoid conflicts in production with things like object names.`
+
+Where'd My App Go?
+~~~~~~~~~~~~~~~~~~
+
+Apps are installed using somethind called a package. To find the package:
+
+1. From Setup, you search and select Installed Packages in the Quick Find box.
+2. Click the name of the package you installed. It will be the same name from the AppExchange download page.
+3. Click :strong:`View Components` to see more information about the package. The Package Details page shows you all the components, including custom fields, and Apex classes in the package. This information helps you determine whether you have any conflicts in your own customization.
+
+  :emphasis:`Be sure to check out free apps provided by Salesforce Labs. The great thing about Salesforce Labs apps is that they're open source. You can customize them as needed and peek under the hood to see how they work.`
+
 
 
 Glossary
