@@ -277,7 +277,7 @@ Understand the Salesforce Architecture
 Trust
 ~~~~~
 
-In the `trust site <trust.salesforce.com>`_ you can view perormance data and get more information about how we secure your data. It also shows you any planned maintenance we'll be performing that might impact your access to Salesforce.
+In the `trust site <trust.salesforce.com>`_ you can view performance data and get more information about how we secure your data. It also shows you any planned maintenance we'll be performing that might impact your access to Salesforce. It is Salesforce's website to provide transparency around service availability, performance, security, privacy, and compliance. Trust status gives you a quick and easy way to see if yoyur org performance has been affected so you can let your users know of any changes.
 
 Multitenancy
 ~~~~~~~~~~~~
@@ -355,6 +355,38 @@ Apps are installed using somethind called a package. To find the package:
 3. Click :strong:`View Components` to see more information about the package. The Package Details page shows you all the components, including custom fields, and Apex classes in the package. This information helps you determine whether you have any conflicts in your own customization.
 
   :emphasis:`Be sure to check out free apps provided by Salesforce Labs. The great thing about Salesforce Labs apps is that they're open source. You can customize them as needed and peek under the hood to see how they work.`
+
+User Management
+---------------
+
+Add New Users
+^^^^^^^^^^^^^
+
+A user is anyone who logs in to Salesforce who need access to the company's records. Every user in Salesforce has a user account. The user account identifies the user, and the user account settings determine what features and records the user caan access. Each user account contain at least a ``user name``, ``email address``, ``user's first and last name``, ``alias``, ``nick name``, ``license``, ``profile`` and a ``role``.
+
+Usernames
+    Each user name has both a username and formatted like an email address which can or cannot be real as long as it is unique across all Salesforce organizations. When a user is added the user's password must be changed the first time they log in.
+User Licenses
+    A user license determines which feactures the user can access in Salesforce.
+Profiles
+    Profiles detemine what users can do in Salesforce. They come with a sert of permissions which grant access to particular objects, fields, tabs, and records.
+Roles
+    Roles determine qhat users can see in Salesforce based on where they are located in the role hierarchy. Users at the top of the hierarchy can see all the data owned by userds below them. Users at a lower level can see data owned by users above them only if sharing rules grant them access.
+Alias
+    An alias is a short name to identify the user on list pages, reports or other places where their entire name doesn't fit.
+
+To add users:
+
+1. From Setup select :strong:`Users`.
+2. Click :strong:`New User` or :strong:`Add Multiple Users` to add up to 10 users at a time.
+3. Enter each user's information.
+4. Select the user license.
+5. Select a profile.
+6. Select :strong:`Generate passwords and notify user via email`.
+7. Save.
+
+You can perform essesntial admin tasks like resetting passwords, freezin users, and viewing current system status from your mobile device.
+
 
 
 
