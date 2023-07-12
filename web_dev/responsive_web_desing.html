@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html  lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1"><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+      <title>Responsive Web Design[#]_</title>
+    
+          <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+          <link rel="stylesheet" href="../_static/theme.css " type="text/css" />
+      
+      <!-- sphinx script_files -->
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+
+      
+      <!-- bundled in js (rollup iife) -->
+      <!-- <script src="../_static/theme-vendors.js"></script> -->
+      <script src="../_static/theme.js" defer></script>
+    
+  <link rel="index" title="Index" href="../genindex.html" />
+  <link rel="search" title="Search" href="../search.html" /> 
+  </head>
+
+  <body>
+    <div id="app">
+    <div class="theme-container" :class="pageClasses"><navbar @toggle-sidebar="toggleSidebar">
+  <router-link to="../index.html" class="home-link">
+    
+      <span class="site-name">The Beaver&#39;s Hut</span>
+    
+  </router-link>
+
+  <div class="links">
+    <navlinks class="can-hide">
+
+
+
+    </navlinks>
+  </div>
+</navbar>
+
+      
+      <div class="sidebar-mask" @click="toggleSidebar(false)">
+      </div>
+        <sidebar @toggle-sidebar="toggleSidebar">
+          
+          <navlinks>
+            
+
+
+
+            
+          </navlinks><div id="searchbox" class="searchbox" role="search">
+  <div class="caption"><span class="caption-text">Quick search</span>
+    <div class="searchformwrapper">
+      <form class="search" action="../search.html" method="get">
+        <input type="text" name="q" />
+        <input type="submit" value="Search" />
+        <input type="hidden" name="check_keywords" value="yes" />
+        <input type="hidden" name="area" value="default" />
+      </form>
+    </div>
+  </div>
+</div><div class="sidebar-links" role="navigation" aria-label="main navigation">
+  
+    <div class="sidebar-group">
+      <p class="caption">
+        <span class="caption-text"><a href="../index.html#the-beaver-s-hut">Books</a></span>
+      </p>
+      <ul class="">
+        
+          <li class="toctree-l1 ">
+            
+              <a href="../git/index.html" class="reference internal ">Git</a>
+            
+
+            
+          </li>
+
+        
+          <li class="toctree-l1 ">
+            
+              <a href="../salesforce/index.html" class="reference internal ">Salesforce</a>
+            
+
+            
+          </li>
+
+        
+      </ul>
+    </div>
+  
+</div>
+        </sidebar>
+
+      <page>
+          <div class="body-header" role="navigation" aria-label="navigation">
+  
+  <ul class="breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+    
+    <li>Responsive Web Design[#]_</li>
+  </ul>
+  
+
+  <ul class="page-nav">
+</ul>
+  
+</div>
+<hr>
+          <div class="content" role="main" v-pre>
+            
+  <section id="responsive-web-design">
+<h1>Responsive Web Design[#]_<a class="headerlink" href="#responsive-web-design" title="Permalink to this heading">¶</a></h1>
+<ul class="simple">
+<li><p>Only use one h1 element per page and place lower importance headings below higher important headings.</p></li>
+<li><p>All img elements should have an alt attribute. It is used for screen readers to improve accessibility and is displayed if the image fails to load.</p></li>
+<li><p>The <a href="#id1"><span class="problematic" id="id2">``</span></a>figure``element represents sel-contained content and will allow you to associate an image with a caption.</p></li>
+<li><p>The default behaviour of clicking a form button without any attributes submits the form to the location specified in the form’s <code class="docutils literal notranslate"><span class="pre">action</span></code> attribute. To avoid confusion add the <code class="docutils literal notranslate"><span class="pre">type</span></code> attribute with the value ‘submit’ on the button to make it clear that it is a submit button.</p></li>
+<li><p>label elements are used to help associate the text for an <code class="docutils literal notranslate"><span class="pre">input</span></code> element with the <code class="docutils literal notranslate"><span class="pre">input</span></code> element itsel (especially for assistive thecnologies like screen readers).</p></li>
+<li><p>To make a unique selection in a group of radio buttons, the buttons must have a <code class="docutils literal notranslate"><span class="pre">name</span></code> attribute with the same value.</p></li>
+<li><p><a href="#id3"><span class="problematic" id="id4">``</span></a>fieldset `` element is used to group related inputs and labels together in a web form.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">legend</span></code> element acts as a caption for the content in the <code class="docutils literal notranslate"><span class="pre">fieldset</span></code> element. It gives users context about what they should enter into that part of the form.</p></li>
+<li><p>Another way to associate an <code class="docutils literal notranslate"><span class="pre">input</span></code> element’s text with the element itself is using a <code class="docutils literal notranslate"><span class="pre">label</span></code> element and a <code class="docutils literal notranslate"><span class="pre">for</span></code> attribute with the same value as the <code class="docutils literal notranslate"><span class="pre">input</span></code> element’s <code class="docutils literal notranslate"><span class="pre">id</span></code> attribute.</p></li>
+<li><p>Form data for selected checkboxes are <code class="docutils literal notranslate"><span class="pre">name</span></code> / <code class="docutils literal notranslate"><span class="pre">value</span></code> attribute pairs. While the <code class="docutils literal notranslate"><span class="pre">value</span></code> attribute is optional, it’s best practice to include it with any checkboxes or radio buttons on the page.</p></li>
+<li><p>Add a <code class="docutils literal notranslate"><span class="pre">lang</span></code> attribute to the <code class="docutils literal notranslate"><span class="pre">head</span></code> element in order to stablish a laguage for the website.</p></li>
+<li><p>All pages should begin with &lt;!DOCTYPE html&gt;. This special string is known as a declaration and ensures the browser tries to meet industry-wide specifications.</p></li>
+<li><dl class="simple">
+<dt>The <code class="docutils literal notranslate"><span class="pre">title</span></code> is one of several elements that provide extra information not visible on the web page, but it is useful for search engines or how the page gets displayed. It aslo displays the content of that <code class="docutils literal notranslate"><span class="pre">title</span></code> elemet in 2 ways:</dt><dd><ul>
+<li><p>in the title bar when the page is open,</p></li>
+<li><p>in the browser tab for the page when you hover on it. Even if that tab is not active, once you hover on the, the <code class="docutils literal notranslate"><span class="pre">title</span></code> text is displayed.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>For the styling of a page to look similar on mobile as it does on a desktop or laptop, need to add: <code class="docutils literal notranslate"><span class="pre">&lt;meta</span> <span class="pre">name=&quot;viewport&quot;</span> <span class="pre">content=&quot;width=device-width,</span> <span class="pre">initial-sclae=1.0&quot;</span> <span class="pre">/&gt;</span></code>.</p></li>
+<li><p>The inline-blcok element only take up the width of their content.</p></li>
+<li><p>One enter alter the position of the elements (E.g. Step 41 Responsive Web Desing Lear Basic CSS by Building a Cafe Menu).</p></li>
+<li><p>The deaful color of a link that has not yet been clicked on is typically blue. The default color of a link that has alreaduy been visited from a page is typically purple. This can be change by applying the color property to the anchor tag (a).</p></li>
+<li><dl class="simple">
+<dt>There ar two main color models: the additive RGB (red, gree, blue) model used in electronic devices, and the substractive CMYK /cyan, magenta , yellow, black) model used in print.</dt><dd><ul>
+<li><p>Primary colors: basic at they maximum.</p></li>
+<li><p>Secondary colors: the color you get when combine primary colors. Cyan, Magenta, Yellow.</p></li>
+<li><p>Tertiary colors are created combining a primary with a nearby secondary color.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>A color wheel is a circle where similar colors, or <cite>hues</cite>, are near each other, and different ones are further apart. Two colors that are opposite from each other on the color wheel are called complementary colors. If two complementary colors are combined, the produce gray. But when they are placed side-by-side, these colors produce strong visual contrast and appear brighter.</p></li>
+<li><p>It’s better practice to choose one color as the dominant color, and use its complementary color as an accent to bring attention to certain content on the page.</p></li>
+<li><p>There are several other important color combinations outside of complementary colors.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">HEX</span> <span class="pre">color</span></code> values start with a # characgter and take six characters from 0-9 and A-F. The first pair of characters represent red, the second pair represent green, and the third pair represent blue.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">HSL</span></code> color model, or hue, saturation and lightness, is another way to represent colors. The CSS hsl function accepts 3 values: a numbre from 0 to 360 for hue, a percentage from 0 to 100 for saturation, and a percengage from 0 to 100 for lightness. If you imagine a color wheel, the hue red is at 0 degress, green is at 120 degreses, and blue is at 240 degrees. Saturation is the intensity of a color from 0%, or gray, to 100% for pure color. The % sign must be added to the saturation and lightness values. Lightness is how bright a color appears, from 0%, or complete black, to 100%, complete white, with 50% being neutral.</p></li>
+<li><p>A gradient is when one color transitions into another. The CSS <code class="docutils literal notranslate"><span class="pre">linear-gradient</span></code> funtion lets you control de direction of the transition along a line, and which colors are used. One thing to remember is that the <code class="docutils literal notranslate"><span class="pre">linear-gradient</span></code> funtcion actually creates an <code class="docutils literal notranslate"><span class="pre">image</span></code> element, and i usually paired with the background property which can accept an image as a value.</p></li>
+<li><p>If you want a value of zero (0) for any or both offsetX and offsetY, you don’t need to add a unit. Every browser understands that zero means no change.</p></li>
+<li><p>rem: unit stands for root em, and is also relative to the font size of the html element.</p></li>
+<li><p>Give width of “unset” in order to remove previous rules.</p></li>
+<li><p>Attribute selector: selects an element based on the given attribute value (e.g. input[name=”password”]).</p></li>
+</ul>
+<p>Basic html template:</p>
+<p><a href="#id5"><span class="problematic" id="id6">``</span></a>` html</p>
+<p>&lt;!DOCTYPE html&gt;
+&lt;html lang=”en”&gt;</p>
+<blockquote>
+<div><dl class="simple">
+<dt>&lt;head&gt;</dt><dd><p>&lt;meta charset=”utf-8”&gt;
+&lt;meta name=”viewport” content=”width=device-width, initial-scale=1.0”&gt;
+&lt;title&gt;Colored Markers&lt;/title&gt;</p>
+</dd>
+</dl>
+<p>&lt;/head&gt;
+&lt;body&gt;
+&lt;/body&gt;</p>
+</div></blockquote>
+<p>&lt;/html&gt;</p>
+<p><a href="#id7"><span class="problematic" id="id8">``</span></a><a href="#id9"><span class="problematic" id="id10">`</span></a></p>
+<section id="registration-form">
+<h2>Registration form:<a class="headerlink" href="#registration-form" title="Permalink to this heading">¶</a></h2>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Atributes form element:</dt><dd><ul>
+<li><p>action: where from data should be sent.</p></li>
+<li><dl class="simple">
+<dt>method: specifies how send form-data to the URL specified in the action attribute.</dt><dd><ul>
+<li><p>GET request:</p></li>
+<li><p>POST request:</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Elements:</dt><dd><ul>
+<li><p>fieldset:</p></li>
+<li><dl class="simple">
+<dt>label:</dt><dd><ul>
+<li><p>for</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>input (self-closing):</dt><dd><ul>
+<li><p>id</p></li>
+<li><p>type</p></li>
+<li><p>name</p></li>
+<li><p>placeholder</p></li>
+<li><p>required</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<ul class="simple">
+<li><p>To handle the form submission, after the last <code class="docutils literal notranslate"><span class="pre">fielset</span></code> element add an <code class="docutils literal notranslate"><span class="pre">input``element</span> <span class="pre">with</span> <span class="pre">the</span> <span class="pre">``type</span></code> attribute set to “submit” and the <a href="#id11"><span class="problematic" id="id12">``</span></a>value``attribute set to “Submit”.</p></li>
+<li><p>To every input element add a <code class="docutils literal notranslate"><span class="pre">name</span></code> attribute.</p></li>
+<li><p>During development, it is useful to see the fieldset default borders.</p></li>
+</ul>
+<p><a href="#id13"><span class="problematic" id="id14">``</span></a>` html</p>
+<p>&lt;!DOCTYPE html&gt;
+&lt;html lang=”en”&gt;</p>
+<blockquote>
+<div><dl class="simple">
+<dt>&lt;head&gt;</dt><dd><p>&lt;meta charset=”UTF-8”&gt;
+&lt;title&gt;Registration Form&lt;/title&gt;
+&lt;link rel=”stylesheet” href=”styles.css” /&gt;</p>
+</dd>
+</dl>
+<p>&lt;/head&gt;
+&lt;body&gt;</p>
+<blockquote>
+<div><p>&lt;h1&gt;Registration Form&lt;/h1&gt;
+&lt;p&gt;Please fill out this form with the required information&lt;/p&gt;
+&lt;form method=”post” action=’<a class="reference external" href="https://register-demo.freecodecamp.org'">https://register-demo.freecodecamp.org’</a>&gt;</p>
+<blockquote>
+<div><dl class="simple">
+<dt>&lt;fieldset&gt;</dt><dd><p>&lt;label for=”first-name”&gt;Enter Your First Name: &lt;input id=”first-name” name=”first-name” type=”text” required /&gt;&lt;/label&gt;
+&lt;label for=”last-name”&gt;Enter Your Last Name: &lt;input id=”last-name” name=”last-name” type=”text” required /&gt;&lt;/label&gt;
+&lt;label for=”email”&gt;Enter Your Email: &lt;input id=”email” name=”email” type=”email” required /&gt;&lt;/label&gt;
+&lt;label for=”new-password”&gt;Create a New Password: &lt;input id=”new-password” name=”new-password” type=”password” pattern=”[a-z0-5]{8,}” required /&gt;&lt;/label&gt;</p>
+</dd>
+</dl>
+<p>&lt;/fieldset&gt;
+&lt;fieldset&gt;</p>
+<blockquote>
+<div><p>&lt;label for=”personal-account”&gt;&lt;input id=”personal-account” type=”radio” name=”account-type” class=”inline” /&gt; Personal Account&lt;/label&gt;
+&lt;label for=”business-account”&gt;&lt;input id=”business-account” type=”radio” name=”account-type” class=”inline” /&gt; Business Account&lt;/label&gt;
+&lt;label for=”terms-and-conditions”&gt;</p>
+<blockquote>
+<div><p>&lt;input id=”terms-and-conditions” type=”checkbox” required name=”terms-and-conditions” class=”inline” /&gt; I accept the &lt;a href=”<a class="reference external" href="https://www.freecodecamp.org/news/terms-of-service/">https://www.freecodecamp.org/news/terms-of-service/</a>”&gt;terms and conditions&lt;/a&gt;</p>
+</div></blockquote>
+<p>&lt;/label&gt;</p>
+</div></blockquote>
+<p>&lt;/fieldset&gt;
+&lt;fieldset&gt;</p>
+<blockquote>
+<div><p>&lt;label for=”profile-picture”&gt;Upload a profile picture: &lt;input id=”profile-picture” type=”file” name=”file” /&gt;&lt;/label&gt;
+&lt;label for=”age”&gt;Input your age (years): &lt;input id=”age” type=”number” name=”age” min=”13” max=”120” /&gt;&lt;/label&gt;
+&lt;label for=”referrer”&gt;How did you hear about us?</p>
+<blockquote>
+<div><dl class="simple">
+<dt>&lt;select id=”referrer” name=”referrer”&gt;</dt><dd><p>&lt;option value=””&gt;(select one)&lt;/option&gt;
+&lt;option value=”1”&gt;freeCodeCamp News&lt;/option&gt;
+&lt;option value=”2”&gt;freeCodeCamp YouTube Channel&lt;/option&gt;
+&lt;option value=”3”&gt;freeCodeCamp Forum&lt;/option&gt;
+&lt;option value=”4”&gt;Other&lt;/option&gt;</p>
+</dd>
+</dl>
+<p>&lt;/select&gt;</p>
+</div></blockquote>
+<p>&lt;/label&gt;
+&lt;label for=”bio”&gt;Provide a bio:</p>
+<blockquote>
+<div><p>&lt;textarea id=”bio” name=”bio” rows=”3” cols=”30” placeholder=”I like coding on the beach…”&gt;&lt;/textarea&gt;</p>
+</div></blockquote>
+<p>&lt;/label&gt;</p>
+</div></blockquote>
+<p>&lt;/fieldset&gt;
+&lt;input type=”submit” value=”Submit” /&gt;</p>
+</div></blockquote>
+<p>&lt;/form&gt;</p>
+</div></blockquote>
+<p>&lt;/body&gt;</p>
+</div></blockquote>
+<p>&lt;/html&gt;</p>
+<p><a href="#id15"><span class="problematic" id="id16">``</span></a><a href="#id17"><span class="problematic" id="id18">`</span></a></p>
+<blockquote>
+<div><dl class="simple">
+<dt>self-closing tags:</dt><dd><ul class="simple">
+<li><p>img</p></li>
+<li><p>input</p></li>
+</ul>
+</dd>
+</dl>
+</div></blockquote>
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="id19" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></span>
+<p><a class="reference external" href="https://www.freecodecamp.org/learn/2022/responsive-web-design/">FreeCodeCamp - Responsive Web Desing</a></p>
+</aside>
+</aside>
+</section>
+</section>
+
+
+          </div>
+          <div class="page-nav">
+            <div class="inner"><ul class="page-nav">
+</ul><div class="footer" role="contentinfo">
+      &#169; Copyright 2022, Daniel Clavijo.
+    <br>
+    Created using <a href="http://sphinx-doc.org/">Sphinx</a> 7.0.1 with <a href="https://github.com/schettino72/sphinx_press_theme">Press Theme</a> 0.8.0.
+</div>
+            </div>
+          </div>
+      </page>
+    </div></div>
+    
+    
+  </body>
+</html>
