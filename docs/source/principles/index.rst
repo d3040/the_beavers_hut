@@ -1,5 +1,5 @@
-Book
-====
+Principles Life and Work
+========================
 
 .. toctree::
     :maxdepth: 1
