@@ -1,5 +1,5 @@
-Book Sample
-===========
+Administración eficaz
+=====================
 
 .. toctree::
     :maxdepth: 1
