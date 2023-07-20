@@ -4,7 +4,6 @@ The Beaver's Hut
 .. toctree::
    :caption: Books
    :maxdepth: 1
-   :hidden:
+   :glob:
 
-   book/
-
+   */index
