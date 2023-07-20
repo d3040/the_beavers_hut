@@ -7,3 +7,7 @@ The Beaver's Hut
    :glob:
 
    */index
+
+   :hidden:
+
+   book/*
