@@ -93,15 +93,11 @@ An idea meritocracy requires people to do three things:
 Formulas
 --------
 
-.. math::	Dreams + Reality + Determination = A Successful Life
-
-.. math::	Idea Meritocracy = Radical Truth + Radical Transparency + Believability weighted desition making
-	
-.. math::	Pain + Reflection = Progress
-
-.. math::	Performance = Learning + ability 
-
-.. math::	Expected value = (reward * probability of success) - (cost * probability of fail)
+* Dreams + Reality + Determination = A Successful Life
+* Idea Meritocracy = Radical Truth + Radical Transparency + Believability weighted desition making
+* Pain + Reflection = Progress
+* Performance = Learning + ability 
+* Expected value = (reward * probability of success) - (cost * probability of fail)
 
 .. note::
 
