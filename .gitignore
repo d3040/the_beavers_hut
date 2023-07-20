@@ -1,4 +1,4 @@
 *~
 build/
-book/*
+source/book
 *.pdf
