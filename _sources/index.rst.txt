@@ -6,9 +6,5 @@ The Beaver's Hut
    :maxdepth: 1
    :hidden:
 
-   book/**
-
-   :glob:
-
-   */index
+   book/
 
