@@ -99,6 +99,8 @@ Formulas
 * Performance = Learning + ability 
 * Expected value = (reward * probability of success) - (cost * probability of fail)
 
+
+
 .. note::
 
 	The prices reflect people's expectations, so they go up when actual results are better than expected and they go down when they are worse than expected.
