@@ -4,6 +4,11 @@ Principles Life and Work
 .. important::
 	These are my notes from the book `Principles Life and Work by Ray Dalio <https://www.principles.com/>`_. All principles coverd in the book can be fund here: `Life and Work Principles <https://www.principles.com/principles/418eaeca-564f-41e8-bd90-8e0d042f28d5/#table-of-contents>`_.
 
+.. contents::
+    :depth: 1
+    :local:
+    :backlinks: entry
+
 Principles
 ----------
 
