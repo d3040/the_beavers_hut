@@ -130,12 +130,12 @@ Essential Habits for Salesforce Admins
 
     1. Organization:
 
-      .. hlist::
+    .. hlist::
 
-        - Single sign-on
-        - Multi-factor authentication
-        - Password policies
-        - Certificate & key management
+      - Single sign-on
+      - Multi-factor authentication
+      - Password policies
+      - Certificate & key management
 
     2. Persona:
         
@@ -357,22 +357,22 @@ Apps are installed using somethind called a package. To find the package:
   :emphasis:`Be sure to check out free apps provided by Salesforce Labs. The great thing about Salesforce Labs apps is that they're open source. You can customize them as needed and peek under the hood to see how they work.`
 
 User Management
----------------
+^^^^^^^^^^^^^^^
 
 Add New Users
-^^^^^^^^^^^^^
+~~~~~~~~~~~~~
 
 A user is anyone who logs in to Salesforce who need access to the company's records. Every user in Salesforce has a user account. The user account identifies the user, and the user account settings determine what features and records the user caan access. Each user account contain at least a ``user name``, ``email address``, ``user's first and last name``, ``alias``, ``nick name``, ``license``, ``profile`` and a ``role``.
 
-Usernames
+* Usernames
     Each user name has both a username and formatted like an email address which can or cannot be real as long as it is unique across all Salesforce organizations. When a user is added the user's password must be changed the first time they log in.
-User Licenses
+* User Licenses
     A user license determines which feactures the user can access in Salesforce.
-Profiles
+* Profiles
     Profiles detemine what users can do in Salesforce. They come with a sert of permissions which grant access to particular objects, fields, tabs, and records.
-Roles
+* Roles
     Roles determine qhat users can see in Salesforce based on where they are located in the role hierarchy. Users at the top of the hierarchy can see all the data owned by userds below them. Users at a lower level can see data owned by users above them only if sharing rules grant them access.
-Alias
+* Alias
     An alias is a short name to identify the user on list pages, reports or other places where their entire name doesn't fit.
 
 To add users:
