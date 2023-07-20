@@ -1,5 +1,5 @@
-Administración eficaz
-=====================
+Administración
+==============
 
 .. toctree::
     :maxdepth: 1
