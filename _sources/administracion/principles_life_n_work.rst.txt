@@ -15,7 +15,7 @@ Habit is probably the most powerful tool in your brain's toolbox. The good habit
 
 Look for the patterns of those things that affect you in order to understand the cause-effect relationships that drive them and to learn principles for dealing with them effectively. Have clear goals. Don't confuse goals with desires. Logic, reason, and common sense are your best tools for synthesizing reality and understanding what to do about it. Use principles. Using principles is a way of both simplifying and improving your decision making. Convert your principles into algorithms and have the computer make decisions alognside you.
 
-Seek out the smartest people who disagreed with you so 1. you could try to understand their reasoning. 2. Know when no to have an opinion. 3. Develop, test and systemize timesless and universal principles.
+Seek out the smartest people who disagreed with you so 1) you could try to understand their reasoning, 2) know when no to have an opinion, and 3) develop, test and systemize timesless and universal principles.
 
 Work principles is written for those for whom work is primarily the game that you play to follow your passion and achieve your mission.
 
@@ -97,19 +97,11 @@ Formulas
 	
 	Dreams + Reality + Determination = A Successful Life
 
-.. math::
-	:nowrap:
-
 	Idea Meritocracy = Radical Truth + Radical Transparency + Believability weighted desition making
-
-.. math::
 	
 	Pain + Reflection = Progress
 
 	Performance = Learning + ability 
-
-.. mathd::
-	:nowrap:
 
 	Expected value = (reward * probability of success) - (cost * probability of fail)
 
