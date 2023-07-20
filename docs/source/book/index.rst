@@ -1,5 +1,5 @@
-z. Book Sample
-==============
+Book title
+===========
 
 .. toctree::
     :maxdepth: 1
