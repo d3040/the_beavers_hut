@@ -12,7 +12,7 @@ Principles Life and Work
 Principles
 ----------
 
-Principles are fundamental thruths that serve as the foundations for behavior that gets you what you want out of life. The principles you choose can be anything you want them to be as long as the are authentic (i.e. as long as they reflect your true character and values). If inconsistencies seem to exist, you should explain them. Principles themselves are a form of leverage-they´re a way to compound your understanding of situations so that you don´t need to exert the same effort each time you encounter a problem. It is a way to systemize your decision making using believability-weighted decisions.
+Principles are fundamental truths that serve as the foundations for behavior that gets you what you want out of life. The principles you choose can be anything you want them to be as long as the are authentic (i.e. as long as they reflect your true character and values). If inconsistencies seem to exist, you should explain them. Principles themselves are a form of leverage-they´re a way to compound your understanding of situations so that you don´t need to exert the same effort each time you encounter a problem. It is a way to systemize your decision making using believability-weighted decisions.
 
 It's smarter to start with what you really want, which are your real goals, and then work back to what you need to attain them. Use daily observations and look to nature to learn how reality works. Truth-or, more precisely, an accurate understanding of reality-is the essential foundation for any good outcome. It is a fundamental law of nature that you get stronger only by doing difficult things.
 
@@ -47,7 +47,7 @@ The things are just the bait. To help you stay centered and effective, pretend t
 
 Desing a plan and write down your plan for everyone to see and to measure your progress against. Remember that great planners who don't execute go nowhere, and don't forget to establish clear metrics to make certain that you are following your plan.
 
-Five step process:
+Five step process to get what you want out of life:
 
 1. Identifying our goals,
 2. Encountering our problems, 
