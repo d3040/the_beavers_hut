@@ -9,8 +9,8 @@ Principles Life and Work
     :local:
     :backlinks: entry
 
-Principles
-----------
+The Idea of Principles
+----------------------
 
 Principles are fundamental truths that serve as the foundations for behavior that gets you what you want out of life. The principles you choose can be anything you want them to be as long as the are authentic (i.e. as long as they reflect your true character and values). If inconsistencies seem to exist, you should explain them. Principles themselves are a form of leverage-they´re a way to compound your understanding of situations so that you don´t need to exert the same effort each time you encounter a problem. It is a way to systemize your decision making using believability-weighted decisions.
 
@@ -24,8 +24,8 @@ Seek out the smartest people who disagreed with you so 1) you could try to under
 
 Work principles is written for those for whom work is primarily the game that you play to follow your passion and achieve your mission.
 
-Success
--------
+The Idea of Success
+-------------------
 
 If you can think for yourself while being open-minded in a clearheaded way to find out what is best for you to do, and if you can summon up the courage to do it, you will make the most of your life. The key to success lies in knowing how to both strive for a lot and fail well. One is inevitably going to be painfully wrong a lot, so knowing how to do that well is critical so one's success.
 
@@ -61,8 +61,8 @@ Don't mistake posibilities for probabilities. Any damn fool can make it complex.
 
 The courage that's needed the most isn't the king that drives you to prevail over others, but the kind that allows you to be true to your truest self, no matter what other people want you to be. Recognize that 1) the biggest threat to good decision making is harmful emotions, and 2) decision making is a two-step process (first learning and then deciding). Remind yourself that it's never harmful to at least hear an opposing point of view.
 
-Idea meritocracy
-----------------
+The Idea Meritocracy
+--------------------
 
 The greatest success you can have as the person in charge is to orchestrate others to do things well without you. There are far fewer types of people in the world than there are people and far fewer different types of situations than there are situations, so matching the right types of peoples to the right types of situations is key.
 
