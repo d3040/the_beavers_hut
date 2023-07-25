@@ -18,7 +18,8 @@ Imagine having all your notes in one place and available from anywhere. Using a 
 
 | Level of importance | Description                             |Start |Finish|
 | ------------------- | --------------------------------------- | ---- | ---- |
-|1 										|	What?																		|			 |			|
+|1 										|	Update side bar titles									|			 |			|
+|0 										|	What?																		|			 |			|
 |0 										|	How?																		|			 |			|
 |0 										|	Why?																		|			 |			|
 
