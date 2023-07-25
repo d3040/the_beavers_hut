@@ -1,5 +1,24 @@
-# The Beavers hut
+# The Beaver's hut
 
-Este repositorio tiene como objetivo crear un ambiente dinámico donde pueda capturar el contenido de mis estudios y gestionar un diseño que facilite la lectura de esa información, así como facilitar su ubicación.
+Welcome, this project is about ideas and how to store them. The Beaver's hut is a library full of shelves with your books. A book is a collection of ideas organized by their origin. 
 
-Para organizar mis notas (a.k.a books), utilicé archivos *index.rst* (rst -> (reEstructuredText)[https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html]) para cada tema de estudio, cada uno separado por carpetas, y con ayuda de (Sphinx)[https://www.sphinx-doc.org/en/master/)  se crea un sitio de documentación con el estilo tema (Book)[https://sphinx-themes.org/sample-sites/sphinx-book-theme/]. El acceso a esta página es a través del siguiente url: *https://d3040.github.io/the_beavers_hut/*.
+Imagine having all your notes in one place and available from anywhere. Using a simple workflow and [Sphinx](https://www.sphinx-doc.org/en/master/), you can easily take your notes using [ReEstructuredText](https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html) syntax (rst) and let github render your documentation site.
+
+* Mantain your notes
+* Organize your notes
+* Access your notes
+
+## What?
+
+## How?
+
+## Why?
+
+## The Future
+
+| Level of importance | Description                             |Start |Finish|
+| ------------------- | --------------------------------------- | ---- | ---- |
+|1 										|	What?																		|			 |			|
+|0 										|	How?																		|			 |			|
+|0 										|	Why?																		|			 |			|
+
