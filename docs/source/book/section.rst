@@ -1,12 +1,18 @@
-Book Section
-============
-
-Whatever!
-
+*****
+Title
+*****
+    
 .. contents::
     :depth: 1
     :local:
     :backlinks: entry
 
-Nice subsection
----------------
+########
+Subtitle
+########
+
+Section
+=======
+
+Sub-section
+-----------
