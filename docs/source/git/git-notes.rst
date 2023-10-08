@@ -9,6 +9,10 @@ Git temporal notes
 Update token to connect to remote repository
 --------------------------------------------
 
-1. git remote remove origin
-2. git remote add origin ``https://token>@github.com/<user>/<repo>.git``
-3. git push --set-upstream origin main
+.. code-block:: git
+    :linenos:
+
+    git remote remove origin
+    git remote add origin https://<token>@github.com/<user>/<repo>.git
+    git push --set-upstream origin main
+```
