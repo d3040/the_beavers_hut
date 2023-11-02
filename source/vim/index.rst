@@ -15,7 +15,8 @@ Vi IMproved (Vim)
 
 * `Beginner´s guide <https://www.openvim.com/tutorial.html>`_
 * `Vim adventures <https://vim-adventures.com/>`_
-
+* `VIM and Python <https://realpython.com/vim-and-python-a-match-made-in-heaven/>`_
+  
 ###########
 Cheat Sheet
 ###########
@@ -69,8 +70,13 @@ Cheat Sheet
 
 
 
-Section
-=======
+Hacks
+=====
 
-Sub-section
------------
+* Find and Replace: ``:[range]s/{pattern}/{string}/[flags]``
+  
+  + [range]: pass a range of lines. Pass % to find and replace in all lines. Use two numbers separated by a comma to indicate range (eg. 5,10), use a *dot* . to represent the current line and *$* for the las line of the file.
+  + {pattern}: pass regex patterns here.
+  + {string}: replacement string.
+  + [flags]: additional flags, for example: *c* to confirm before replacement, *i* to change to case-insensitive search, and *g* make a change globally.  
+
