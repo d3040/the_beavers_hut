@@ -72,13 +72,14 @@ html_sidebars =  {
     #"max_navbar_depth": 4,
     #"collapse_navbar": False,#True,
 }
-html_title = project
-html_logo = 'img/beaver.png'
-html_favicon = 'img/accessibility.svg'
-
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 html_css_files = ['css/custom.css']
 html_js_files = ['js/custom.js']
+html_title = project
+html_logo = 'img/beaver.png'
+html_favicon = 'img/accessibility.svg'
+
+
