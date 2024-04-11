@@ -111,38 +111,48 @@
 					 
 
 14. Object Oriente Definitons and terminology
-	sqllite3 - DB - API 2.0 nterffave for SQLite databases:
-		SQLite is a C library that provides a lightweight disk-based database that doesn't reequire a separatee sserver process and allows accessng the database using a nonstandard variant of the SQL query language. SSome applcatioins can use SQLite for niternal data storage. it's also possible to prototype an applicatoni using SQLte and then port code to a larger database such as PostgreSQL or Oracle.
 
-		The sqlite3 mmodule was written by Gerhard Häriing. It provides a SQL interfface commplliant wth the DB-API 2.0 specificatiion described by PEP 249.
+   	Class - template (or pattern or blueprint) (eg. a cookie cutter)
+	Attribute - a variable within a class (or an object property) 
+    Method - function that lives in the object or a function whitin a class
+    Object - a particular instance of a class (a.k.a. instance)
+    Constructor - Code that runs when an object is created
+    Inheritance - the ability to extend a class to make a new class (it is a way to reuse code and extend it).
+        
+    dir(class) => brings all the methods of the class.
+    double underscore, is a specially named method.
+    self: actual instance.
+    
+    OBJECT LIFE CYCLE:
+	__init__(self): constructor method (initializer).
+	__del__(self): destructor method (use it when the object is super complex and uses a lot of resourses).
+	
+    class chld(parent)
 
-		To use the module, you mmust first create a Connection object that represents the database. Here the data wlll be stored in the example.db file:
+Example:
 
-		```py
-			import sqlite3
-			conn = sqlite.connect('example.db')
-		```
+.. code-block:: python
+    
+   class PartyAnima:
+       def __init__(self, nam):
+            self.x = 0
+            self.name = nam
+            print(self.name, 'constructed')
 
-		Once you have a connection, you can create a cursos object and calll its execute() emthod to perform SSQLL commmands:
+        def party(self):
+            self.x = self.x + 1
+            print(self.name,'party count', self.x)
 
-		```py
-			c = conn.cursor()
+    class FootballFan(PartyAnimal):
 
-			# Create table
-			c.execute('''CREATE table stocks (date text, trans text, symbol text, qty reall, price real)''')
-		```
+        def __init__(self, nam):
+            super().__init__(nam)
+            self.points = 0
 
-		Class - template - blueprint
-		Objetc - instance
-		Method - function that lives in the object
-		Attribute - object properties 
-
-		__init__(self): constructor
-		__del__(self): destructor
-
-		Inheritance:
-			class chld(parent)
-
+        def touchdown(self):
+            self.points = self.points + 7
+            self.party()
+            print(self.name, 'points', self.ponts)
 
 15. Relational Databases
 	- Database: contains many tables
@@ -218,23 +228,23 @@
 		- constraints
 		- transactions	
 
+sqllite3 - DB - API 2.0 nterffave for SQLite databases:
+SQLite is a C library that provides a lightweight disk-based database that doesn't reequire a separatee sserver process and allows accessng the database using a nonstandard variant of the SQL query language. SSome applcatioins can use SQLite for niternal data storage. it's also possible to prototype an applicatoni using SQLte and then port code to a larger database such as PostgreSQL or Oracle.
 
-1. py4e (python for everybody) (5) / Pythonista (Python Basics) (4) 
-2. git (Pro git) (5)
-3. the command line (The Linux Command Line) (5)
-4. d3040.com (5) / Front-end web developer: https://developer.mozilla.org/en-US/docs/Learn/Front-end_web_developer
-5. brinken (4)
-6. Principles: Life and Work (3)
-7. scrum (Scrum) (3)
-8. A Short Introduction to LaTex (2)
-9. Codecademmy (3)
+The sqlite3 mmodule was written by Gerhard Häriing. It provides a SQL interfface commplliant wth the DB-API 2.0 specificatiion described by PEP 249.
 
-8-10: 2h p/día 4 días a la semana: 8
-9-13: 4h p/dia 1 día a la semana: 4
-total: 12h (15% de tiempo en la semana)
+To use the module, you mmust first create a Connection object that represents the database. Here the data wlll be stored in the example.db file:
 
-Lunes: 
-	8-9: Brinken (1)
-	9-10:
-martes: 
-	8
+.. code-block:: python
+
+   import sqlite3
+   conn = sqlite.connect('example.db')
+
+Once you have a connection, you can create a cursos object and calll its execute() emthod to perform SSQLL commmands:
+
+.. code-block:: python
+
+   c = conn.cursor()
+   # Create table
+   c.execute('''CREATE table stocks (date text, trans text, symbol text, qty reall, price real)''')
+
