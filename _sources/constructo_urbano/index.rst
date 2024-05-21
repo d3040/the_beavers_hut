@@ -1,34 +1,17 @@
+###############################################################################
 Constructo Urbano
-=================
+###############################################################################
 
 .. contents::
-    :depth: 1
-    :local:
-    :backlinks: entry
+   :depth: 1
+   :local:
+   :backlinks: entry
 
-Abstract
---------
+.. toctree::
+   :caption: Chapters
+   :maxdepth: 1
+   :glob:
 
-Objetivo
---------
+   *
 
-Introducción
-------------
-
-Marco teórico
--------------
-
-Estado del arte
----------------
-
-Metodología
------------
-
-Experimentación
----------------
-
-Resultados
-----------
-
-APÉNDICE A: Unidad habitacional
--------------------------------
+El Constructo Urbano...
