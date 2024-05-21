@@ -171,18 +171,22 @@ Example:
 			Retrieve (some data)
 			Update (data)
 			Delete (data)
+        
+        Roles:
+        Data base administrator <> Developer
 
 		DATA ANALYSIS STRUCTURE
-
-
-		Input files ----CLEAN-----> Python <----SQL------> Database
-															Programs 									File
-																	|                   	 |
-																	|											SQL	
-		R	-------->	Output 						|											 |
-		Excel----->										v 										 v
-		D3.js----->	Files  <--------------> YOU --------> SQLite
-																										 Browser        
+    
+		Input files ----CLEAN-----> Python <-------SQL------> Database
+					   	           Programs                   File
+					                   |                       |
+	                                   |			           |	
+		R	 <----- Output             |                       |
+		Excel<-----                    |                      SQL
+		D3.js<-----	Files  <-----------|                       |
+                                       |                       |
+                                       v                       v
+                                      YOU <------------> SQLite Browser        
 	
 	DBA (Data Base Admnistrator)
 
@@ -194,15 +198,29 @@ Example:
 	SELECT COUNT(*) FROM Counts #Counts the rows in the table Users
 
 	## DESIGNIING A DATA MODEL
-		- Basic rule: don't put the same string data in twice. Use a relationship instead.
+		- Draw a picture of the data objects for the app and then figure out how to represent the objects and their
+          relationships.
+            - start creating the table of the thing that is the most essential. 
+            - Convert the logical model into a physical model
+                Table
+                - Primary key: a unique number (end point of the arrow).
+                - Logical key: we might use it in a ORDER BY clause or a WHERE clause.
+                - Foreing key: starting point of the arrow. Naming the object_id as the Foreing Key (FK) is a
+                  convention.
+        - Basic rule: don't put the same string data in twice. Use a relationship instead.
 		- Is this column an object or an attribute of another object?
 		- Once we define objects, we need to define the relationships between objects.
+
+    ### Data Model
+    
+    * Every model starts with a schema and a contract.
+    
 
 	## Representing a Data Model in tables
 		- Primary key: unique number (in all the tables), use to look up a particular row in a table very quickly 
 		- Logical key: "we might use this attribute in a where/order clause"
 		- Foreign key: connection to another table
-		- Ruby on rails name convention
+		- Ruby on rails name convention (name_id)
 		- Use integers as primary keys
 		- Model each "object" inthe application as one or more tables
 		- Never repeat string data in more than one table in a data model
