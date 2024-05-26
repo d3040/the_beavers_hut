@@ -31,6 +31,7 @@ copyright = today_year + ', Daniel Clavijo'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+    'sphinx_copybutton'
     #'pydata_sphinx_theme'
 ]
 
@@ -74,7 +75,9 @@ html_sidebars =  {
 }
 html_title = project
 html_logo = '_static/img/beaver.png'
-#html_favicon = '_static/img/accessibility.svg'
+html_favicon = '_static/img/book.svg'
+
+
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
