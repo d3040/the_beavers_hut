@@ -3,9 +3,9 @@ Chapter
 *******************************************************************************
     
 .. contents::
-    :depth: 1
-    :local:
-    :backlinks: entry
+   :depth: 1
+   :local:
+   :backlinks: entry
 
 This is a Section
 =================

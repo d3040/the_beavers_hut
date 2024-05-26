@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Trailhead Playground Management &#8212; The Beaver&#39;s Hut</title>
+    <title>Blueprints &#8212; The Beaver&#39;s Hut</title>
   
   
   
@@ -30,6 +30,7 @@
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=6f51ac52" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -40,14 +41,17 @@
     <script src="../_static/documentation_options.js?v=40e79d90"></script>
     <script src="../_static/doctools.js?v=9a2dae69"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
     <script src="../_static/translations.js?v=efdbd0b9"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'salesforce/trailhead_playground';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'user_guide/blueprints';</script>
     <script src="../_static/js/custom.js"></script>
+    <link rel="icon" href="../_static/book.svg"/>
     <link rel="index" title="Índice" href="../genindex.html" />
     <link rel="search" title="Búsqueda" href="../search.html" />
-    <link rel="next" title="Vi IMproved (Vim)" href="../vim/index.html" />
-    <link rel="prev" title="Salesforce admin" href="salesforce_admin.html" />
+    <link rel="next" title="Extractos" href="../abstracts/index.html" />
+    <link rel="prev" title="Manual de usuario" href="index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="es"/>
   </head>
@@ -156,29 +160,29 @@
     <div class="bd-toc-item navbar-nav active">
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Books</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../abstracts/index.html">Extractos</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Manual de usuario</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Blueprints</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../abstracts/index.html">Extractos</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../abstracts/principles_life_n_work.html">Principles Life and Work</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../abstracts/salesforce.html">Salesforce admin </a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../book/index.html">Book’s Title</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../book/section.html">Chapter</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../Historia%20de%20riesgos/index.html">Book’s Title</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Historia%20de%20riesgos/chapter_title.html">Chapter</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../constructo_urbano/index.html">Constructo Urbano</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../constructo_urbano/index.html">Constructo Urbano</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../constructo_urbano/estudio.html">Estudio del constructo urbano</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../git/index.html">Git</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../git/index.html">Git</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../git/git-notes.html">Git temporal notes</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../python/index.html">Python</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../python/index.html">Python</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../python/pythonista/read_pdf.html">How to work with a PDF in Python </a></li>
-</ul>
-</li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Salesforce</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="salesforce_admin.html">Salesforce admin </a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Trailhead Playground Management</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../vim/index.html">Vi IMproved (Vim)</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -239,7 +243,7 @@
       
       
       
-      <li><a href="../_sources/salesforce/trailhead_playground.rst" target="_blank"
+      <li><a href="../_sources/user_guide/blueprints.rst" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Descargar archivo fuente"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -321,7 +325,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Trailhead Playground Management</h1>
+    <h1>Blueprints</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -335,19 +339,59 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="trailhead-playground-management">
-<h1>Trailhead Playground Management<a class="headerlink" href="#trailhead-playground-management" title="Link to this heading">#</a></h1>
-<ul>
-<li><p>Create a Trailhead Playground:</p>
-<p>&lt;TEXT&gt;</p>
-</li>
-<li><p>Get Your Trailhead Playground Username and Password;</p>
-<p>&lt;TEXT&gt;</p>
-</li>
-<li><p>Install APPs and Packages in Your Trailhead Playground:</p>
-<p>&lt;TEXT&gt;</p>
-</li>
-</ul>
+  <section id="blueprints">
+<h1>Blueprints<a class="headerlink" href="#blueprints" title="Link to this heading">#</a></h1>
+<div class="literal-block-wrapper docutils container" id="id1">
+<div class="code-block-caption"><span class="caption-text">Run script in docs folder (Mac)</span><a class="headerlink" href="#id1" title="Link to this code">#</a></div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">source/user_guide/add_book.sh</span>
+</pre></div>
+</div>
+</div>
+<div class="literal-block-wrapper docutils container" id="id2">
+<div class="code-block-caption"><span class="caption-text">Book basic template</span><a class="headerlink" href="#id2" title="Link to this code">#</a></div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="gh">###############################################################################</span>
+<span class="gh">Book&#39;s Title</span>
+<span class="gh">###############################################################################</span>
+
+<span class="p">..</span> <span class="ow">contents</span><span class="p">::</span>
+   <span class="nc">:depth:</span> 1
+   <span class="nc">:local:</span>
+   <span class="nc">:backlinks:</span> entry
+
+<span class="p">..</span> <span class="ow">toctree</span><span class="p">::</span>
+   <span class="nc">:caption:</span> chapter_x
+   <span class="nc">:maxdepth:</span> 1
+   <span class="nc">:glob:</span>
+
+   *
+</pre></div>
+</div>
+</div>
+<div class="literal-block-wrapper docutils container" id="id3">
+<div class="code-block-caption"><span class="caption-text">Chapter basic template</span><a class="headerlink" href="#id3" title="Link to this code">#</a></div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="gh">*******************************************************************************</span>
+<span class="gh">Chapter</span>
+<span class="gh">*******************************************************************************</span>
+
+<span class="p">..</span> <span class="ow">contents</span><span class="p">::</span>
+   <span class="nc">:depth:</span> 1
+   <span class="nc">:local:</span>
+   <span class="nc">:backlinks:</span> entry
+
+<span class="gh">This is a Section</span>
+<span class="gh">=================</span>
+
+<span class="gh">This is a Sub-Section</span>
+<span class="gh">---------------------</span>
+
+<span class="gh">This is a Sub-Sub-Section</span>
+<span class="gh">^^^^^^^^^^^^^^^^^^^^^^^^^</span>
+
+<span class="gh">This is a Paragraph</span>
+<span class="gh">&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;&quot;</span>
+</pre></div>
+</div>
+</div>
 </section>
 
 
@@ -362,20 +406,20 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="salesforce_admin.html"
+       href="index.html"
        title="página anterior">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">anterior</p>
-        <p class="prev-next-title">Salesforce admin </p>
+        <p class="prev-next-title">Manual de usuario</p>
       </div>
     </a>
     <a class="right-next"
-       href="../vim/index.html"
+       href="../abstracts/index.html"
        title="siguiente página">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">siguiente</p>
-        <p class="prev-next-title">Vi IMproved (Vim)</p>
+        <p class="prev-next-title">Extractos</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

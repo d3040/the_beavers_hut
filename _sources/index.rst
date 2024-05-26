@@ -6,4 +6,6 @@ The Beaver's Hut
    :maxdepth: 1
    :glob:
 
+   user_guide/index
+   abstracts/index
    */index

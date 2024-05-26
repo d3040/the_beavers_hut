@@ -11,6 +11,7 @@ El extracto tiene que mencionar las ideas centrales del documento, pero no desar
    :glob:
 
    *
+   */index
 
 
 .. [#] `Definición de extracto <https://definicion.de/extracto/>`_
