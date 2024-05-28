@@ -1,5 +1,5 @@
 *******************************************************************************
-Blueprints
+Nuevo Libro
 *******************************************************************************
     
 .. contents::
@@ -7,13 +7,22 @@ Blueprints
     :local:
     :backlinks: entry
 
+Cada libro (o carpeta), cuenta 2 archivos: *index.rst* y *chapter_x.rst*. El primero es la información que aparece el
+ingresar al libro (puede ser una especie de introducción), y el segundo es un capítulo del libro, el nombre del archivo
+puede ser cualquiera.
+
+El siguiente script crea la carpeta y archivos necesarios para iniciar un libro.
+
 .. code-block:: console
-   :caption: Run script in docs folder (Mac)
+   :caption: Habre la terminal en la carpeta "docs" de la biblioteca (Ej. the_beavers_hut). 
 
    source/user_guide/add_book.sh
 
+
+Descripción de los archiovs .rst:
+
 .. code-block:: rst
-   :caption: Book basic template
+   :caption: Libro (introducción).
 
    ###############################################################################
    Book's Title
@@ -33,7 +42,7 @@ Blueprints
 
 
 .. code-block:: rst
-   :caption: Chapter basic template
+   :caption: Capítulo.
 
    *******************************************************************************
    Chapter
