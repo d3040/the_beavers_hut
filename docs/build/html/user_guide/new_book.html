@@ -321,17 +321,16 @@ document.write(`
                   
   <section id="nuevo-libro">
 <h1>Nuevo Libro<a class="headerlink" href="#nuevo-libro" title="Enlace permanente a este encabezado">#</a></h1>
-<p>Cada libro (o carpeta), cuenta 2 archivos: <em>index.rst</em> y <em>chapter_x.rst</em>. El primero es la información que aparece el
-ingresar al libro (puede ser una especie de introducción), y el segundo es un capítulo del libro, el nombre del archivo
-puede ser cualquiera.</p>
-<p>El siguiente script crea la carpeta y archivos necesarios para iniciar un libro.</p>
+<p>Cada libro (o carpeta) está compuesto por 2 archivos: <em>index.rst</em> y <em>chapter_x.rst</em>. El primero es la información que aparece el
+ingresar al libro, puede usarse como introducción o descripción del libro; y el segundo es un capítulo del libro.</p>
+<p>El siguiente script crea la carpeta y archivos necesarios para inicializar un libro.</p>
 <div class="literal-block-wrapper docutils container" id="id1">
-<div class="code-block-caption"><span class="caption-text">Habre la terminal en la carpeta «docs» de la biblioteca (Ej. the_beavers_hut).</span><a class="headerlink" href="#id1" title="Enlace permanente a este código fuente">#</a></div>
+<div class="code-block-caption"><span class="caption-text">Habre la terminal en la carpeta «docs» de la biblioteca.</span><a class="headerlink" href="#id1" title="Enlace permanente a este código fuente">#</a></div>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">source/user_guide/add_book.sh</span>
 </pre></div>
 </div>
 </div>
-<p>Descripción de los archiovs .rst:</p>
+<p>Descripción de los archivos .rst:</p>
 <div class="literal-block-wrapper docutils container" id="id2">
 <div class="code-block-caption"><span class="caption-text">Libro (introducción).</span><a class="headerlink" href="#id2" title="Enlace permanente a este código fuente">#</a></div>
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="gh">###############################################################################</span>
@@ -344,7 +343,7 @@ puede ser cualquiera.</p>
    <span class="nc">:backlinks:</span> entry
 
 <span class="p">..</span> <span class="ow">toctree</span><span class="p">::</span>
-   <span class="nc">:caption:</span> chapter_x
+   <span class="nc">:caption:</span> TOC&#39;s title
    <span class="nc">:maxdepth:</span> 1
    <span class="nc">:glob:</span>
 

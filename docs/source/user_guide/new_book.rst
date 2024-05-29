@@ -7,19 +7,18 @@ Nuevo Libro
     :local:
     :backlinks: entry
 
-Cada libro (o carpeta), cuenta 2 archivos: *index.rst* y *chapter_x.rst*. El primero es la información que aparece el
-ingresar al libro (puede ser una especie de introducción), y el segundo es un capítulo del libro, el nombre del archivo
-puede ser cualquiera.
+Cada libro (o carpeta) está compuesto por 2 archivos: *index.rst* y *chapter_x.rst*. El primero es la información que aparece el
+ingresar al libro, puede usarse como introducción o descripción del libro; y el segundo es un capítulo del libro.
 
-El siguiente script crea la carpeta y archivos necesarios para iniciar un libro.
+El siguiente script crea la carpeta y archivos necesarios para inicializar un libro.
 
 .. code-block:: console
-   :caption: Habre la terminal en la carpeta "docs" de la biblioteca (Ej. the_beavers_hut). 
+   :caption: Habre la terminal en la carpeta "docs" de la biblioteca. 
 
    source/user_guide/add_book.sh
 
 
-Descripción de los archiovs .rst:
+Descripción de los archivos .rst:
 
 .. code-block:: rst
    :caption: Libro (introducción).
@@ -34,7 +33,7 @@ Descripción de los archiovs .rst:
       :backlinks: entry
 
    .. toctree::
-      :caption: chapter_x
+      :caption: TOC's title
       :maxdepth: 1
       :glob:
 
