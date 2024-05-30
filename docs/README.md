@@ -1,4 +1,4 @@
-# The Beaver's hut
+# The Beaver's Hut
 
 Welcome to the library of your thoughts. This project is about ideas and how to *efficiently* store them. After going through something called [Tutorial Hell][#], I realized that my notes ended up in notebooks, napkins, sheets of paper, digital notes, and anything else you could imagine. In other words, everywhere and anywhere. This problem took me to a journey from [MarkDown](https://en.wikipedia.org/wiki/Markdown), to [Sphinx](https://www.sphinx-doc.org/en/master/), then to [ReEstructuredText](https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html), then, of course, to [Workflows](https://docs.github.com/en/actions/using-workflows/about-workflows) in [GitHub](https://en.wikipedia.org/wiki/GitHub), and finally, to **The Beaver's Hut**, my notes' personal library.
 
