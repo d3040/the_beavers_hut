@@ -75,8 +75,8 @@ html_sidebars =  {
 }
 html_title = project
 html_logo = '_static/img/beaver.png'
-html_favicon = '_static/img/book.svg'
-
+html_favicon = '_static/img/hut.ico'
+# <a href="https://www.flaticon.com/free-icons/hut" title="hut icons">Hut icons created by Freepik - Flaticon</a>
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
