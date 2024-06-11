@@ -230,11 +230,17 @@ Example:
 		- You must tell the JOIN how to use the keys that make the connection between the tables using an ON clause.
 		CONSTRUCTION:
 			SELECT <atributes from tables> FROM <tablex> JOIN <tabley> JOIN <tablez> ON <how the tables are linked> AND <how the tables are linked> AND...
+        E.g.
+            SELECT Album.title, Artist.name, Track.title 
+            FROM Album JOIN Artist JOIN Track 
+            ON Album.artist_id = Artist.id AND Track.album_id = Album.id
+            ORDER BY Album.title, Artist.name, Track.title
+            LIMIT 100;
 
 	## INSERT OR IGNORE // INSERT OR REPLACE
 
 	## Many to Many relationships
-	JUNCTION TABLE
+	JUNCTION TABLE or CONNECTION TABLE
 		- Generally avoid in a many-to-many junction table:
 			* Logical key
 			* Autoincrement int value
