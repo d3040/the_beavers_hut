@@ -1,8 +1,5 @@
 *~
-build/
 *.pdf
 *.sqlite
-docs/source/python/py4e/exercises/gmane/content.sqlite
-docs/source/python/py4e/exercises/gmane/index.sqlite
 */.DS_Store
-
+build/
