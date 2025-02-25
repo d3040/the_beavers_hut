@@ -11,13 +11,14 @@ The Beaver's Hut
    */index
 
 
-   If you work for 10 years, do you get 10 years of experience or 
-   do you get 1 year of experience 10 times? You have to reflect on
-   your activities to get true experience. If you make learning a 
-   continuous commitment, you’ll get experience. If you don’t, you won’t,
-   no matter how many years you have under your belt.
 
-   -- Steve McConnell, Software Engineer.
+If you work for 10 years, do you get 10 years of experience or 
+do you get 1 year of experience 10 times? You have to reflect on
+your activities to get true experience. If you make learning a 
+continuous commitment, you’ll get experience. If you don’t, you won’t,
+no matter how many years you have under your belt.
+
+-- Steve McConnell, Software Engineer.
 
 Esta bilblioteca tiene como objetivo:
 
