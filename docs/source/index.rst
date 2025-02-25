@@ -24,8 +24,9 @@ Esta bilblioteca tiene como objetivo:
 1. Salir del *tutorial hell* [#]_
 2. Notas siempre al alcance.
 
+*******************************************************************************
 Manual de usuario
-=================
+*******************************************************************************
 
 Utiliza este formato para crear tus libros. Los títulos van subrayados (o sobre y subrayados) con un símbolo no alfanumérico al menos el largo del texto. 
 
@@ -42,7 +43,7 @@ La convención utilizada por Python es la siguiente [#]_:
 * ``"``: párragos (subrayado).
 
 Nuevo Libro
------------
+===========
 
 .. contents::
     :depth: 1
