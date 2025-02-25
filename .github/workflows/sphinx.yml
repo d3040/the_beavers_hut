@@ -12,7 +12,7 @@ jobs:
       uses: ammaraskar/sphinx-action@0.4 #sphinx-action@master
       # action details @ https://github.com/ammaraskar/sphinx-action
     - name: Upload artifacts
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       # action details @ https://github.com/marketplace/actions/upload-a-build-artifact
       with:
         name: html-docs
