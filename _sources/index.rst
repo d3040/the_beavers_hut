@@ -19,15 +19,38 @@ Consejos de `How to Learn to Code and Get a Developer Job <https://www.freecodec
 
 * Always have a project. Then learn what you need to learn en route to finishing that project.
 * Together, we face the fundamental problems of our time:
-   - Access to information,
-   - Access to education, and 
-   - Access to the tools that are shaping the future.
+  
+  - Access to information,
+  - Access to education, and 
+  - Access to the tools that are shaping the future.
+
+|
+
+  If you work for 10 years, do you get 10 years of experience or 
+  do you get 1 year of experience 10 times? You have to reflect on
+  your activities to get true experience. If you make learning a 
+  continuous commitment, you’ll get experience. If you don’t, you won’t,
+  no matter how many years you have under your belt.
+
+  -- Steve McConnell, Software Engineer.
+
+|
 
 * There are three big reasons why learning to code is so hard, even today:
-   - The tools are still primitive.
-   - Most people aren't good at handling ambiguity, and learning to code is ambiguous. People get lost.
-   - Most people aren't good at handling constant negative feedback. And **learning to code is one brutal error message after another**. People get frustrated.
-      How Not to Get Frustrated: The key, again, is practice.
+  
+  - The tools are still primitive.
+  - Most people aren't good at handling ambiguity, and learning to code is ambiguous. People get lost.
+  - Most people aren't good at handling constant negative feedback. And **learning to code is one brutal error message after another**. People get frustrated.
+  - How Not to Get Frustrated: The key, again, is practice.
+
+|
+
+  Computer science education cannot make anybody an expert programmer 
+  any more than studying brushes and pigment can make somebody an expert painter.
+
+  -- Eric Raymond, Developer, Computer Scientist, and Author.
+
+|
 
 * People think software development is about typing code into a computer. But it's really about learning.
 * Get comfortable with ambiguity and you will go far.
@@ -36,29 +59,18 @@ Consejos de `How to Learn to Code and Get a Developer Job <https://www.freecodec
 * Tip #3: Use Rubber Duck Debugging (Rubber Duck Debugging is a method of debugging code by explaining it out loud, often to an inanimate object like a rubber duck).
 * Well, here's a theory: what you learn in university is less important than whether you finished university. Employers are trying to select for people who can figure out a way to get through this rite of passage.
 
-   
-   If you work for 10 years, do you get 10 years of experience or 
-   do you get 1 year of experience 10 times? You have to reflect on
-   your activities to get true experience. If you make learning a 
-   continuous commitment, you’ll get experience. If you don’t, you won’t,
-   no matter how many years you have under your belt.
+|
 
-   -- Steve McConnell, Software Engineer.
-   
+  If you want to go fast, go alone. 
+  If you want to go far, go together.
 
-   Computer science education cannot make anybody an expert programmer 
-   any more than studying brushes and pigment can make somebody an expert painter.
+  -- African Proverb
 
-   -- Eric Raymond, Developer, Computer Scientist, and Author.
+|
 
- 
-   If you want to go fast, go alone. 
-   If you want to go far, go together.
-
-   -- African Proverb
-
-
-Esta bilblioteca tiene como objetivo:
+*******************************************************************************
+Objetivo
+*******************************************************************************
 
 1. Salir del *tutorial hell* [#]_
 2. Notas siempre al alcance.
