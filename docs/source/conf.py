@@ -57,11 +57,8 @@ exclude_patterns = []
 #
 html_theme = 'sphinx_book_theme'
 html_theme_options = {
-    #"use_fullscreen_button": False,
-    #"toc_title": "Secciones",
-    #"use_sidenotes": True,
-    #"repository_url": "https://github.com/d3040/resume",
-    #"use_repository_button": True,
+    "repository_url": "https://github.com/d3040/the_beavers_hut",
+    "use_repository_button": True,
     #"show_toc_level": 2,
     #"extra_navbar": "<p>test</p>"
     #"announcement": "My announcement!"
