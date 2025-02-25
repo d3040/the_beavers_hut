@@ -13,9 +13,19 @@ The Beaver's Hut
 
 *******************************************************************************
 Intro
-*******************************************************************************
+******************************************************************************* 
 
-Consejos de `How to Learn to Code and Get a Developer Job <https://www.freecodecamp.org/news/learn-to-code-book/>`_: 
+|
+
+  If you work for 10 years, do you get 10 years of experience or
+  do you get 1 year of experience 10 times? You have to reflect on
+  your activities to get true experience. If you make learning a
+  continuous commitment, you’ll get experience. If you don’t, you won’t,
+  no matter how many years you have under your belt.
+
+  -- Steve McConnell, Software Engineer.
+
+|
 
 * Always have a project. Then learn what you need to learn en route to finishing that project.
 * Together, we face the fundamental problems of our time:
@@ -24,17 +34,6 @@ Consejos de `How to Learn to Code and Get a Developer Job <https://www.freecodec
   - Access to education, and 
   - Access to the tools that are shaping the future.
 
-|
-
-  If you work for 10 years, do you get 10 years of experience or 
-  do you get 1 year of experience 10 times? You have to reflect on
-  your activities to get true experience. If you make learning a 
-  continuous commitment, you’ll get experience. If you don’t, you won’t,
-  no matter how many years you have under your belt.
-
-  -- Steve McConnell, Software Engineer.
-
-|
 
 * There are three big reasons why learning to code is so hard, even today:
   
@@ -43,14 +42,6 @@ Consejos de `How to Learn to Code and Get a Developer Job <https://www.freecodec
   - Most people aren't good at handling constant negative feedback. And **learning to code is one brutal error message after another**. People get frustrated.
   - How Not to Get Frustrated: The key, again, is practice.
 
-|
-
-  Computer science education cannot make anybody an expert programmer 
-  any more than studying brushes and pigment can make somebody an expert painter.
-
-  -- Eric Raymond, Developer, Computer Scientist, and Author.
-
-|
 
 * People think software development is about typing code into a computer. But it's really about learning.
 * Get comfortable with ambiguity and you will go far.
@@ -61,12 +52,14 @@ Consejos de `How to Learn to Code and Get a Developer Job <https://www.freecodec
 
 |
 
-  If you want to go fast, go alone. 
-  If you want to go far, go together.
+  Computer science education cannot make anybody an expert programmer 
+  any more than studying brushes and pigment can make somebody an expert painter.
 
-  -- African Proverb
+  -- Eric Raymond, Developer, Computer Scientist, and Author.
 
 |
+
+`How to Learn to Code and Get a Developer Job <https://www.freecodecamp.org/news/learn-to-code-book/>`_
 
 *******************************************************************************
 Objetivo
@@ -152,8 +145,16 @@ Descripción de los archivos .rst:
 
    This is a Paragraph
    """""""""""""""""""
-  
- 
+
+|
+
+  If you want to go fast, go alone. 
+  If you want to go far, go together.
+
+  -- African Proverb
+
+|
+
 .. [#] Tutorial hell is where you jump from one tutorial to the next, learning and then relearning the same basic things. But never really going beyond the fundamentals.
 .. [#] `Section Structure (rst Cheatsheet) <https://bashtage.github.io/sphinx-material/rst-cheatsheet/rst-cheatsheet.html>`_
 
