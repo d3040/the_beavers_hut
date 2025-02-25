@@ -11,7 +11,6 @@ The Beaver's Hut
    */index
 
 
-
 If you work for 10 years, do you get 10 years of experience or 
 do you get 1 year of experience 10 times? You have to reflect on
 your activities to get true experience. If you make learning a 
