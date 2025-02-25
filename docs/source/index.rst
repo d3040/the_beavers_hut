@@ -10,15 +10,15 @@ The Beaver's Hut
 
    */index
 
+---
 
+   If you work for 10 years, do you get 10 years of experience or 
+   do you get 1 year of experience 10 times? You have to reflect on
+   your activities to get true experience. If you make learning a 
+   continuous commitment, you’ll get experience. If you don’t, you won’t,
+   no matter how many years you have under your belt.
 
-If you work for 10 years, do you get 10 years of experience or 
-do you get 1 year of experience 10 times? You have to reflect on
-your activities to get true experience. If you make learning a 
-continuous commitment, you’ll get experience. If you don’t, you won’t,
-no matter how many years you have under your belt.
-
--- Steve McConnell, Software Engineer.
+   -- Steve McConnell, Software Engineer.
 
 Esta bilblioteca tiene como objetivo:
 
@@ -108,7 +108,6 @@ Descripción de los archivos .rst:
    This is a Paragraph
    """""""""""""""""""
   
-
 
 .. [#] Tutorial hell is where you jump from one tutorial to the next, learning and then relearning the same basic things. But never really going beyond the fundamentals.
 .. [#] `Section Structure (rst Cheatsheet) <https://bashtage.github.io/sphinx-material/rst-cheatsheet/rst-cheatsheet.html>`_
