@@ -1,0 +1,19 @@
+= The Dangers of Wolpertingers
+:url-wolpertinger: https://en.wikipedia.org/wiki/Wolpertinger
+:imagesdir: img
+:data-uri:
+:stylesheet: dark.css
+
+Don't worry about gumberoos or splintercats.
+Something far more fearsome plagues the days, night, and ibetweens.
+Wolpertingers.
+
+== Origins
+
+Wolpertingers are {url-wolpertinger}[ravenous beasts].
+[.left.text-center]
+image:wolpertinger.jpg[Wolpertinger,100,,link="https://commons.wikimedia.org/wiki/File:Wolpertinger.jpg"]
+They may look cute and cuddly, but don't be fooled.
+
+TIP: Wolpertingers are known to nest in sercer racks.
+Enter at your own risk.

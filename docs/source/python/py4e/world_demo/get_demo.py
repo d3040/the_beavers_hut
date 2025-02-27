@@ -92,7 +92,7 @@ for country, info in countries.items():
         print('Error on page (' + url + '): ',document.getcode())
     # get structure of page (bs4 object)
     html_parser = BeautifulSoup(html, 'html.parser')
-    table_rows = html_parser.select('table.infobox>tbody>tr')
+    table_rows = html_parser.select('table.infobox.ib-country.vcard>tbody>tr')
     # get data from wiki's country info table
     sub_level = None
     previous_label = None
@@ -100,14 +100,30 @@ for country, info in countries.items():
         infobox_header = row.find('th', class_='infobox-header')
         infobox_label = row.find('th', class_='infobox-label')
         infobox_data = row.find('td', class_='infobox-data')
+        infobox_img = row.find('td', class_='infobox-image')
         # tags validation
-        header, label, data = None, None, None
+        header, label, data, flag = None, None, None, None
         if infobox_header:
             header = infobox_header.get_text('|', strip=True)
         if infobox_label:
             label = infobox_label.get_text('|', strip=True)
         if infobox_data:
             data = infobox_data.get_text('|', strip=True)
+        if infobox_img:
+            images = infobox_img.find_all('img')
+            flag = 'https:' + re.sub('[0-9]+[p]+[x]',
+                                     'width_px',
+                                     images[0]['src'],
+                                     flags=re.IGNORECASE)
+            if len(images) > 1:
+                coat_of_arms = 'https:' + re.sub('[0-9]+[p]+[x]',
+                                         'width_px',
+                                         images[1]['src'],
+                                         flags=re.IGNORECASE)
+            else:
+                coat_of_arms = None
+            demo['flag'] = flag
+            demo['coat of arms'] = coat_of_arms
         # save country information
         if header:
             # a header sections comes with sub level labels and data
@@ -119,7 +135,7 @@ for country, info in countries.items():
                 bullet = True
             else:
                 bullet = False
-            # cleanse data
+            # clear data
             label = initial_cleaning(label)
             data = initial_cleaning(data)
             # sub_level while label starts with bullet
@@ -141,11 +157,18 @@ for country, info in countries.items():
     print(country)
     #wait = input('press any key to continue')
     demos[country] = demo
-# create a json file to save o
+# create a json file to save
 with open('country_info.json', mode='w', encoding='utf-8') as write_file:
     json.dump(demos, write_file)
+'''
+To Be Done:
 
-# data processing and format
+[] clean data
+[] fields histogram
+[] create tables in relational data base
+[] plot charts
+'''
+
 '''
 info_hist = dict()
 for country, info in demos.items():
