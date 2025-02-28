@@ -155,7 +155,8 @@ By taking yourself more seriously, by thinking about your life as a movie, you'r
 
   -- Paulo Coelho
 
-Your Reputation Will Become Your Legacy.
+Your Reputation Will Become Your Legacy
+---------------------------------------
 
 Think about who you want to be at the end of your story. How you want people to think of your time on Earth. Then work backward from there.
 
@@ -185,6 +186,9 @@ On the first Monday of each month, I would map out all that month's upcoming tec
 So I talked with the CTO over noodles. Mostly listened. I'd learned that people project intelligence onto quiet people. Listening intently not only helps you get smarter – it even makes you look smarter.
 
 This wasn't a cushy job at a big tech company, with all the compensation, benefits, and company bowling alleys. It was a contractor role that paid about the same as I was making as a teacher. But it was a developer job. A company was paying me to write code. I was now a professional developer.
+
+Chapter 4: How to Get Paid to Code – Freelance Clients and the Job Search
+=========================================================================
 
 What Employers Want
 -------------------
