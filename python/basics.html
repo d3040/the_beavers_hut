@@ -1,0 +1,1403 @@
+
+<!DOCTYPE html>
+
+
+<html lang="es" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Basics &#8212; The Beaver&#39;s Hut</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=6f51ac52" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=40e79d90"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script src="../_static/translations.js?v=f85f4cfb"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'python/basics';</script>
+    <script src="../_static/js/custom.js"></script>
+    <link rel="icon" href="../_static/hut.ico"/>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="Vi IMproved (Vim)" href="../vim/index.html" />
+    <link rel="prev" title="Python" href="index.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="es"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Saltar al contenido principal</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Volver arriba</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Advertencia de versión"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/beaver.png" class="logo__image only-light" alt="The Beaver's Hut - Home"/>
+    <script>document.write(`<img src="../_static/beaver.png" class="logo__image only-dark" alt="The Beaver's Hut - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Búsqueda</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Libros</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../abstracts/index.html">Extractos</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../abstracts/free-code-camp.html">How to Learn to Code and Get a Developer Job </a></li>
+
+<li class="toctree-l2"><a class="reference internal" href="../abstracts/principles_life_n_work.html">Principles Life and Work</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../abstracts/salesforce.html">Salesforce admin </a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../constructo_urbano/index.html">Constructo Urbano</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../constructo_urbano/estudio.html">Estudio del constructo urbano</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../git/index.html">Git</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../git/git-notes.html">Git temporal notes</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Python</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Basics</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../vim/index.html">Vi IMproved (Vim)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../vim/o-reilly.html">Learning the vi and Vim Editors</a></li>
+</ul>
+</details></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<a href="https://github.com/d3040/the_beavers_hut" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Repositorio de origen"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Descarga esta pagina">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/python/basics.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Descargar archivo fuente"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Imprimir en PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Modo de pantalla completa"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="claro/oscuro" aria-label="claro/oscuro" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Búsqueda" aria-label="Búsqueda" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Basics</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contenido </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pyt">Pyt</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="basics">
+<h1>Basics<a class="headerlink" href="#basics" title="Link to this heading">#</a></h1>
+<nav class="contents local" id="contenido">
+<ul class="simple">
+<li><p><a class="reference internal" href="#pyt" id="id125">Pyt</a></p></li>
+</ul>
+</nav>
+<section id="pyt">
+<h2><a class="toc-backref" href="#id125" role="doc-backlink">Pyt</a><a class="headerlink" href="#pyt" title="Link to this heading">#</a></h2>
+<dl class="simple">
+<dt>IDLE:</dt><dd><p>Integrated Development Environment.</p>
+</dd>
+</dl>
+<p>Rules for valid variable names:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Avoid decorated characters (eg. é, ü, …).</p></li>
+<li><p>Descriptive names are beeter tha short names, but make them less than 3 or 4 words long.</p></li>
+<li><p>Write variables in _snake_case_(as <cite>PEP 8</cite> sugests): every word is lower case and separated by an underscore. Another commonly used sintax is camelCase.</p></li>
+</ul>
+</div></blockquote>
+<p>Comments:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Begin lines with the # character. comments that start on a new line are called block comments while in-line comments, are comments that appear on the same line as some code.</p></li>
+<li><p>According to <cite>PEP 8</cite>, comments shouls always be written in complete sentences with a sigle space between de # and the first word of the comment.</p></li>
+<li><p>For in-lines comments, <cite>PEP 8</cite> recomends at least two spaces between the code and the # symbol.</p></li>
+<li><p>Use comments only when they add value to your code by make it easier to understand why something is done a certain way. Comments that describe <em>what</em> something does can often be avoided by using more descriptive variable names.</p></li>
+</ul>
+</div></blockquote>
+<ul>
+<li><dl class="simple">
+<dt>Strings:</dt><dd><ul class="simple">
+<li><dl class="simple">
+<dt>Properties:</dt><dd><ol class="arabic simple">
+<li><p>Strings contains <em>characters</em>: individual letters or symbols.</p></li>
+<li><p>Strings have a <em>length</em>: the number of characters conatined in a string.</p></li>
+<li><p>Characters in a string appear in a <em>sequence</em>: each character has a numbered position in the string.</p></li>
+</ol>
+</dd>
+</dl>
+</li>
+<li><p><cite>PEP 8</cite> recommends each line of Ptyhon code contain no more tha 79 characters-including spaces. For larger lines use <a href="#id1"><span class="problematic" id="id2">`</span></a>` to break into multiple lines.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Integers:</dt><dd><ul class="simple">
+<li><p>Underscores can be used to make the numbers more readable eg. 1_000_000 = 1000000.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>Floating-point numbers:</dt><dd><ul>
+<li><dl class="simple">
+<dt>Can be created in three different ways:</dt><dd><ol class="arabic simple">
+<li><p>1000.0</p></li>
+<li><p>1_000.0</p></li>
+<li><p>1e3 (E-notation)</p></li>
+</ol>
+</dd>
+</dl>
+</li>
+<li><p>The maximum float number depends on each system. When the maximum is reached Python returns a special float value: <em>inf</em>.</p></li>
+<li><p>floating-point representation error: happend due to the way a floating-point number is store in a computers memory (binary representation).</p></li>
+<li><dl>
+<dt>To print a number with certain format use the formatting language.</dt><dd><ul>
+<li><dl>
+<dt>{n:.2f} prints n number rounding two decimal places. To insert commas to group the integer part of large numbers by the thousands use «,» eg.</dt><dd><p>&gt; &gt; &gt; n = 1234567890
+&gt; &gt; &gt; f» The value of n is {n:,. 2f}»</p>
+<blockquote>
+<div><p>“The value of n is 1,234.56”</p>
+</div></blockquote>
+</dd>
+</dl>
+</li>
+</ul>
+<p>This is useful for displaying currency values.</p>
+<ul>
+<li><dl>
+<dt>% is used to display percentages:</dt><dd><p>&gt; &gt; &gt; ratio = 0.9
+&gt; &gt; &gt; f» Over {ratio:. 1%} of Pythonistas say “Real Python rocks!”»</p>
+<blockquote>
+<div><p>«Over 90.0% of Pythonistas say “Real Python rocks!”»</p>
+</div></blockquote>
+</dd>
+</dl>
+</li>
+<li><p>For more information read offitial documentation at <a class="reference external" href="https://docs.python.org/3/library/string.html#format">https://docs.python.org/3/library/string.html#format</a>-<a href="#id126"><span class="problematic" id="id127">string-syntax_</span></a></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>fixed-point: a number display with the precise number of decimals places specified.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>Complex numbers:</dt><dd><ul>
+<li><dl>
+<dt>A complex number is a number with two distinct components: a real component and an imaginary component.</dt><dd><ul class="simple">
+<li><p>n = 1 + 2j</p></li>
+<li><p>Properties:</p></li>
+</ul>
+<ul class="simple">
+<li><p>n.real = 1</p></li>
+<li><p>n.imag = 2</p></li>
+</ul>
+<ul class="simple">
+<li><p>Method:</p></li>
+</ul>
+<ul class="simple">
+<li><p>n.conjugate() =&gt; returns the complex conjugate of the number. = (1-2j).</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>Functions:</dt><dd><ul>
+<li><p>One of the most important properties of a function in Python is that functions are values and can be assigned to a variable.</p></li>
+<li><p>An argument is a value that gets passed to the function as input.</p></li>
+<li><dl class="simple">
+<dt>Process of executing a funtcion:</dt><dd><ol class="arabic simple">
+<li><p>the function is called, and any arguments are passed to the function as input.</p></li>
+<li><p>the functions excecutes, and some action is performed with the arguments.</p></li>
+<li><p>the function returns, and the original function call is replaced with the return value.</p></li>
+</ol>
+</dd>
+</dl>
+</li>
+<li><p>When a function changes or affects something external to the function itself, it is said to have a <strong>side effect</strong> eg. print().</p></li>
+<li><p>If a function doesn’t have a retunr statement, the returned value is None.</p></li>
+<li><dl>
+<dt>The anatomy of a function:</dt><dd><ol class="arabic simple">
+<li><p>The function signature defines the name of the function and any inputs it expects.</p></li>
+</ol>
+<p>2. The function body contains the code that runs every time the function is used.
+<a href="#id3"><span class="problematic" id="id4">``</span></a><a href="#id5"><span class="problematic" id="id6">`</span></a></p>
+<blockquote>
+<div><blockquote>
+<div><p>{—-}  &lt;- Parameter list</p>
+</div></blockquote>
+<dl>
+<dt>def multiply(x, y): # Function signature</dt><dd><dl class="simple">
+<dt>“””</dt><dd><p>Return the product of two numbers x and y.</p>
+</dd>
+</dl>
+<p>“””
+# Function body
+product = x * y
+return product # Return statement</p>
+</dd>
+</dl>
+</div></blockquote>
+<p><a href="#id7"><span class="problematic" id="id8">``</span></a>`
++ <cite>PEP 8</cite> recommends indenting with four spaces.
++ Documenting your functions:</p>
+<blockquote>
+<div><ul class="simple">
+<li></li>
+</ul>
+</div></blockquote>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>Operations:</dt><dd><ul>
+<li><dl>
+<dt>Hierarchy:</dt><dd><ol class="arabic">
+<li><p>() -&gt; parentheses.</p></li>
+<li><p>x^y -&gt; exponents.</p></li>
+<li><ul>
+<li><div class="line-block">
+<div class="line">/ -&gt; multiplication and division (left to right).</div>
+</div>
+</li>
+</ul>
+</li>
+</ol>
+<p>4. + | - -&gt; addition and subtraction (left to right).
+{PEMDAS}</p>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>Addition: +</p></li>
+<li><p>Substraction: -</p></li>
+<li><p>Multiplication: *</p></li>
+<li><p>Division: /</p></li>
+<li><p>Integer division: //</p></li>
+<li><p>Exponents: **</p></li>
+<li><p>Modulus operator: % &gt; To calculate the remainder r of dividing a number x by a number y, Python uses the equation r = x - (y * (x // y)).</p></li>
+<li><p><cite>PEP 8</cite> says: If operators with different priorities are used, consider adding whitespace around the operators with the lowest priority( ies). Use your own judgment; however, never use more than one space, and always have the same amount of whitespace on both sides of a binary operator.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Build-in functions:</dt><dd><ul class="simple">
+<li><p>type(): returns the data type of a variable or value.</p></li>
+<li><p>len(): returns the length of a string or list.</p></li>
+<li><p>int(): converts a string into integer.</p></li>
+<li><p>float(): converts a string intp numbers with decimal point.</p></li>
+<li><p>str(): converts a number into a string.</p></li>
+<li><p>round(): round a number to its nearest integer. Has unexpected behavior when the number ends in .5 due Python uses the «rounding ties to even» rounding strategy.</p></li>
+<li><p>abs(): absolute value.</p></li>
+<li><p>pow(): different from ** because it can use a third argument computing the modulus of the result from raising a number to a certain power. i.e. ((x ** y) % z).</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Build-in number data types:</dt><dd><ul class="simple">
+<li><p>integers</p></li>
+<li><p>floating-point numbers</p></li>
+<li><p>complex numbers</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Methods:</dt><dd><ul class="simple">
+<li><p>&lt;str&gt;.lower(): converts all letters from string to lower case.</p></li>
+<li><p>&lt;str&gt;.upper(): converts all letters from string to upper case.</p></li>
+<li><p>&lt;str&gt;.rstrip(): removes white spaces from the right side of a string.</p></li>
+<li><p>&lt;str&gt;.lstrip(): removes white spaces from the left side of a string.</p></li>
+<li><p>&lt;str&gt;.strip(): removes white spaces from both sides of a string.</p></li>
+<li><p>&lt;str&gt;.startswith(string): string starts with given string (this method is case sensitive).</p></li>
+<li><p>&lt;str&gt;.endswith(string): string ends with given string (this method is case sensitive).</p></li>
+<li><p>To see more String methods create a string variable, add a dot at the end of it and wait for a few seconds. A list of available methods will appear in the IDLE.</p></li>
+<li><p>number.is_integer(): verify if the number is integral -meaning it has no fractional part-.</p></li>
+<li><p>&lt;str&gt;.split(&lt;separator&gt;):</p></li>
+<li><p>random.choice(list): randomly select an item from the list given.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Open Debugger:</dt><dd><ul class="simple">
+<li><p>From python Shell select Debug &gt; Debugger.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>Loops:</dt><dd><ul>
+<li><dl>
+<dt>while: repeat a section of code ahile some condition is met.</dt><dd><p><a href="#id9"><span class="problematic" id="id10">``</span></a>`
+while n &lt; 100:</p>
+<blockquote>
+<div><p>print(n)
+n = n + 1</p>
+</div></blockquote>
+<p><a href="#id11"><span class="problematic" id="id12">``</span></a><a href="#id13"><span class="problematic" id="id14">`</span></a></p>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>for: executes a section of code once for each item in a collection of items.</dt><dd><p><a href="#id15"><span class="problematic" id="id16">``</span></a>`
+for letter in «Python»: #statement = for + membership expression + :</p>
+<blockquote>
+<div><p>print(letter)</p>
+</div></blockquote>
+<p><a href="#id17"><span class="problematic" id="id18">``</span></a>`
+- Python’s built-in function range() produces a range of numbers.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>range(n) = a range from 0 to n - 1.</p></li>
+<li><p>range(n, n + i) = a range from n to n + i - 1.</p></li>
+</ul>
+</div></blockquote>
+</dd>
+</dl>
+</li>
+</ul>
+<ul class="simple">
+<li><p>Using nested loops is sometimes the only way to get something done, but too many nested loops can have a negative effect on a program’s performance.</p></li>
+<li><dl class="simple">
+<dt>else statement in loops:</dt><dd><ul>
+<li><p>Any code in the <strong>else</strong> block after a loop is executed only it the for loop completes without a <strong>break</strong> statement.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Scope:</dt><dd><ul class="simple">
+<li><p>¿How Python resolves scope? LEGB rule: Local, Enclosing, Global, Built-in</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>Logical Operators:</dt><dd><ul class="simple">
+<li><p>and</p></li>
+<li><p>or</p></li>
+<li><p>not</p></li>
+</ul>
+<ul>
+<li><dl>
+<dt>Order of precedence for logical operators:</dt><dd><ul class="simple">
+<li><p>&lt;, &lt;=, ==, &gt;=, &gt;</p></li>
+<li><p>not</p></li>
+<li><p>and</p></li>
+<li><p>or</p></li>
+</ul>
+<ul class="simple">
+<li><p>Grouping expressions with  parentheses is a great way to clarify which operators belogn to which part of a compound expression.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>Boolean comparators:</dt><dd><ul class="simple">
+<li><p>if</p></li>
+<li><p>else</p></li>
+<li><p>elif</p></li>
+</ul>
+<ul class="simple">
+<li><p>The complexity that results from using deeply nested if statements may make difficult to predict how your program will behave under given conditions. For this reason, nested if statements are generally discouraged.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Break out of the pattern:</dt><dd><ul class="simple">
+<li><dl class="simple">
+<dt>break:</dt><dd><ul>
+<li><p>Tells python to break out of a loop.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>continue:</dt><dd><ul>
+<li><p>Is used to skip any remaining code in the loop body and continue on to the next iteration.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>Handling errors:</dt><dd><ul>
+<li><dl class="simple">
+<dt>built-in exception types:</dt><dd><ul class="simple">
+<li><p>ValueError: operation encounters an invalid value (e.g. int(«not a number»)).</p></li>
+<li><p>TypeError: operation is performed on a value of the wrong type (e.g. «1» + 2).</p></li>
+<li><p>NameError: using a variable name that hasn’t been defined yet (e.g. print(does_not_exist)).</p></li>
+<li><p>ZeroDivisionError: 1 / 0.</p></li>
+<li><p>OverflowError: the result of an arithmetic operation is too large (e.g. pow(2.0, 1_000_000)). <em>note: integers in Python have unlimited precision. This means that OverflowErrors can oly occur with floating-point numbers.</em></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt><strong>try</strong> and <strong>except</strong>: sometimes you can predict that a certain exception might occur. Instead of letting the program crash, you can catch the error if it occurs and do something else instead.</dt><dd><p><a href="#id19"><span class="problematic" id="id20">``</span></a>`
+try:</p>
+<blockquote>
+<div><p>…do something…</p>
+</div></blockquote>
+<dl class="simple">
+<dt>except type_of_error:</dt><dd><p>…do something else instead…</p>
+</dd>
+</dl>
+<p><a href="#id21"><span class="problematic" id="id22">``</span></a>`
+-E.g:</p>
+<blockquote>
+<div><p><a href="#id23"><span class="problematic" id="id24">``</span></a><a href="#id25"><span class="problematic" id="id26">`</span></a>Python
+# one kind of exception
+try:</p>
+<blockquote>
+<div><p>number = int( input(» Enter an integer: «))</p>
+</div></blockquote>
+<dl class="simple">
+<dt>except ValueError:</dt><dd><p>print(» That was not an integer»)</p>
+</dd>
+</dl>
+<p># two or more kinds of exception
+try:</p>
+<blockquote>
+<div><p>number1 = int( input(» Enter an integer: «))
+number2 = int( input(» Enter another integer: «))
+print(number1 / number2)</p>
+</div></blockquote>
+<dl class="simple">
+<dt>except (ValueError, ZeroDivisionError):</dt><dd><p>print(«Encountered an error»)</p>
+</dd>
+</dl>
+<p># two or more kinds of exception with different explanation.
+try:</p>
+<blockquote>
+<div><p>number1 = int( input(» Enter an integer: «))
+number2 = int( input(» Enter another integer: «))
+print(number1 / number2)</p>
+</div></blockquote>
+<dl class="simple">
+<dt>except ValueError:</dt><dd><p>print(» That was not an integer»)</p>
+</dd>
+<dt>except ZeroDivisionError:</dt><dd><p>print(«number2 must not be 0»)</p>
+</dd>
+</dl>
+<p><a href="#id27"><span class="problematic" id="id28">``</span></a><a href="#id29"><span class="problematic" id="id30">`</span></a></p>
+</div></blockquote>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>Tuples, Lists, and Dictionaries:</p>
+<blockquote>
+<div><p>Python has three built-in data structures: tuples, lists, and dictionaries:
++ Tuples (immutable sequences)</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>comes from mathematics, where it is used to describe a finite ordered sequence of values.</p></li>
+</ul>
+<p>-Empty tuple: a tuple that doesn’t contain any values (eg. empty_tuple = ()).
+-One value tuple: x = (1,)
+-Tuple built in function can only create a tuple from another sequences type, like strings. Other similarities: both are sequence types with finite lengths, support indexing and slicing, are immutable, and can be iterated over in a loop.
+-Main difference: tuples can be any kinf of value you like, whereas strings can only contain characters.</p>
+</div></blockquote>
+<ul>
+<li><dl>
+<dt>Lists (mutable sequences):</dt><dd><ul class="simple">
+<li><dl class="simple">
+<dt>Change several values in a list at once with a slice assignment:</dt><dd><p>colors[1:3] = [«orange», «magenta»]
+«»» colors[1:3] selects the slots with indices 1 and 2.</p>
+</dd>
+</dl>
+</li>
+</ul>
+<p>The list aassigned to a slice does not need to have the same lenght as the slice. When the lenght of the list being assigned to the slice is less than the lentgh of the slice, the overall length of the original list is reduced.
+- Methods to mutate a list:</p>
+<blockquote>
+<div><ul class="simple">
+<li><dl class="simple">
+<dt>list.insert(i, x)</dt><dd><ul>
+<li><p>.insert() is said to alter colors in place. This is true for all list methods that do not return a value.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>list.pop(i) -&gt; removes the value from the list at index i. The value removed is returned by the method.</dt><dd><ul>
+<li><p>if you do not pass a value to .pop(), it removes the last item in the list.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>list.append(x) -&gt; inserts x to the end of the list. append(x) alters the list in place (just like .insert(i, x)).</p></li>
+<li><p>list.extend(iterable) -&gt; adds several new elements to the end of a list (also alters the list in place).</p></li>
+</ul>
+</div></blockquote>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Lists of numbers:</dt><dd><ul>
+<li><dl class="simple">
+<dt>sum([1, 2, 3, 4, 5])</dt><dd><p>= 15</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>min([1, 2, 3, 4, 5])</dt><dd><p>= 1</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>max([1, 2, 3, 4, 5])</dt><dd><p>= 5</p>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>List Comprehensions:</dt><dd><ul>
+<li><p>short-hand for a for loop. Commonly used to convert values in one list to a different type.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Nesting:</dt><dd><ul class="simple">
+<li><p>A table is an informal way of thinking about a list o lists (or tuples). While you can use the built in list and tuple type for matrices, better alternative exists.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Copying:</dt><dd><ul class="simple">
+<li><p>Quirk OOP, when assigning one list to another, both variables refer to the same object, so if one changes the other also changes.</p></li>
+<li><p>A variable name is really just a reference to a specific localtion in computer memory.</p></li>
+<li><dl class="simple">
+<dt>To get an independent copy of a list, it can be used the slicing notation. This will return a new list with the same values.</dt><dd><dl class="simple">
+<dt>Eg.</dt><dd><p>animals = [«lion», «tiger», «frumious Bandersnatch»]
+large_cats = animals[:]</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+<li><p>More reading &#64; [Shallow VS Deep Copying of Python Objects](<a class="reference external" href="https://realpython.com/copying-python-objects/">https://realpython.com/copying-python-objects/</a>).</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>Sorting lists</dt><dd><ul>
+<li><p>.sort(key): sorts all of the itmes in ascending order (alphabetical o numerical order). It sorts the list in place, so you don’t need to assign it’s result to anything.</p></li>
+<li><dl>
+<dt>The key parameter can be used to adjust how the list gets sorted, is also accepts a function that based on the return value will sort the list.</dt><dd><dl>
+<dt>Eg.</dt><dd><p>colors = [«red», «yellow», «green», «blue»]
+colors.sort(key=len)
+colors</p>
+<blockquote>
+<div><p>[«red», «blue», «green», «yellow»]</p>
+</div></blockquote>
+</dd>
+</dl>
+<p>«»» Important: the function that gets passed to key must only accept a single argument. «»»</p>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>Dictionaries:</dt><dd><ul class="simple">
+<li><p>Key-value pairs: each object in a dictionary has two parts: a key and a value.</p></li>
+</ul>
+<dl>
+<dt>Eg.</dt><dd><dl class="simple">
+<dt>capitals = {</dt><dd><p>«California»: «Sacramento»,
+«New York»: «Albany»,
+«Texas»: «Austin»,</p>
+</dd>
+</dl>
+<p>}</p>
+</dd>
+</dl>
+<ul class="simple">
+<li><dl class="simple">
+<dt>To add an item to a dictionary:</dt><dd><p>capitals[«Colorado»] = «Denver»</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>To remove an item from a dictionary:</dt><dd><p>del capitals[«Texas»]</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>To check that a key exists in a dictionary use the «in» keyword.</dt><dd><p>&gt;&gt;&gt;»Colorado» in capitals
+TRUE</p>
+</dd>
+</dl>
+</li>
+<li><p>dictionary.items() method will return a list-like object containing tuples of key-value pair (type called dict_items).</p></li>
+<li><p>Only immutable types can be dictionary keys.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div></blockquote>
+</li>
+<li><dl>
+<dt>[Decorators](<a class="reference external" href="https://realpython.com/courses/python-decorators-101/">https://realpython.com/courses/python-decorators-101/</a>):</dt><dd><ul class="simple">
+<li><p>are functions that take another function, and extends the behavior of that function without explicitly modifying that function.</p></li>
+<li><p>Function as First-Class Objects: functions can be used as arguments also as any other object.</p></li>
+<li><p>eg.</p></li>
+</ul>
+<p><a href="#id31"><span class="problematic" id="id32">``</span></a><a href="#id33"><span class="problematic" id="id34">`</span></a>Python
+import datetime from datetime
+# decorator
+def not_during_the_night(func):</p>
+<blockquote>
+<div><dl class="simple">
+<dt>def wrapper():</dt><dd><dl class="simple">
+<dt>if 7 &lt;= datetime.now().hour &lt; 22:</dt><dd><p>func()</p>
+</dd>
+<dt>else:</dt><dd><p>pass # Hush, the neighbors are asleep</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p>return wrapper</p>
+</div></blockquote>
+<p># x function
+def say_whee():</p>
+<blockquote>
+<div><p>print(“Whee!”)</p>
+</div></blockquote>
+<p># using the decorator
+say_whee = not_during_the_night(say_whee)
+<a href="#id35"><span class="problematic" id="id36">``</span></a>`
++ Syntactic Sugar:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>&#64; + decorator function’s name</p></li>
+</ul>
+</div></blockquote>
+<ul>
+<li><p>Reusing decorators: import from modules.</p></li>
+<li><dl class="simple">
+<dt>Using arguments in decorators:</dt><dd><ul class="simple">
+<li><dl class="simple">
+<dt>wrapper(<a href="#id37"><span class="problematic" id="id38">*</span></a>args, <a href="#id39"><span class="problematic" id="id40">**</span></a>kwargs):</dt><dd><ul>
+<li><p><a href="#id41"><span class="problematic" id="id42">*</span></a>args: arguments</p></li>
+<li><p><a href="#id43"><span class="problematic" id="id44">**</span></a>kwargs: key arguments</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>return values from decorated functions:</dt><dd><ul class="simple">
+<li><p>use inside the wrappeer the “return” statemmenet.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>Introspection:</dt><dd><ul class="simple">
+<li><p>import functools and decorate the wrapper function with wraps(func).</p></li>
+<li><p>Eg.</p></li>
+</ul>
+<p><a href="#id45"><span class="problematic" id="id46">``</span></a><a href="#id47"><span class="problematic" id="id48">`</span></a>Python
+immport functools</p>
+<dl>
+<dt>def do_twice(func):</dt><dd><p># use functools to find the original function properties.
+&#64;functools.wraps(func)
+def wrapper_do_twice(<a href="#id49"><span class="problematic" id="id50">*</span></a>args, <a href="#id51"><span class="problematic" id="id52">**</span></a>kwargs):</p>
+<blockquote>
+<div><p>func(<a href="#id53"><span class="problematic" id="id54">*</span></a>args, <a href="#id55"><span class="problematic" id="id56">**</span></a>kwargs)
+return fun(<a href="#id57"><span class="problematic" id="id58">*</span></a>args, <a href="#id59"><span class="problematic" id="id60">**</span></a>kwargs)</p>
+</div></blockquote>
+<p>return wrapper</p>
+</dd>
+</dl>
+<p><a href="#id61"><span class="problematic" id="id62">``</span></a><a href="#id63"><span class="problematic" id="id64">`</span></a></p>
+<ul class="simple">
+<li><p>Template Eg.</p></li>
+</ul>
+<p><a href="#id65"><span class="problematic" id="id66">``</span></a><a href="#id67"><span class="problematic" id="id68">`</span></a>Python
+import functools</p>
+<dl>
+<dt>def decorator(func):</dt><dd><p>&#64;functools.wraps(func)
+def wrapper_decorator(<a href="#id69"><span class="problematic" id="id70">*</span></a>args, <a href="#id71"><span class="problematic" id="id72">**</span></a>kwargs):</p>
+<blockquote>
+<div><p># do something before
+value = func(<a href="#id73"><span class="problematic" id="id74">*</span></a>args, <a href="#id75"><span class="problematic" id="id76">**</span></a>kwargs)
+# do something after
+return value</p>
+</div></blockquote>
+<p>return wrapper_decorator</p>
+</dd>
+</dl>
+<p><a href="#id77"><span class="problematic" id="id78">``</span></a><a href="#id79"><span class="problematic" id="id80">`</span></a></p>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>Real world examples:</dt><dd><ul class="simple">
+<li><p>Timing functions.</p></li>
+</ul>
+<p>Eg.
+<a href="#id81"><span class="problematic" id="id82">``</span></a><a href="#id83"><span class="problematic" id="id84">`</span></a>Python
+def timer(func):</p>
+<blockquote>
+<div><p>«»»Print the runtime of the decorated function»»»
+&#64;functools.wraps(func)
+def wrapper_timer(<a href="#id85"><span class="problematic" id="id86">*</span></a>args, <a href="#id87"><span class="problematic" id="id88">**</span></a>kwargs):</p>
+<blockquote>
+<div><p>start_time = time.perf_count() #1
+value = func(<a href="#id89"><span class="problematic" id="id90">*</span></a>args, <a href="#id91"><span class="problematic" id="id92">**</span></a>kwards)
+end_time = time.perf_counter() #2
+run_time = end_time - start_time #3
+print(f’Finished {func.__name__!r} in {run_time:.4f} secs”)
+return value</p>
+</div></blockquote>
+<p>return wrapper_timer</p>
+</div></blockquote>
+<p><a href="#id93"><span class="problematic" id="id94">``</span></a>`
+- Debugger:
+Eg.
+<a href="#id95"><span class="problematic" id="id96">``</span></a><a href="#id97"><span class="problematic" id="id98">`</span></a>Python
+def debug(func):</p>
+<blockquote>
+<div><p>«»»Print the function signature and return value»»»
+&#64;functools.wraps(func)
+def wrapper_debug(<a href="#id99"><span class="problematic" id="id100">*</span></a>args, <a href="#id101"><span class="problematic" id="id102">**</span></a>kwargs):</p>
+<blockquote>
+<div><p># do something before
+args_repr = [repr(a) for a in args] #1
+kwargs_repr = [f”{k} = {v!r}” for k, v in kwargs.items()] #2
+signature = “, “.join(args_repr + kwargs_repr) #3
+print(f’Calling {func.__name__}({signature})”)
+value = func(<a href="#id103"><span class="problematic" id="id104">*</span></a>args, <a href="#id105"><span class="problematic" id="id106">**</span></a>kwargs)
+# do something after
+print(f”{func.__name__!r} returned {value!r}”) #4
+return value</p>
+</div></blockquote>
+<p>return wrapper_debug</p>
+</div></blockquote>
+<p><a href="#id107"><span class="problematic" id="id108">``</span></a>`
+- Slowing down code
+- Registering Plugins</p>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>OOP:</dt><dd><ul class="simple">
+<li><p>Objetc-oriented programming is a method of structuring a program by bundling related properties and behaviors into individual objects.</p></li>
+<li><p>Classes define functions called <strong>methods</strong>, which identify the behaviors and actions that an object created from the class can perform with its data.</p></li>
+<li><p>A class is a blueprint for how something should be defined.</p></li>
+<li><p>An instance is an object that is built from a class and contains real data. Creating a new object from a class is called <strong>instantiating</strong> an object.</p></li>
+<li><p>Python class names are written in CapitalizedWords notation by convention.</p></li>
+<li><p>The first parameter in a method will always be a variable called self.</p></li>
+<li><p>Attributes created in .__init__() are called instance attributes.</p></li>
+<li><p>Instance methods are functions that are defined inside of a class and can only be called from an instance of that class.</p></li>
+<li><p>When creating your own classes, it’s a good idea to have a method that returns a string containing useful informatión about an instance of the class. To do this, use __str__() dunder method.</p></li>
+<li><p>Inheritance is the process by which one class takes on the attributes and methods of another.</p></li>
+<li><p>Child classes can override or extend the attributs and methods of a parent class.</p></li>
+<li><p>To create a child class, you create a new class with its own name and then put the name of the parent class in parentheses.</p></li>
+<li><p><strong>isinstance(object, class)</strong> is a function that tells if an object is also an instance of a certain class.</p></li>
+<li><p>You can acces the parent class from inside a method of a child class by using <strong>super()</strong>. super() does much more than just search the parent class for a method or an attribute. It traverses the entire class hierarchy for a matching method or attribute. If you aren’t careful, super() can have surprising results.</p></li>
+</ul>
+<dl>
+<dt>-E.g:</dt><dd><p><a href="#id109"><span class="problematic" id="id110">``</span></a><a href="#id111"><span class="problematic" id="id112">`</span></a>Python
+# Parent class
+class Rectangle:</p>
+<blockquote>
+<div><blockquote>
+<div><p># Class attributes
+species = «Canis Familiaris»
+# Instance attributes</p>
+</div></blockquote>
+<dl class="simple">
+<dt>def __init__(self, length, width):</dt><dd><p>self.length = length
+self.width = width</p>
+</dd>
+</dl>
+<p># Instance method
+def __str__(self):</p>
+<blockquote>
+<div><p>pass</p>
+</div></blockquote>
+<p># Another instance method
+def area(self):</p>
+<blockquote>
+<div><p>return self.length * self.width</p>
+</div></blockquote>
+</div></blockquote>
+<p># Child class
+class Square(Rectangle):</p>
+<blockquote>
+<div><dl class="simple">
+<dt>def __init__(self, side_length):</dt><dd><p>super().__init__(side_length, side_length)</p>
+</dd>
+</dl>
+</div></blockquote>
+<p><a href="#id113"><span class="problematic" id="id114">``</span></a><a href="#id115"><span class="problematic" id="id116">`</span></a></p>
+</dd>
+</dl>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Managing attributes with python’s property()</dt><dd><ul>
+<li><p>The pythonic way to avoid getter and setter methods</p></li>
+<li><p>Convert Class attributes into properties (managed attributes)</p></li>
+<li><p>built-in function</p></li>
+<li><p>implemented in C (to ensure optimal performance)</p></li>
+<li><p>property() commonly referred to as a function but it is a class designed to work as a function</p></li>
+<li></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Keywords:</dt><dd><ul class="simple">
+<li><p><strong>global</strong> keyword tells python to look in the global scope for a certain variable. Though, the global keyword is considered bad form in general.</p></li>
+<li><p><strong>del</strong> keyword is used to un-assign a variable from a value.</p></li>
+<li><p><strong>in</strong> keyword is used to check whether or not a value is contained in a tuple.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Dictionary:</dt><dd><p>-By Packing/Unpacking you can make multiple variable assignments in a single line. Eg. name, age, occupation = «Daniel», 32, «programmer».
+-Immutable: the values previously created cannot be changed.
+-Sequence: an ordered list of values.
+-Data structure models a collection of data.
+-Lexicographic ordering: strings ordered as the would appear in a dictionary.
+- Refactoring: the process of re-writing existing code to be cleaner, easier to read and understand, or adhere to code standards set by a team.
+-Debugger is a tool that helps you hunt down bugs and understand why the are happening.
+- Debugging: removing bugs.
+- Logic errors cause unexpected behaviors called bugs.
+- Logic errors occur when an otherwise valid program doesn’t do what was intended.
+- Pythonic: it is generally used to describe code that is clear, concise and uses Python’s built-in features to its advantage.
+- rounding ties to even: a tie is any number whose last digit is a 5. When you round ties to even, you first look at the digit one decimal place to the left to the last digit in the tie. If that digit is even, you round down. if the digit is odd, you round up. This is a round strategy recommended for floating-point numbers by the IEEE because it helps limit the impact rounding has on operations involving lots of numbers.
+- sequence is any Python object that supports accessing elements by index.
+- immutable: an object that cannot be changed once created (e.g. strings).
+- substring: a portion of a string.
+- off-by-one error: Forgetting that counting starts with zero and trying to access the first character in a string with the index 1.
+- docstrings: tiple-quoted strings used to document code or custom functions.
+- triple-quoted srtring: a string definition which preserves whitespaces.
+- delimiters: the quotes surrounding a string.
+- string literal: a string literally written out in code.
+- Strings: a _fundamental_ data type that represents text.
+- fundamental data type: data types that can’t be broken down into smaller values of a different type.
+- data type: the kind of data a value represents.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Quotes:</dt><dd><ul class="simple">
+<li><p>«Computers execute code but humans read code.»</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<p>—</p>
+<p># Other topics:
+* [What is pip](<a class="reference external" href="https://realpython.com/what-is-pip/">https://realpython.com/what-is-pip/</a>)
+* [f-string or formatted string literals](<a class="reference external" href="https://realpython.com/python-f-strings/">https://realpython.com/python-f-strings/</a>)
+* [formatting language](<a class="reference external" href="https://docs.python.org/3/library/string.html#format-specification-mini-language">https://docs.python.org/3/library/string.html#format-specification-mini-language</a>)
+* [Pyhton’s built-in exceptions](<a class="reference external" href="https://docs.python.org/3/library/exceptions.html">https://docs.python.org/3/library/exceptions.html</a>)
+* [Finding the Perfect Python Code Editor](<a class="reference external" href="https://realpython.com/courses/finding-perfect-python-code-editor/">https://realpython.com/courses/finding-perfect-python-code-editor/</a>)
+* [Python args and kwargs: Demystified](<a class="reference external" href="https://realpython.com/courses/python-kwargs-and-args/">https://realpython.com/courses/python-kwargs-and-args/</a>)
+* [Regular Expressions: Regexes in Python (Part 1)](<a class="reference external" href="https://realpython.com/regex-python/">https://realpython.com/regex-python/</a>)
+* [Python Inner Functions—What Are They Good For?](<a class="reference external" href="https://realpython.com/inner-functions-what-are-they-good-for/">https://realpython.com/inner-functions-what-are-they-good-for/</a>)
+* [Immutability in Python](<a class="reference external" href="https://realpython.com/courses/immutability-python/">https://realpython.com/courses/immutability-python/</a>)
+—
+* [Python Virtual Environments: A Primer](<a class="reference external" href="https://realpython.com/python-virtual-environments-a-primer/">https://realpython.com/python-virtual-environments-a-primer/</a>)
+* [Setting up Python for Machine learning on Windows](<a class="reference external" href="https://realpython.com/python-windows-machine-learning-setup/">https://realpython.com/python-windows-machine-learning-setup/</a>)
+—</p>
+<p>##What is Pip?</p>
+<p>pip is the standard package manager for Python. It allows you to install and manage additional packages that are not part of the Python standard library. It is included with the Python installer since versions 3.4 for Python 3 and 2.7.9 for Python 2. pip is to python as npm is to JavaScript, gem to Ruby or NuGet to .NET.</p>
+<p>###Installing Packages with pip</p>
+<p>Python packages are published to the Python Package Index (PyPI aka Pie Pea Eye).</p>
+<p>pip options:
+* install
+* download
+* uninstall
+* freeze
+* list
+* show
+* check
+* config
+* search
+* wheel
+* hash
+* completion
+* help</p>
+<p>Other content: requirement files.
+Packages that are good candidates to become useful tools: <cite>requests</cite> and <cite>pytest</cite>.</p>
+<p>###Finding packages to use</p>
+<p>Use search command or search for packages directly in the PyPI website: <a class="reference external" href="https://pypi.org/">https://pypi.org/</a>.</p>
+<p>###Uninstalling packages</p>
+<p>Before uninstalling a package, make sure to run the <cite>show</cite> command for that pakage. Doing this will show the required packages for that package and required-by package info, then those can be uninstall to.</p>
+<p>Adding a <cite>-y</cite> will suppress the file list and confirm the uninstall request.
+Eg.
+<cite>pip uninstall urllib3 -y</cite>
+-&gt; Uninstalling urllib3-1.24.1:
+-&gt;     Successfully uninstalled urllib3-1.24.1</p>
+<p>###Alternatives to pip</p>
+<ol class="arabic simple">
+<li><p>Conda</p></li>
+<li><p>Pipenv</p></li>
+<li><p>Poetry</p></li>
+</ol>
+<p>—</p>
+<p>## Introduction to Python (Coursera)
+Program structure:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Globals (state)</p></li>
+<li><p>Helper functions</p></li>
+<li><p>Classes (later)</p></li>
+<li><p>Define event handlers</p></li>
+<li><p>Create a frame</p></li>
+<li><p>Register event handlers</p></li>
+<li><p>Start frame and timers</p></li>
+</ol>
+</div></blockquote>
+<p><a href="#id117"><span class="problematic" id="id118">``</span></a><a href="#id119"><span class="problematic" id="id120">`</span></a></p>
+<p># SimpleGUI program template</p>
+<p># Import the module
+import simplegui</p>
+<p># Define global variables (program state)</p>
+<p># Define «helper» functions</p>
+<p># Define event handler functions</p>
+<p># Create a frame</p>
+<p># Register event handlers</p>
+<p># Start frame and timers</p>
+<p><a href="#id121"><span class="problematic" id="id122">``</span></a><a href="#id123"><span class="problematic" id="id124">`</span></a></p>
+</section>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="index.html"
+       title="página anterior">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">anterior</p>
+        <p class="prev-next-title">Python</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../vim/index.html"
+       title="siguiente página">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">siguiente</p>
+        <p class="prev-next-title">Vi IMproved (Vim)</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contenido
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pyt">Pyt</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+Por Daniel Clavijo
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025, Daniel Clavijo.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
