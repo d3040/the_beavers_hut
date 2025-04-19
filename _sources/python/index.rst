@@ -8,7 +8,6 @@ Python
    :backlinks: entry
 
 .. toctree::
-   :caption: TOC's title
    :maxdepth: 1
    :glob:
 

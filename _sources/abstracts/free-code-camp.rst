@@ -1,9 +1,12 @@
 *******************************************************************************
-How to Learn to Code and Get a Developer Job [#]_
+Free Code Camps Lessons
 ******************************************************************************* 
 
+How to Learn to Code and Get a Developer Job [#]_
+=================================================
+
 Chapter 1: How to Build Your Skills
-===================================
+-----------------------------------
 
 |
 
@@ -53,7 +56,7 @@ Tutorial hell:
 |
 
 Chapter 2: How to Build Your Network
-====================================
+------------------------------------
 
 |
 
@@ -85,7 +88,7 @@ Text for helping others:
 
 
 How to Write a Personal Bio for Social Media
---------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 You want your presence to be consistent across all of your social media accounts.
 
@@ -104,7 +107,7 @@ Take into account: People are busy. Smart people are defensive of their time, an
 
 
 Chapter 3: How to Build Your Reputation
-=======================================
+---------------------------------------
 
 |
 
@@ -156,7 +159,7 @@ By taking yourself more seriously, by thinking about your life as a movie, you'r
   -- Paulo Coelho
 
 Your Reputation Will Become Your Legacy
----------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Think about who you want to be at the end of your story. How you want people to think of your time on Earth. Then work backward from there.
 
@@ -188,10 +191,10 @@ So I talked with the CTO over noodles. Mostly listened. I'd learned that people 
 This wasn't a cushy job at a big tech company, with all the compensation, benefits, and company bowling alleys. It was a contractor role that paid about the same as I was making as a teacher. But it was a developer job. A company was paying me to write code. I was now a professional developer.
 
 Chapter 4: How to Get Paid to Code – Freelance Clients and the Job Search
-=========================================================================
+-------------------------------------------------------------------------
 
 What Employers Want
--------------------
+^^^^^^^^^^^^^^^^^^^
 
 I think much of the frustration developers feel about the hiring process comes down to a misunderstanding. Employers value one thing above all else: *predictability*. Try not to change jobs too often. Hiring is hard. So you can see why employers are risk averse. Many of them will pass over seemingly qualified candidates until they find someone whom they feel 99% sure about.
 
@@ -200,7 +203,7 @@ The reality is: learning to code is hard. But knowing how to code is important.
 My hope is that with strong skills, a strong network, and a strong reputation, you'll be able to land a good job despite a challenging job market.
 
 What to Expect from the Developer Job Interview Process
--------------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Now, practicing algorithms and data structures will go a long way. But you also need to be able to think out loud, and explain your thought process as you write your solutions.
 
@@ -211,7 +214,7 @@ You want your interviewer to like you. You want them to be rooting for you, so t
 You are selling yourself as a job candidate. Make sure your interviewer feels like they're getting a good deal.
 
 How Do I Make Sure Freelance Clients Pay Me?
---------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 A lot of other freelancers – myself included – use this simple approach: ask for half of your compensation up-front, before you start the work. And when you can demonstrate that you're half way finished, ask for the other half.
 
@@ -224,7 +227,7 @@ If you instead focus on finding clients through your own local network, you will
 And the same goes for people who are looking for help from freelance developers. If you ever want to hire a freelancer, I strongly recommend working with someone you can meet with in-person, who has ties to your community.
 
 Chapter 5: How to Succeed in Your First Developer Job
-=====================================================
+-----------------------------------------------------
 
 This was one of my earliest lessons about team dynamics. You don't want to wear out your welcome with too many questions. You need to get better at learning things for yourself.
 
@@ -235,40 +238,40 @@ He just let out a laugh and said, "Sure, when you started, you were the worst de
 Take on projects that both fulfill your obligation to your employer, and also position you well for your long-term
 career goals. `Salaries by job title and company <https://h1bdata.info/index.php>`_
 
-**************************************************************************************
 I spent 3 months applying to jobs after a coding bootcamp. Here’s what I learned. [#]_
-**************************************************************************************
+======================================================================================
 
 Here are 5 things I wish I’d known before I began my job search:
 
 Insight #1: Get through to real people:
-=======================================
+---------------------------------------
 
-  * `Companies easy to apply <https://github.com/j-delaney/easy-application>`_
-  * For most small companies or C-level executives, the email format is usually firstName@dreamCompany.com. For larger companies, it may be firstName.lastName@dreamCompany.com. To verify emails, I used Rapportive to cross-check emails with social media accounts. The results were amazing. With 150+ emails sent, my response rate was a whopping 22%.
-  * Takeaway: If you’re applying through the front door, make sure you’re getting to human beings.
+* `Companies easy to apply <https://github.com/j-delaney/easy-application>`_
+* For most small companies or C-level executives, the email format is usually firstName@dreamCompany.com. For larger companies, it may be firstName.lastName@dreamCompany.com. To verify emails, I used Rapportive to cross-check emails with social media accounts. The results were amazing. With 150+ emails sent, my response rate was a whopping 22%.
+
+Takeaway: If you’re applying through the front door, make sure you’re getting to human beings.
 
 Insight #2: Start small and work your way up
-============================================
+--------------------------------------------
 
 I strategically set up my process so that I had lower-level interviews earlier, and higher-level interviews later on. Early on, I gained experience, built confidence, and secured offers from companies that had less intensive interviews.
 
 Takeaway: Plan to tackle easier interviews early on and more difficult ones later on.
 
 Insight #3: Study like your future job depends on it (because it does)
-======================================================================
+----------------------------------------------------------------------
 
-- https://www.interviewcake.com/
-- https://www.hiredintech.com/classrooms/system-design/lesson/60
-- https://www.educative.io/collection/5642554087309312/5679846214598656
-- https://www.reddit.com/r/cscareerquestions/comments/1jov24/heres_how_to_prepare_for_tech_interviews/
-- https://github.com/h5bp/Front-end-Developer-Interview-Questions
-- https://leetcode.com/
+- `Learn to ace your programming interview <https://www.interviewcake.com/>`_
+- `Hired in Tech <https://www.hiredintech.com/classrooms/system-design/lesson/60>`_
+- `Coderust: Hacking the Coding Interview <https://www.educative.io/collection/5642554087309312/5679846214598656>`_
+- `Here's How to Prepare for Tech Interviews <https://www.reddit.com/r/cscareerquestions/comments/1jov24/heres_how_to_prepare_for_tech_interviews/>`_
+- `Front-end Developer Interview Questions <https://github.com/h5bp/Front-end-Developer-Interview-Questions>`_
+- `A New Way to Learn <https://leetcode.com/>`_
 
 Takeaway: There’s no such thing as too much preparation.
 
 Insight #4: Put your best foot forward
-======================================
+--------------------------------------
 
 Ultimately, you need to convince companies that you can do the job. At the same time, you need to convince yourself that you can do the job. **You can**. Focus on your love for programming. Focus on what you’ve built with React and Node. Focus on demonstrating your deep knowledge in JavaScript and any other languages you’ve learned. Only then can they justify giving you the job.
 
@@ -280,7 +283,7 @@ Pro-Tip: During interviews, ask the following questions:
 Takeaway: Don’t sell yourself short! And remember, it’s a mutual exploration.
 
 Insight #5: It’s a marathon, not a sprint
-=========================================
+-----------------------------------------
 
 It’s easy to burn out during the process. Eat well, sleep, and exercise. It can get lonely. Spend time with friends who are going through the same experience.
 
