@@ -5,11 +5,11 @@ The Beaver's Hut
 .. toctree::
    :hidden:
    :caption: Libros
-   :maxdepth: 1
+   :maxdepth: 2
    :glob:
 
    */index
-
+   link-lodge
 
 *******************************************************************************
 Objetivo

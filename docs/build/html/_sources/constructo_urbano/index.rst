@@ -2,12 +2,14 @@
 Constructo Urbano
 ###############################################################################
 
-La medición de los siguientes factores a nivel unidad habitacional:
+Darse cuenta, hacerse cargo y dar sentido.
+
+Categorías de medición:
     
-  1. Recursos,
-  2. Residuos,
+  1. Recursos (in),
+  2. Residuos (out),
   3. Intraestructura, y
-  4. Percepción.
+  4. Percepción (urban-glitches).
 
 
 .. contents::
@@ -16,7 +18,6 @@ La medición de los siguientes factores a nivel unidad habitacional:
    :backlinks: entry
 
 .. toctree::
-   :caption: Chapters
    :maxdepth: 1
    :glob:
 
