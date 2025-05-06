@@ -1,18 +1,20 @@
+################################################################################
 Salesforce admin [#]_
-=====================
+################################################################################
 
 .. contents::
     :depth: 1
     :local:
     :backlinks: entry
 
+*******************************************************************************
 Learn About the Salesforce Admin Role
--------------------------------------
+*******************************************************************************
 
 Salesforce Administration is an operational role. Salesforce Admins solve business problems by customizing the Salesforce Platform. They build, configure, and automate techonology solutions to deliver business value. Core responsibilities include supporting users, managing data, maintaining security standards, and delivering actionable analytics.
 
 Required Skills
-...............
+===============
 
 Communication:
   Collaborate with busines and technical stakeholders to design, configure, adn implement Salesforce.
@@ -30,7 +32,7 @@ Project management:
   Plan and overse Salesforce projects to ensure they're completed on time and within budget.
 
 Key Responibilites
-..................
+==================
 
 User Management:
   The Salesforce Admin serves as a subject matter expert for user and team needs. They desing a Salesforce solution that is customized and ensures a good user experience. Behind this is the goal to ``improve productivity`` and ``increase adoption``.
@@ -44,13 +46,14 @@ Security:
 Actionable Analytics:
   The Salesforce Admin takes building reports a step further by ensuring the reports and dashboards built for their company are ``easy to read`` an that users can ``make critical decisions based on the information they're seeing``.
 
+*******************************************************************************
 Essential Habits for Salesforce Admins
---------------------------------------
+*******************************************************************************
 
 `Create your own Calendar Habits Kit <https://org62.my.salesforce.com/sfc/p/#000000000062/a/3y000001UL0V/vMgMiOnP9L.5hI5AY544xrCLLyxbwt9Tp0_PYH.Ym3A>`_
 
 1. User management
-..................
+==================
 
 - Observe your users (30 min per week).
 - Review and report on adoption (60 min per week).
@@ -69,7 +72,7 @@ Essential Habits for Salesforce Admins
   Gather information on ``MON`` or ``TUE``, study what we have and how well we are using it on ``WED`` or ``THU``, and on ``THU`` or ``FRI`` add documentation.
 
 2. Data management
-..................
+==================
 
 - Create and maintain backup solution (30 min per month).
 
@@ -109,7 +112,7 @@ Essential Habits for Salesforce Admins
   On ``MON`` or ``TUE`` solicit feedback and observe users. Design and configure solutions on ``WED`` or ``THU``, and communicate and deploy changes on ``THU`` or ``FRI``.
 
 3. Security
-...........
+===========
 
 - Managing communication with partners and IT (60 min per week).
 
@@ -208,7 +211,7 @@ Essential Habits for Salesforce Admins
 
 
 4. Actionable analytics
-.......................
+=======================
 
 Actionable analytics allow your company to drive business decisions by using your Salerfoce data.
 
@@ -232,8 +235,9 @@ Actionable analytics allow your company to drive business decisions by using you
 
   Quaterly Business Review ``MON``, confirm KPIs ``TUE`` and review reports and dashboards ``WED``. (Once a quarter)
 
+*******************************************************************************
 Salesforce Platform Basics
---------------------------
+*******************************************************************************
 
 APP: 
   A set of objects, fields, adn other functionality that supports a business process. (switch between apps using the APP Launcger a.k.a. the waffle).
@@ -246,13 +250,9 @@ Fields:
 Org: 
   A specific instance of Salesforce.
 
-Trailhead Playground (TP)
-.........................
-
-A safe environment where you can practice the skills you're learning before you take them to your real work. You can have up to 10 at a time.
 
 Customizing the Salesforce Platform
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+===================================
 
 Developing without code is known as no-code (or declarative) development. With no-code development, you use forms and drag-and-drop tools to perform powerful customization tasks. The platfomr also offers ``programmatic development``, which uses things like Lightning components.
 
@@ -267,7 +267,7 @@ Every time you create a custom objecto, you automatically get something called `
 Processes with these traits are great candidates for early projects on the Salesforce platform.
 
 Understand the Salesforce Architecture
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+======================================
 
 * Salesforce is a cloud company. Everything we offer resides in the trusted, multitenant cloud.
 * The Salesforce platform is the foundation of our services. It's powered by metadata and made up of different parts, like data services, artificial intelligence, and a robust APIs for development.
@@ -275,29 +275,29 @@ Understand the Salesforce Architecture
 * Eveything is integrated. Our platform tehcnologies like predictive analytics and the development framework are built into everything we offer and everything you build.
 
 Trust
-~~~~~
+-----
 
 In the `trust site <trust.salesforce.com>`_ you can view performance data and get more information about how we secure your data. It also shows you any planned maintenance we'll be performing that might impact your access to Salesforce. It is Salesforce's website to provide transparency around service availability, performance, security, privacy, and compliance. Trust status gives you a quick and easy way to see if yoyur org performance has been affected so you can let your users know of any changes.
 
 Multitenancy
-~~~~~~~~~~~~
+------------
 
 Salesforce provides a core set of services to all out customers in the multitenant cloud. No matter the size of your business, you get access to the same computing power, data storage, and core features (multitenancy = shared resources). With this, you never have to install new features or worry about your hardware.
 
 Metadata
-~~~~~~~~
+--------
 
 Data about data, custom configurations, functionality, and code in your org are metadata. Part of the reason you can move so fast on the platform is that Salesforce knows how to store and serve you that metadata immediately after you create it.
 
 Application Programming Interface (a.k.a. API)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+----------------------------------------------
 
 The Salesforce API is like a contract between two pieces of software, allowing them to connect and exchange information. When you add a custom object or field, the platform automatically creates an API name that serves as an access point between your org and the database. Salesforce uses that API name to retrieve the metadata and data you're looking for.
 
 The core of the API's power is that all your data and metadata is API enabled. Every time you use Salesforce, whether you're using standard functionality or building a custom app, you're interacting with the API.
 
 Navigate Setup
-^^^^^^^^^^^^^^
+==============
 
 .. figure:: img/setup_area.png
   :alt: the setup area navigation parts. Image downloaded from: Salesforce org.
@@ -319,12 +319,12 @@ There are 3 main categories in the Setup menu:
 * :strong:`Settings`: manage your company information and org security (add business hours, change your locale, and view your org's history).
 
 Power Up with AppExchange
-^^^^^^^^^^^^^^^^^^^^^^^^^
+=========================
 
 Salesforce has a community of partners that use the flexibility of the Salesforce platform to build amazing apps and other solutions that anyone can use. These offerings are available for installation on AppExchange.
 
 Strategies for Success:
-~~~~~~~~~~~~~~~~~~~~~~~
+-----------------------
 
 A solid AppExcanche strategy helps ensure that you're getting the highest value apps without duplicating functionality or investing in something that you don't need.
 
@@ -346,7 +346,7 @@ Follow these steps to develop a good AppExchange strategy:
   :emphasis:`Word of the wise: testing the app first helps you avoid conflicts in production with things like object names.`
 
 Where'd My App Go?
-~~~~~~~~~~~~~~~~~~
+------------------
 
 Apps are installed using somethind called a package. To find the package:
 
@@ -357,10 +357,10 @@ Apps are installed using somethind called a package. To find the package:
   :emphasis:`Be sure to check out free apps provided by Salesforce Labs. The great thing about Salesforce Labs apps is that they're open source. You can customize them as needed and peek under the hood to see how they work.`
 
 User Management
-^^^^^^^^^^^^^^^
+===============
 
 Add New Users
-~~~~~~~~~~~~~
+-------------
 
 A user is anyone who logs in to Salesforce who need access to the company's records. Every user in Salesforce has a user account. The user account identifies the user, and the user account settings determine what features and records the user caan access. Each user account contain at least a ``user name``, ``email address``, ``user's first and last name``, ``alias``, ``nick name``, ``license``, ``profile`` and a ``role``.
 
@@ -389,19 +389,19 @@ You can perform essesntial admin tasks like resetting passwords, freezin users, 
 
 
 
-
+*******************************************************************************
 Glossary
---------
+*******************************************************************************
 
 .. glossary::
   
-  Add custom field to std object
-    :menuselection:`Setud --> Object Manager --> Object --> Details panel: Fields & Relationships --> New`
+   Trailhead Playground (TP)
+      A safe environment where you can practice the skills you're learning before you take them to your real work. You can have up to 10 at a time.
+   
+   Add custom field to std object
+      :menuselection:`Setud --> Object Manager --> Object --> Details panel: Fields & Relationships --> New`
 
-  Use :term:`Add custom field to std object`
 
-
-
-
+Use :term:`Add custom field to std object`
 
 .. [#] `Build Your Admin Career on Salesforce <https://trailhead.salesforce.com/es-MX/users/strailhead/trailmixes/build-your-admin-career-on-salesforce>`_
