@@ -46,7 +46,7 @@ El siguiente script crea la carpeta y archivos necesarios para inicializar un li
 .. code-block:: console
    :caption: Corre este script dentro de la carpeta docs de la biblioteca. 
 
-   source/user_guide/add_book.sh
+   source/add_book.sh
 
 
 Descripción de los archivos .rst:
