@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Salesforce admin &#8212; The Beaver&#39;s Hut</title>
+    <title>Salesforce Admin &#8212; The Beaver&#39;s Hut</title>
   
   
   
@@ -45,13 +45,13 @@
     <script src="../_static/copybutton.js?v=f281be69"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script src="../_static/translations.js?v=f85f4cfb"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'abstracts/salesforce';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'salesforce/admin';</script>
     <script src="../_static/js/custom.js"></script>
     <link rel="icon" href="../_static/hut.ico"/>
     <link rel="index" title="Índice" href="../genindex.html" />
     <link rel="search" title="Búsqueda" href="../search.html" />
-    <link rel="next" title="Constructo Urbano" href="../constructo_urbano/index.html" />
-    <link rel="prev" title="Principles Life and Work" href="principles_life_n_work.html" />
+    <link rel="next" title="Glossary" href="glossary.html" />
+    <link rel="prev" title="Salesforce" href="index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="es"/>
   </head>
@@ -163,10 +163,9 @@
     <div class="bd-toc-item navbar-nav active">
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Libros</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Extractos</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="free-code-camp.html">Free Code Camps Lessons</a></li>
-<li class="toctree-l2"><a class="reference internal" href="principles_life_n_work.html">Principles Life and Work</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Salesforce admin </a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../abstracts/index.html">Extractos</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../abstracts/free-code-camp.html">Free Code Camps Lessons</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../abstracts/principles_life_n_work.html">Principles Life and Work</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../constructo_urbano/index.html">Constructo Urbano</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -179,6 +178,11 @@
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../python/index.html">Python</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../python/basics.html">Python Basics</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Salesforce</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Salesforce Admin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html">Glossary</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../vim/index.html">Vi IMproved (Vim)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -255,7 +259,7 @@
       
       
       
-      <li><a href="../_sources/abstracts/salesforce.rst" target="_blank"
+      <li><a href="../_sources/salesforce/admin.rst" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Descargar archivo fuente"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -339,7 +343,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Salesforce admin </h1>
+    <h1>Salesforce Admin</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -376,13 +380,20 @@ document.write(`
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#where-d-my-app-go">Where’d My App Go?</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">User Management</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">User Management</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#add-new-users">Add New Users</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#glossary">Glossary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-modeling">Data Modeling</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#this-is-a-sub-section">This is a Sub-Section</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#this-is-a-sub-sub-section">This is a Sub-Sub-Section</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trails">Trails</a></li>
 </ul>
             </nav>
         </div>
@@ -395,17 +406,18 @@ document.write(`
                 <article class="bd-article">
                   
   <section id="salesforce-admin">
-<h1>Salesforce admin <a class="footnote-reference brackets" href="#id3" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a><a class="headerlink" href="#salesforce-admin" title="Link to this heading">#</a></h1>
+<h1>Salesforce Admin<a class="headerlink" href="#salesforce-admin" title="Link to this heading">#</a></h1>
 <nav class="contents local" id="contenido">
 <ul class="simple">
-<li><p><a class="reference internal" href="#learn-about-the-salesforce-admin-role" id="id5">Learn About the Salesforce Admin Role</a></p></li>
-<li><p><a class="reference internal" href="#essential-habits-for-salesforce-admins" id="id6">Essential Habits for Salesforce Admins</a></p></li>
-<li><p><a class="reference internal" href="#salesforce-platform-basics" id="id7">Salesforce Platform Basics</a></p></li>
-<li><p><a class="reference internal" href="#glossary" id="id8">Glossary</a></p></li>
+<li><p><a class="reference internal" href="#learn-about-the-salesforce-admin-role" id="id3">Learn About the Salesforce Admin Role</a></p></li>
+<li><p><a class="reference internal" href="#essential-habits-for-salesforce-admins" id="id4">Essential Habits for Salesforce Admins</a></p></li>
+<li><p><a class="reference internal" href="#salesforce-platform-basics" id="id5">Salesforce Platform Basics</a></p></li>
+<li><p><a class="reference internal" href="#data-modeling" id="id6">Data Modeling</a></p></li>
+<li><p><a class="reference internal" href="#trails" id="id7">Trails</a></p></li>
 </ul>
 </nav>
 <section id="learn-about-the-salesforce-admin-role">
-<h2><a class="toc-backref" href="#id5" role="doc-backlink">Learn About the Salesforce Admin Role</a><a class="headerlink" href="#learn-about-the-salesforce-admin-role" title="Link to this heading">#</a></h2>
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">Learn About the Salesforce Admin Role</a><a class="headerlink" href="#learn-about-the-salesforce-admin-role" title="Link to this heading">#</a></h2>
 <p>Salesforce Administration is an operational role. Salesforce Admins solve business problems by customizing the Salesforce Platform. They build, configure, and automate techonology solutions to deliver business value. Core responsibilities include supporting users, managing data, maintaining security standards, and delivering actionable analytics.</p>
 <section id="required-skills">
 <h3>Required Skills<a class="headerlink" href="#required-skills" title="Link to this heading">#</a></h3>
@@ -441,7 +453,7 @@ document.write(`
 </section>
 </section>
 <section id="essential-habits-for-salesforce-admins">
-<h2><a class="toc-backref" href="#id6" role="doc-backlink">Essential Habits for Salesforce Admins</a><a class="headerlink" href="#essential-habits-for-salesforce-admins" title="Link to this heading">#</a></h2>
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">Essential Habits for Salesforce Admins</a><a class="headerlink" href="#essential-habits-for-salesforce-admins" title="Link to this heading">#</a></h2>
 <p><a class="reference external" href="https://org62.my.salesforce.com/sfc/p/#000000000062/a/3y000001UL0V/vMgMiOnP9L.5hI5AY544xrCLLyxbwt9Tp0_PYH.Ym3A">Create your own Calendar Habits Kit</a></p>
 <section id="user-management">
 <h3>1. User management<a class="headerlink" href="#user-management" title="Link to this heading">#</a></h3>
@@ -665,7 +677,7 @@ document.write(`
 </section>
 </section>
 <section id="salesforce-platform-basics">
-<h2><a class="toc-backref" href="#id7" role="doc-backlink">Salesforce Platform Basics</a><a class="headerlink" href="#salesforce-platform-basics" title="Link to this heading">#</a></h2>
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">Salesforce Platform Basics</a><a class="headerlink" href="#salesforce-platform-basics" title="Link to this heading">#</a></h2>
 <dl class="simple">
 <dt>APP:</dt><dd><p>A set of objects, fields, adn other functionality that supports a business process. (switch between apps using the APP Launcger a.k.a. the waffle).</p>
 </dd>
@@ -719,10 +731,10 @@ document.write(`
 </section>
 <section id="navigate-setup">
 <h3>Navigate Setup<a class="headerlink" href="#navigate-setup" title="Link to this heading">#</a></h3>
-<figure class="align-default" id="id4">
-<img alt="the setup area navigation parts. Image downloaded from: Salesforce org." src="abstracts/img/setup_area.png" />
+<figure class="align-default" id="id2">
+<img alt="the setup area navigation parts. Image downloaded from: Salesforce org." src="salesforce/img/setup_area.png" />
 <figcaption>
-<p><span class="caption-text">From the gear menu at the top of the screen, click <strong>Setup</strong>.</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
+<p><span class="caption-text">From the gear menu at the top of the screen, click <strong>Setup</strong>.</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
 <div class="legend">
 <div class="pst-scrollable-table-container"><table class="table">
 <tbody>
@@ -796,8 +808,8 @@ document.write(`
 </div></blockquote>
 </section>
 </section>
-<section id="id2">
-<h3>User Management<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<section id="id1">
+<h3>User Management<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
 <section id="add-new-users">
 <h4>Add New Users<a class="headerlink" href="#add-new-users" title="Link to this heading">#</a></h4>
 <p>A user is anyone who logs in to Salesforce who need access to the company’s records. Every user in Salesforce has a user account. The user account identifies the user, and the user account settings determine what features and records the user caan access. Each user account contain at least a <code class="docutils literal notranslate"><span class="pre">user</span> <span class="pre">name</span></code>, <code class="docutils literal notranslate"><span class="pre">email</span> <span class="pre">address</span></code>, <code class="docutils literal notranslate"><span class="pre">user's</span> <span class="pre">first</span> <span class="pre">and</span> <span class="pre">last</span> <span class="pre">name</span></code>, <code class="docutils literal notranslate"><span class="pre">alias</span></code>, <code class="docutils literal notranslate"><span class="pre">nick</span> <span class="pre">name</span></code>, <code class="docutils literal notranslate"><span class="pre">license</span></code>, <code class="docutils literal notranslate"><span class="pre">profile</span></code> and a <code class="docutils literal notranslate"><span class="pre">role</span></code>.</p>
@@ -842,21 +854,21 @@ document.write(`
 </section>
 </section>
 </section>
-<section id="glossary">
-<h2><a class="toc-backref" href="#id8" role="doc-backlink">Glossary</a><a class="headerlink" href="#glossary" title="Link to this heading">#</a></h2>
-<dl class="simple glossary">
-<dt id="term-Trailhead-Playground-TP">Trailhead Playground (TP)<a class="headerlink" href="#term-Trailhead-Playground-TP" title="Link to this term">#</a></dt><dd><p>A safe environment where you can practice the skills you’re learning before you take them to your real work. You can have up to 10 at a time.</p>
-</dd>
-<dt id="term-Add-custom-field-to-std-object">Add custom field to std object<a class="headerlink" href="#term-Add-custom-field-to-std-object" title="Link to this term">#</a></dt><dd><p><span class="menuselection">Setud ‣ Object Manager ‣ Object ‣ Details panel: Fields &amp; Relationships ‣ New</span></p>
-</dd>
-</dl>
-<p>Use <a class="reference internal" href="#term-Add-custom-field-to-std-object"><span class="xref std std-term">Add custom field to std object</span></a></p>
-<aside class="footnote-list brackets">
-<aside class="footnote brackets" id="id3" role="doc-footnote">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
-<p><a class="reference external" href="https://trailhead.salesforce.com/es-MX/users/strailhead/trailmixes/build-your-admin-career-on-salesforce">Build Your Admin Career on Salesforce</a></p>
-</aside>
-</aside>
+<section id="data-modeling">
+<h2><a class="toc-backref" href="#id6" role="doc-backlink">Data Modeling</a><a class="headerlink" href="#data-modeling" title="Link to this heading">#</a></h2>
+<section id="this-is-a-sub-section">
+<h3>This is a Sub-Section<a class="headerlink" href="#this-is-a-sub-section" title="Link to this heading">#</a></h3>
+<section id="this-is-a-sub-sub-section">
+<h4>This is a Sub-Sub-Section<a class="headerlink" href="#this-is-a-sub-sub-section" title="Link to this heading">#</a></h4>
+</section>
+</section>
+</section>
+<section id="trails">
+<h2><a class="toc-backref" href="#id7" role="doc-backlink">Trails</a><a class="headerlink" href="#trails" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://trailhead.salesforce.com/es-MX/users/strailhead/trailmixes/build-your-admin-career-on-salesforce">Build Your Admin Career on Salesforce</a></p></li>
+<li><p><a class="reference external" href="https://trailhead.salesforce.com/content/learn/trails/force_com_admin_beginner">Admin Beginner</a></p></li>
+</ul>
 </section>
 </section>
 
@@ -872,20 +884,20 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="principles_life_n_work.html"
+       href="index.html"
        title="página anterior">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">anterior</p>
-        <p class="prev-next-title">Principles Life and Work</p>
+        <p class="prev-next-title">Salesforce</p>
       </div>
     </a>
     <a class="right-next"
-       href="../constructo_urbano/index.html"
+       href="glossary.html"
        title="siguiente página">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">siguiente</p>
-        <p class="prev-next-title">Constructo Urbano</p>
+        <p class="prev-next-title">Glossary</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -932,13 +944,20 @@ document.write(`
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#where-d-my-app-go">Where’d My App Go?</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">User Management</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">User Management</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#add-new-users">Add New Users</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#glossary">Glossary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-modeling">Data Modeling</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#this-is-a-sub-section">This is a Sub-Section</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#this-is-a-sub-sub-section">This is a Sub-Sub-Section</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trails">Trails</a></li>
 </ul>
   </nav></div>
 
