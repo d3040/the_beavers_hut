@@ -391,8 +391,8 @@ You can perform essesntial admin tasks like resetting passwords, freezin users, 
 Data Modeling
 =============
 
-This is a Sub-Section
----------------------
+Optimize Customer Data with Standard and Custom Objects
+-------------------------------------------------------
 
 This is a Sub-Sub-Section
 ^^^^^^^^^^^^^^^^^^^^^^^^^
