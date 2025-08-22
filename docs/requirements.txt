@@ -1,5 +1,4 @@
 sphinx-icon
 sphinx-copybutton
 sphinx-book-theme
-pandoc
 nbsphinx
