@@ -9,7 +9,6 @@ Python
 
 .. toctree::
    :maxdepth: 1
-   :glob:
 
-   *
+   intro_data_science
 
