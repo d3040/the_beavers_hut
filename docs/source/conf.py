@@ -31,7 +31,8 @@ copyright = today_year + ', Daniel Clavijo'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'sphinx_copybutton'
+    'sphinx_copybutton',
+    'nbsphinx'
     #'pydata_sphinx_theme'
 ]
 
