@@ -6,15 +6,15 @@ jobs:
   build:
     runs-on: ubuntu-latest
     container:
-      image: pandoc/latex  # Use a Docker image with Pandoc installed
+      image: pandoc/latex  # Use a Docker image with Pandoc
     steps:
     - uses: actions/checkout@v4
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: '3.9'
+    - name: Install Python and pip
+      run: |
+        apt-get update
+        apt-get install -y python3 python3-pip
     - name: Install dependencies
-      run: pip install -r requirements.txt
+      run: pip3 install -r requirements.txt
     - name: Build HTML
       uses: ammaraskar/sphinx-action@0.4
     - name: Upload artifacts
@@ -28,4 +28,3 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: docs/build/html
-
