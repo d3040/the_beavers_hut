@@ -431,7 +431,7 @@ Useful links
 * `Immutability in Python <https://realpython.com/courses/immutability-python/>`_
 * `Python Virtual Environments: A Primer <https://realpython.com/python-virtual-environments-a-primer/>`_
 * `Setting up Python for Machine learning on Windows <https://realpython.com/python-windows-machine-learning-setup/>`_
-* `Copying Python Objects <https://realpython.com/copying-python-objects/`_
+* `Copying Python Objects <https://realpython.com/copying-python-objects/>`_
 
 What is Pip?
 ------------
