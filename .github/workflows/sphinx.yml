@@ -8,15 +8,21 @@ jobs:
     steps:
     - uses: actions/checkout@v4
       # action details @ https://github.com/marketplace/actions/checkout
+
+    - name: Install Pandoc
+      run: sudo apt-get install -y pandoc
+
     - name: Build HTML
       uses: ammaraskar/sphinx-action@0.4 #sphinx-action@master
       # action details @ https://github.com/ammaraskar/sphinx-action
+
     - name: Upload artifacts
       uses: actions/upload-artifact@v4
       # action details @ https://github.com/marketplace/actions/upload-a-build-artifact
       with:
         name: html-docs
         path: docs/build/html/
+
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       # action details @ https://github.com/marketplace/actions/github-pages-action
@@ -24,3 +30,4 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: docs/build/html
+
