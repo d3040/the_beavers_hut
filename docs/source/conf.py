@@ -32,7 +32,7 @@ copyright = today_year + ', Daniel Clavijo'
 # ones.
 extensions = [
     'sphinx_copybutton',
-    'nbsphinx'
+    #'nbsphinx'
     #'pydata_sphinx_theme'
 ]
 
