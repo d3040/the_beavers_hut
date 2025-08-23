@@ -8,14 +8,13 @@ jobs:
     steps:
     - uses: actions/checkout@v4
       # action details @ https://github.com/marketplace/actions/checkout
-
-    - name: Install
-      uses: pandoc/actions/setup@v1
-    - name: Run pandoc
-      run: pandoc --version
     
     - name: Build HTML
       uses: ammaraskar/sphinx-action@0.4 #sphinx-action@master
+      # workaround for pandoc
+      with:
+        pre-build-command: >-
+          apt-get update && apt-get install -y pandoc
       # action details @ https://github.com/ammaraskar/sphinx-action
 
     - name: Upload artifacts
