@@ -6,13 +6,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: docker://pandoc/core:3.5
-       # with:
-       #   args: "--help" # gets appended to pandoc command
-
     - uses: actions/checkout@v4
       # action details @ https://github.com/marketplace/actions/checkout
 
+    - name: Install
+      uses: pandoc/actions/setup@v1
+    - name: Run pandoc
+      run: pandoc --version
+    
     - name: Build HTML
       uses: ammaraskar/sphinx-action@0.4 #sphinx-action@master
       # action details @ https://github.com/ammaraskar/sphinx-action
