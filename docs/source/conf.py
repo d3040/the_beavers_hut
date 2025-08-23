@@ -13,7 +13,7 @@
 # import os
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
-import datetime
+import datetime, os
 
 td = datetime.date.today()
 today_date = td.strftime('%Y%m%d')
