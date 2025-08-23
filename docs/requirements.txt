@@ -2,4 +2,4 @@ sphinx-icon
 sphinx-copybutton
 sphinx-book-theme
 nbsphinx
-notebook
+pypandoc
