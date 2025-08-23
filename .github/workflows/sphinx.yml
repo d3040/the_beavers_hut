@@ -6,6 +6,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+    - uses: docker://pandoc/core:3.5
+        with:
+          args: "--help" # gets appended to pandoc command
+
     - uses: actions/checkout@v4
       # action details @ https://github.com/marketplace/actions/checkout
 
