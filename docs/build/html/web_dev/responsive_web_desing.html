@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Responsive Web Design[#]_ &#8212; The Beaver&#39;s Hut</title>
+    <title>Responsive Web Design &#8212; The Beaver&#39;s Hut</title>
   
   
   
@@ -51,6 +51,8 @@
     <link rel="icon" href="../_static/hut.ico"/>
     <link rel="index" title="Índice" href="../genindex.html" />
     <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="Link Lodge" href="../link-lodge.html" />
+    <link rel="prev" title="JavaScript" href="js.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="es"/>
   </head>
@@ -113,8 +115,6 @@
       
       
       
-        
-      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -163,7 +163,7 @@
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Libros</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../abstracts/index.html">Extractos</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../abstracts/free-code-camp.html">Free Code Camps Lessons</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../abstracts/principles_life_n_work.html">Principles Life and Work</a></li>
@@ -189,6 +189,12 @@
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../vim/index.html">Vi IMproved (Vim)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../vim/o-reilly.html">Learning the vi and Vim Editors</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Web Development</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="css.html">Cascading Style Sheets -CSS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="js.html">JavaScript</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Responsive Web Design </a></li>
 </ul>
 </details></li>
 <li class="toctree-l1"><a class="reference internal" href="../link-lodge.html">Link Lodge</a></li>
@@ -345,7 +351,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Responsive Web Design[#]_</h1>
+    <h1>Responsive Web Design </h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -368,15 +374,15 @@ document.write(`
                 <article class="bd-article">
                   
   <section id="responsive-web-design">
-<h1>Responsive Web Design[#]_<a class="headerlink" href="#responsive-web-design" title="Link to this heading">#</a></h1>
+<h1>Responsive Web Design <a class="footnote-reference brackets" href="#id2" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a><a class="headerlink" href="#responsive-web-design" title="Link to this heading">#</a></h1>
 <ul class="simple">
 <li><p>Only use one h1 element per page and place lower importance headings below higher important headings.</p></li>
 <li><p>All img elements should have an alt attribute. It is used for screen readers to improve accessibility and is displayed if the image fails to load.</p></li>
-<li><p>The <a href="#id1"><span class="problematic" id="id2">``</span></a>figure``element represents sel-contained content and will allow you to associate an image with a caption.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">figure</span></code> element represents sel-contained content and will allow you to associate an image with a caption.</p></li>
 <li><p>The default behaviour of clicking a form button without any attributes submits the form to the location specified in the form’s <code class="docutils literal notranslate"><span class="pre">action</span></code> attribute. To avoid confusion add the <code class="docutils literal notranslate"><span class="pre">type</span></code> attribute with the value “submit” on the button to make it clear that it is a submit button.</p></li>
 <li><p>label elements are used to help associate the text for an <code class="docutils literal notranslate"><span class="pre">input</span></code> element with the <code class="docutils literal notranslate"><span class="pre">input</span></code> element itsel (especially for assistive thecnologies like screen readers).</p></li>
 <li><p>To make a unique selection in a group of radio buttons, the buttons must have a <code class="docutils literal notranslate"><span class="pre">name</span></code> attribute with the same value.</p></li>
-<li><p><a href="#id3"><span class="problematic" id="id4">``</span></a>fieldset `` element is used to group related inputs and labels together in a web form.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">fieldset</span></code> element is used to group related inputs and labels together in a web form.</p></li>
 <li><p>The <code class="docutils literal notranslate"><span class="pre">legend</span></code> element acts as a caption for the content in the <code class="docutils literal notranslate"><span class="pre">fieldset</span></code> element. It gives users context about what they should enter into that part of the form.</p></li>
 <li><p>Another way to associate an <code class="docutils literal notranslate"><span class="pre">input</span></code> element’s text with the element itself is using a <code class="docutils literal notranslate"><span class="pre">label</span></code> element and a <code class="docutils literal notranslate"><span class="pre">for</span></code> attribute with the same value as the <code class="docutils literal notranslate"><span class="pre">input</span></code> element’s <code class="docutils literal notranslate"><span class="pre">id</span></code> attribute.</p></li>
 <li><p>Form data for selected checkboxes are <code class="docutils literal notranslate"><span class="pre">name</span></code> / <code class="docutils literal notranslate"><span class="pre">value</span></code> attribute pairs. While the <code class="docutils literal notranslate"><span class="pre">value</span></code> attribute is optional, it’s best practice to include it with any checkboxes or radio buttons on the page.</p></li>
@@ -430,8 +436,8 @@ document.write(`
 <section id="registration-form">
 <h2>Registration form:<a class="headerlink" href="#registration-form" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><dl class="simple">
-<dt>Atributes form element:</dt><dd><ul>
+<li><p>Atributes form element:</p>
+<ul>
 <li><p>action: where from data should be sent.</p></li>
 <li><dl class="simple">
 <dt>method: specifies how send form-data to the URL specified in the action attribute.</dt><dd><ul>
@@ -442,11 +448,9 @@ document.write(`
 </dl>
 </li>
 </ul>
-</dd>
-</dl>
 </li>
-<li><dl class="simple">
-<dt>Elements:</dt><dd><ul>
+<li><p>Elements:</p>
+<ul>
 <li><p>fieldset:</p></li>
 <li><dl class="simple">
 <dt>label:</dt><dd><ul>
@@ -467,12 +471,8 @@ document.write(`
 </dl>
 </li>
 </ul>
-</dd>
-</dl>
 </li>
-</ul>
-<ul class="simple">
-<li><p>To handle the form submission, after the last <code class="docutils literal notranslate"><span class="pre">fielset</span></code> element add an <code class="docutils literal notranslate"><span class="pre">input``element</span> <span class="pre">with</span> <span class="pre">the</span> <span class="pre">``type</span></code> attribute set to «submit» and the <a href="#id5"><span class="problematic" id="id6">``</span></a>value``attribute set to «Submit».</p></li>
+<li><p>To handle the form submission, after the last <code class="docutils literal notranslate"><span class="pre">fielset</span></code> element add an <code class="docutils literal notranslate"><span class="pre">input</span></code> element with the <code class="docutils literal notranslate"><span class="pre">type</span></code> attribute set to «submit» and the <code class="docutils literal notranslate"><span class="pre">value</span></code> attribute set to «Submit».</p></li>
 <li><p>To every input element add a <code class="docutils literal notranslate"><span class="pre">name</span></code> attribute.</p></li>
 <li><p>During development, it is useful to see the fieldset default borders.</p></li>
 </ul>
@@ -530,8 +530,8 @@ document.write(`
 </dd>
 </dl>
 <aside class="footnote-list brackets">
-<aside class="footnote brackets" id="id7" role="doc-footnote">
-<span class="label"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></span>
+<aside class="footnote brackets" id="id2" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
 <p><a class="reference external" href="https://www.freecodecamp.org/learn/2022/responsive-web-design/">FreeCodeCamp - Responsive Web Desing</a></p>
 </aside>
 </aside>
@@ -549,6 +549,24 @@ document.write(`
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="js.html"
+       title="página anterior">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">anterior</p>
+        <p class="prev-next-title">JavaScript</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../link-lodge.html"
+       title="siguiente página">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">siguiente</p>
+        <p class="prev-next-title">Link Lodge</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               

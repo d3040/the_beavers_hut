@@ -191,6 +191,12 @@
 <li class="toctree-l2"><a class="reference internal" href="../vim/o-reilly.html">Learning the vi and Vim Editors</a></li>
 </ul>
 </details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../web_dev/index.html">Web Development</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../web_dev/css.html">Cascading Style Sheets -CSS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../web_dev/js.html">JavaScript</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../web_dev/responsive_web_desing.html">Responsive Web Design </a></li>
+</ul>
+</details></li>
 <li class="toctree-l1"><a class="reference internal" href="../link-lodge.html">Link Lodge</a></li>
 </ul>
 
@@ -371,17 +377,16 @@ document.write(`
 <h1>Git temporal notes<a class="headerlink" href="#git-temporal-notes" title="Link to this heading">#</a></h1>
 <nav class="contents local" id="contenido">
 <ul class="simple">
-<li><p><a class="reference internal" href="#update-token-to-connect-to-remote-repository" id="id5">Update token to connect to remote repository</a></p></li>
+<li><p><a class="reference internal" href="#update-token-to-connect-to-remote-repository" id="id1">Update token to connect to remote repository</a></p></li>
 </ul>
 </nav>
 <section id="update-token-to-connect-to-remote-repository">
-<h2><a class="toc-backref" href="#id5" role="doc-backlink">Update token to connect to remote repository</a><a class="headerlink" href="#update-token-to-connect-to-remote-repository" title="Link to this heading">#</a></h2>
-<div class="highlight-git notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span>git remote remove origin
-<span class="linenos">2</span>git remote add origin https://&lt;token&gt;@github.com/&lt;user&gt;/&lt;repo&gt;.git
-<span class="linenos">3</span>git push --set-upstream origin main
+<h2><a class="toc-backref" href="#id1" role="doc-backlink">Update token to connect to remote repository</a><a class="headerlink" href="#update-token-to-connect-to-remote-repository" title="Link to this heading">#</a></h2>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span>git<span class="w"> </span>remote<span class="w"> </span>remove<span class="w"> </span>origin
+<span class="linenos">2</span>git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>origin<span class="w"> </span>https://&lt;token&gt;@github.com/&lt;user&gt;/&lt;repo&gt;.git
+<span class="linenos">3</span>git<span class="w"> </span>push<span class="w"> </span>--set-upstream<span class="w"> </span>origin<span class="w"> </span>main
 </pre></div>
 </div>
-<p><a href="#id1"><span class="problematic" id="id2">``</span></a><a href="#id3"><span class="problematic" id="id4">`</span></a></p>
 </section>
 </section>
 
