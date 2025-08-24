@@ -1,13 +1,13 @@
-Responsive Web Design[#]_
-=========================
+Responsive Web Design [#]_
+==========================
 
 * Only use one h1 element per page and place lower importance headings below higher important headings.
 * All img elements should have an alt attribute. It is used for screen readers to improve accessibility and is displayed if the image fails to load.
-* The ``figure``element represents sel-contained content and will allow you to associate an image with a caption.
+* The ``figure`` element represents sel-contained content and will allow you to associate an image with a caption.
 * The default behaviour of clicking a form button without any attributes submits the form to the location specified in the form's ``action`` attribute. To avoid confusion add the ``type`` attribute with the value 'submit' on the button to make it clear that it is a submit button.
 * label elements are used to help associate the text for an ``input`` element with the ``input`` element itsel (especially for assistive thecnologies like screen readers).
 * To make a unique selection in a group of radio buttons, the buttons must have a ``name`` attribute with the same value.
-* ``fieldset `` element is used to group related inputs and labels together in a web form.
+* ``fieldset`` element is used to group related inputs and labels together in a web form.
 * The ``legend`` element acts as a caption for the content in the ``fieldset`` element. It gives users context about what they should enter into that part of the form.
 * Another way to associate an ``input`` element's text with the element itself is using a ``label`` element and a ``for`` attribute with the same value as the ``input`` element's ``id`` attribute.
 * Form data for selected checkboxes are ``name`` / ``value`` attribute pairs. While the ``value`` attribute is optional, it's best practice to include it with any checkboxes or radio buttons on the page.
@@ -57,23 +57,26 @@ Registration form:
 ------------------
 
 * Atributes form element:
-	- action: where from data should be sent.
-	- method: specifies how send form-data to the URL specified in the action attribute.
-		+ GET request: 
-		+ POST request: 
+
+  - action: where from data should be sent.
+  - method: specifies how send form-data to the URL specified in the action attribute.
+	+ GET request: 
+	+ POST request: 
 * Elements:
-	- fieldset:
-	- label:
-		+ for 
-	- input (self-closing):
-		+ id
-		+ type
-		+ name
-		+ placeholder
-		+ required
-- To handle the form submission, after the last ``fielset`` element add an ``input``element with the ``type`` attribute set to "submit" and the ``value``attribute set to "Submit".
-- To every input element add a ``name`` attribute.
-- During development, it is useful to see the fieldset default borders.
+
+  - fieldset:
+  - label:
+	+ for 
+  - input (self-closing):
+	+ id
+	+ type
+	+ name
+	+ placeholder
+	+ required
+
+* To handle the form submission, after the last ``fielset`` element add an ``input`` element with the ``type`` attribute set to "submit" and the ``value`` attribute set to "Submit".
+* To every input element add a ``name`` attribute.
+* During development, it is useful to see the fieldset default borders.
 
 .. code-block:: html
 

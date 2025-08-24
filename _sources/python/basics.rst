@@ -38,7 +38,7 @@ Integers
 Formatting language
 -------------------
 
-To print a number with certain format use the `formatting language <https://docs.python.org/3/library/string.html#format-string-syntax>`_
+To print a number with certain format use the `format-string-syntax <https://docs.python.org/3/library/string.html#format-string-syntax>`_
 
 Functions
 ---------
