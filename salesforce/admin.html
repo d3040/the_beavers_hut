@@ -388,10 +388,19 @@ document.write(`
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#where-d-my-app-go">Where’d My App Go?</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">User Management</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#add-new-users">Add New Users</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">User Management</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#add-new-users">Add New Users</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#key-terms">Key terms</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#guidelines-for-adding-users">Guidelines for Adding Users</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#add-users">Add Users</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#freeze-a-user">Freeze a User</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#deactivating-a-user">Deactivating a User</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#see-what-a-user-can-access">See What a User Can Access</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#control-what-your-users-can-access">Control What Your Users Can Access</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-modeling">Data Modeling</a><ul class="nav section-nav flex-column">
@@ -420,8 +429,9 @@ document.write(`
 <li><p><a class="reference internal" href="#learn-about-the-salesforce-admin-role" id="id3">Learn About the Salesforce Admin Role</a></p></li>
 <li><p><a class="reference internal" href="#essential-habits-for-salesforce-admins" id="id4">Essential Habits for Salesforce Admins</a></p></li>
 <li><p><a class="reference internal" href="#salesforce-platform-basics" id="id5">Salesforce Platform Basics</a></p></li>
-<li><p><a class="reference internal" href="#data-modeling" id="id6">Data Modeling</a></p></li>
-<li><p><a class="reference internal" href="#trails" id="id7">Trails</a></p></li>
+<li><p><a class="reference internal" href="#id1" id="id6">User Management</a></p></li>
+<li><p><a class="reference internal" href="#data-modeling" id="id7">Data Modeling</a></p></li>
+<li><p><a class="reference internal" href="#trails" id="id8">Trails</a></p></li>
 </ul>
 </nav>
 <section id="learn-about-the-salesforce-admin-role">
@@ -816,41 +826,76 @@ document.write(`
 </div></blockquote>
 </section>
 </section>
+</section>
 <section id="id1">
-<h3>User Management<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<h2><a class="toc-backref" href="#id6" role="doc-backlink">User Management</a><a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
 <section id="add-new-users">
-<h4>Add New Users<a class="headerlink" href="#add-new-users" title="Link to this heading">#</a></h4>
+<h3>Add New Users<a class="headerlink" href="#add-new-users" title="Link to this heading">#</a></h3>
 <p>A user is anyone who logs in to Salesforce who need access to the company’s records. Every user in Salesforce has a user account. The user account identifies the user, and the user account settings determine what features and records the user caan access. Each user account contain at least a <code class="docutils literal notranslate"><span class="pre">user</span> <span class="pre">name</span></code>, <code class="docutils literal notranslate"><span class="pre">email</span> <span class="pre">address</span></code>, <code class="docutils literal notranslate"><span class="pre">user's</span> <span class="pre">first</span> <span class="pre">and</span> <span class="pre">last</span> <span class="pre">name</span></code>, <code class="docutils literal notranslate"><span class="pre">alias</span></code>, <code class="docutils literal notranslate"><span class="pre">nick</span> <span class="pre">name</span></code>, <code class="docutils literal notranslate"><span class="pre">license</span></code>, <code class="docutils literal notranslate"><span class="pre">profile</span></code> and a <code class="docutils literal notranslate"><span class="pre">role</span></code>.</p>
-<ul class="simple">
-<li><dl class="simple">
-<dt>Usernames</dt><dd><p>Each user name has both a username and formatted like an email address which can or cannot be real as long as it is unique across all Salesforce organizations. When a user is added the user’s password must be changed the first time they log in.</p>
-</dd>
-</dl>
+<p>You view and manage users from the <strong>Users page</strong> in <strong>Setup</strong>.</p>
+<section id="key-terms">
+<h4>Key terms<a class="headerlink" href="#key-terms" title="Link to this heading">#</a></h4>
+<ul>
+<li><p>Usernames
+Each user name has both a username and formatted like an email address which can or cannot be real as long as it is unique across all Salesforce organizations. When a user is added the user’s password must be changed the first time they log in.</p></li>
+<li><p>User Licenses
+A user license determines which feactures the user can access in Salesforce.</p></li>
+<li><p>Profiles
+Each user has one profile that defines default settings. It is recommended to grant users the Minimum Access - Salesforce profile, an then use permission sets and permission set groups to gran users the permissions they require.</p>
+<p>What should be in a permission set vs. a profile?</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Permission Set</p></th>
+<th class="head"><p>Profile</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>User, object, and field
+permissions</p></td>
+<td><p>Default record types</p></td>
+</tr>
+<tr class="row-odd"><td><p>Custom permissions</p></td>
+<td><p>Default assigned apps</p></td>
+</tr>
+<tr class="row-even"><td><p>Connected app access</p></td>
+<td><p>Page layout assignments</p></td>
+</tr>
+<tr class="row-odd"><td><p>Apex class access</p></td>
+<td><p>Login hours</p></td>
+</tr>
+<tr class="row-even"><td><p>Visualforce page access</p></td>
+<td><p>Login IP ranges</p></td>
+</tr>
+<tr class="row-odd"><td><p>Tab settings</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
 </li>
-<li><dl class="simple">
-<dt>User Licenses</dt><dd><p>A user license determines which feactures the user can access in Salesforce.</p>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt>Profiles</dt><dd><p>Profiles detemine what users can do in Salesforce. They come with a sert of permissions which grant access to particular objects, fields, tabs, and records.</p>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt>Roles</dt><dd><p>Roles determine qhat users can see in Salesforce based on where they are located in the role hierarchy. Users at the top of the hierarchy can see all the data owned by userds below them. Users at a lower level can see data owned by users above them only if sharing rules grant them access.</p>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt>Alias</dt><dd><p>An alias is a short name to identify the user on list pages, reports or other places where their entire name doesn’t fit.</p>
-</dd>
-</dl>
-</li>
+<li><p>Roles
+Roles determine what users can see in Salesforce based on where they are located in the role hierarchy. Users at the top of the hierarchy can see all the data owned by userds below them. Users at a lower level can see data owned by users above them only if sharing rules grant them access. Roles are optional but each user can have only one.</p></li>
+<li><p>Alias
+An alias is a short name to identify the user on list pages, reports or other places where their entire name doesn’t fit.</p></li>
 </ul>
-<p>To add users:</p>
+</section>
+<section id="guidelines-for-adding-users">
+<h4>Guidelines for Adding Users<a class="headerlink" href="#guidelines-for-adding-users" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p><strong>Username</strong>: Each user must have a username that is unique across all of Salesforce.</p></li>
+<li><p><strong>Username format</strong>: Users must have a username in the format of an email address, but they don’t have to use a real
+email address. They can use their email address if they wish as long as their email address is unique acreoss all of
+Salesforce.</p></li>
+<li><p><strong>Email</strong>: Users can have the same email address across organizations.</p></li>
+<li><p><strong>Passwords</strong>: Users must change their password the first time they log in.</p></li>
+<li><p><strong>Login link</strong>: Users can only use the login link in the sing-in email once. If a user follows the link and doesn’t
+set a password, the admin must reset the password before the can log in.</p></li>
+</ul>
+</section>
+<section id="add-users">
+<h4>Add Users<a class="headerlink" href="#add-users" title="Link to this heading">#</a></h4>
 <ol class="arabic simple">
-<li><p>From Setup select <strong>Users</strong>.</p></li>
+<li><p>From Setup, in the Quick Find box, enter user, and then select <strong>Users</strong>.</p></li>
 <li><p>Click <strong>New User</strong> or <strong>Add Multiple Users</strong> to add up to 10 users at a time.</p></li>
 <li><p>Enter each user’s information.</p></li>
 <li><p>Select the user license.</p></li>
@@ -858,12 +903,45 @@ document.write(`
 <li><p>Select <strong>Generate passwords and notify user via email</strong>.</p></li>
 <li><p>Save.</p></li>
 </ol>
-<p>You can perform essesntial admin tasks like resetting passwords, freezin users, and viewing current system status from your mobile device.</p>
 </section>
+<section id="freeze-a-user">
+<h4>Freeze a User<a class="headerlink" href="#freeze-a-user" title="Link to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p>From Setup, in the Quick Find box, enter Users, and the select <strong>Users</strong>.</p></li>
+<li><p>Click the username of the account you want to freeze.</p></li>
+<li><p>Click <strong>Freeze</strong> to prevent the user from logging in to the account.</p></li>
+</ol>
+<p>Feezing accounts can come in handy when a user leaces your company and you don’t want them logging in, but you have some
+cleanyp to do before deactivating them, also, when a user’s Salesforce account may have been compromised.</p>
+</section>
+<section id="deactivating-a-user">
+<h4>Deactivating a User<a class="headerlink" href="#deactivating-a-user" title="Link to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p>From Setup, in the Quick Find box, enter Users, and the select <strong>Users</strong>.</p></li>
+<li><p>Click Edit next to a user’s name.</p></li>
+<li><p>Deselect the <strong>Active</strong> checkbox, and then click <strong>Save</strong>.</p></li>
+</ol>
+<p>You can deactivate users, but you can’t delete them. Deleting a user can result in orphanes records and the loss of
+critical business information.</p>
+</section>
+<section id="see-what-a-user-can-access">
+<h4>See What a User Can Access<a class="headerlink" href="#see-what-a-user-can-access" title="Link to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p>From Setup, in the Quick Find box, enter Users, and the select <strong>Users</strong>.</p></li>
+<li><p>Click the username of the user whose access you want to see.</p></li>
+<li><p>Click <strong>View Summary</strong>.</p></li>
+<li><p>Click the tabs to see a user’s assigned permissions or the public groups or queues they’re added to. To see which
+profile, permission sets, or premission set groups are granting the user a specific permission, click the
+permission’s row-leve action, and then click <strong>Access Granted By</strong>.</p></li>
+</ol>
+</section>
+</section>
+<section id="control-what-your-users-can-access">
+<h3>Control What Your Users Can Access<a class="headerlink" href="#control-what-your-users-can-access" title="Link to this heading">#</a></h3>
 </section>
 </section>
 <section id="data-modeling">
-<h2><a class="toc-backref" href="#id6" role="doc-backlink">Data Modeling</a><a class="headerlink" href="#data-modeling" title="Link to this heading">#</a></h2>
+<h2><a class="toc-backref" href="#id7" role="doc-backlink">Data Modeling</a><a class="headerlink" href="#data-modeling" title="Link to this heading">#</a></h2>
 <section id="optimize-customer-data-with-standard-and-custom-objects">
 <h3>Optimize Customer Data with Standard and Custom Objects<a class="headerlink" href="#optimize-customer-data-with-standard-and-custom-objects" title="Link to this heading">#</a></h3>
 <section id="this-is-a-sub-sub-section">
@@ -872,7 +950,7 @@ document.write(`
 </section>
 </section>
 <section id="trails">
-<h2><a class="toc-backref" href="#id7" role="doc-backlink">Trails</a><a class="headerlink" href="#trails" title="Link to this heading">#</a></h2>
+<h2><a class="toc-backref" href="#id8" role="doc-backlink">Trails</a><a class="headerlink" href="#trails" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://trailhead.salesforce.com/es-MX/users/strailhead/trailmixes/build-your-admin-career-on-salesforce">Build Your Admin Career on Salesforce</a></p></li>
 <li><p><a class="reference external" href="https://trailhead.salesforce.com/content/learn/trails/force_com_admin_beginner">Admin Beginner</a></p></li>
@@ -952,10 +1030,19 @@ document.write(`
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#where-d-my-app-go">Where’d My App Go?</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">User Management</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#add-new-users">Add New Users</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">User Management</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#add-new-users">Add New Users</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#key-terms">Key terms</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#guidelines-for-adding-users">Guidelines for Adding Users</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#add-users">Add Users</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#freeze-a-user">Freeze a User</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#deactivating-a-user">Deactivating a User</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#see-what-a-user-can-access">See What a User Can Access</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#control-what-your-users-can-access">Control What Your Users Can Access</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-modeling">Data Modeling</a><ul class="nav section-nav flex-column">
