@@ -357,27 +357,67 @@ Apps are installed using somethind called a package. To find the package:
   :emphasis:`Be sure to check out free apps provided by Salesforce Labs. The great thing about Salesforce Labs apps is that they're open source. You can customize them as needed and peek under the hood to see how they work.`
 
 User Management
----------------
+===============
 
 Add New Users
-^^^^^^^^^^^^^
+-------------
 
 A user is anyone who logs in to Salesforce who need access to the company's records. Every user in Salesforce has a user account. The user account identifies the user, and the user account settings determine what features and records the user caan access. Each user account contain at least a ``user name``, ``email address``, ``user's first and last name``, ``alias``, ``nick name``, ``license``, ``profile`` and a ``role``.
 
+You view and manage users from the **Users page** in **Setup**.
+
+Key terms
+^^^^^^^^^
+
 * Usernames
-    Each user name has both a username and formatted like an email address which can or cannot be real as long as it is unique across all Salesforce organizations. When a user is added the user's password must be changed the first time they log in.
+  Each user name has both a username and formatted like an email address which can or cannot be real as long as it is unique across all Salesforce organizations. When a user is added the user's password must be changed the first time they log in.
 * User Licenses
-    A user license determines which feactures the user can access in Salesforce.
+  A user license determines which feactures the user can access in Salesforce.
 * Profiles
-    Profiles detemine what users can do in Salesforce. They come with a sert of permissions which grant access to particular objects, fields, tabs, and records.
+  Each user has one profile that defines default settings. It is recommended to grant users the Minimum Access - Salesforce profile, an then use permission sets and permission set groups to gran users the permissions they require.
+
+  What should be in a permission set vs. a profile?
+
+  +----------------------------+----------------------------+
+  | Permission Set             | Profile                    |
+  +============================+============================+
+  | User, object, and field    | Default record types       |
+  | permissions                |                            |
+  +----------------------------+----------------------------+
+  | Custom permissions         | Default assigned apps      |
+  +----------------------------+----------------------------+
+  | Connected app access       | Page layout assignments    |
+  +----------------------------+----------------------------+
+  | Apex class access          | Login hours                |
+  +----------------------------+----------------------------+
+  | Visualforce page access    | Login IP ranges            |
+  +----------------------------+----------------------------+
+  | Tab settings               |                            |
+  +----------------------------+----------------------------+
+
 * Roles
-    Roles determine qhat users can see in Salesforce based on where they are located in the role hierarchy. Users at the top of the hierarchy can see all the data owned by userds below them. Users at a lower level can see data owned by users above them only if sharing rules grant them access.
+  Roles determine what users can see in Salesforce based on where they are located in the role hierarchy. Users at the top of the hierarchy can see all the data owned by userds below them. Users at a lower level can see data owned by users above them only if sharing rules grant them access. Roles are optional but each user can have only one.
 * Alias
-    An alias is a short name to identify the user on list pages, reports or other places where their entire name doesn't fit.
+  An alias is a short name to identify the user on list pages, reports or other places where their entire name doesn't fit.
 
-To add users:
 
-1. From Setup select :strong:`Users`.
+Guidelines for Adding Users
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* **Username**: Each user must have a username that is unique across all of Salesforce.
+* **Username format**: Users must have a username in the format of an email address, but they don't have to use a real
+  email address. They can use their email address if they wish as long as their email address is unique acreoss all of
+  Salesforce.
+* **Email**: Users can have the same email address across organizations.
+* **Passwords**: Users must change their password the first time they log in.
+* **Login link**: Users can only use the login link in the sing-in email once. If a user follows the link and doesn't
+  set a password, the admin must reset the password before the can log in.
+
+
+Add Users
+^^^^^^^^^
+
+1. From Setup, in the Quick Find box, enter user, and then select :strong:`Users`.
 2. Click :strong:`New User` or :strong:`Add Multiple Users` to add up to 10 users at a time.
 3. Enter each user's information.
 4. Select the user license.
@@ -385,7 +425,42 @@ To add users:
 6. Select :strong:`Generate passwords and notify user via email`.
 7. Save.
 
-You can perform essesntial admin tasks like resetting passwords, freezin users, and viewing current system status from your mobile device.
+
+Freeze a User
+^^^^^^^^^^^^^
+
+1. From Setup, in the Quick Find box, enter Users, and the select :strong:`Users`.
+2. Click the username of the account you want to freeze.
+3. Click **Freeze** to prevent the user from logging in to the account.
+
+Feezing accounts can come in handy when a user leaces your company and you don't want them logging in, but you have some
+cleanyp to do before deactivating them, also, when a user's Salesforce account may have been compromised.
+
+
+Deactivating a User
+^^^^^^^^^^^^^^^^^^^
+
+1. From Setup, in the Quick Find box, enter Users, and the select :strong:`Users`.
+2. Click Edit next to a user's name.
+3. Deselect the **Active** checkbox, and then click **Save**.
+
+You can deactivate users, but you can't delete them. Deleting a user can result in orphanes records and the loss of
+critical business information.
+
+
+See What a User Can Access
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+1. From Setup, in the Quick Find box, enter Users, and the select :strong:`Users`.
+2. Click the username of the user whose access you want to see.
+3. Click **View Summary**.
+4. Click the tabs to see a user's assigned permissions or the public groups or queues they're added to. To see which
+   profile, permission sets, or premission set groups are granting the user a specific permission, click the
+   permission's row-leve action, and then click **Access Granted By**.
+
+
+Control What Your Users Can Access
+----------------------------------
 
 
 Data Modeling
