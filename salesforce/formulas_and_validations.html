@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Git temporal notes &#8212; The Beaver&#39;s Hut</title>
+    <title>Formulas and Validations &#8212; The Beaver&#39;s Hut</title>
   
   
   
@@ -46,13 +46,13 @@
     <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script src="../_static/translations.js?v=f85f4cfb"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'git/git-notes';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'salesforce/formulas_and_validations';</script>
     <script src="../_static/js/custom.js"></script>
     <link rel="icon" href="../_static/hut.ico"/>
     <link rel="index" title="Índice" href="../genindex.html" />
     <link rel="search" title="Búsqueda" href="../search.html" />
-    <link rel="next" title="Python" href="../python/index.html" />
-    <link rel="prev" title="Git" href="index.html" />
+    <link rel="next" title="Glossary" href="glossary.html" />
+    <link rel="prev" title="Salesforce Admin" href="admin.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="es"/>
   </head>
@@ -173,8 +173,8 @@
 <li class="toctree-l2"><a class="reference internal" href="../constructo_urbano/estudio.html">Un estudio del constructo urbano</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Git</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Git temporal notes</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../git/index.html">Git</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../git/git-notes.html">Git temporal notes</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../python/index.html">Python</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -182,10 +182,10 @@
 <li class="toctree-l2"><a class="reference internal" href="../python/intro_data_science.html">Introduction to Data Science in Python</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../salesforce/index.html">Salesforce</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../salesforce/admin.html">Salesforce Admin</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../salesforce/formulas_and_validations.html">Formulas and Validations </a></li>
-<li class="toctree-l2"><a class="reference internal" href="../salesforce/glossary.html">Glossary</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Salesforce</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="admin.html">Salesforce Admin</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Formulas and Validations </a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html">Glossary</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../vim/index.html">Vi IMproved (Vim)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -268,7 +268,7 @@
       
       
       
-      <li><a href="../_sources/git/git-notes.rst" target="_blank"
+      <li><a href="../_sources/salesforce/formulas_and_validations.rst" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Descargar archivo fuente"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -352,7 +352,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Git temporal notes</h1>
+    <h1>Formulas and Validations </h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -362,7 +362,9 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#update-token-to-connect-to-remote-repository">Update token to connect to remote repository</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#use-formula-fields">Use Formula Fields</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implement-roll-up-summary-fields">Implement Roll-Up Summary Fields</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-validation-rules">Creating Validation Rules</a></li>
 </ul>
             </nav>
         </div>
@@ -374,20 +376,128 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="git-temporal-notes">
-<h1>Git temporal notes<a class="headerlink" href="#git-temporal-notes" title="Link to this heading">#</a></h1>
+  <section id="formulas-and-validations">
+<h1>Formulas and Validations <a class="footnote-reference brackets" href="#id2" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a><a class="headerlink" href="#formulas-and-validations" title="Link to this heading">#</a></h1>
 <nav class="contents local" id="contenido">
 <ul class="simple">
-<li><p><a class="reference internal" href="#update-token-to-connect-to-remote-repository" id="id1">Update token to connect to remote repository</a></p></li>
+<li><p><a class="reference internal" href="#use-formula-fields" id="id4">Use Formula Fields</a></p></li>
+<li><p><a class="reference internal" href="#implement-roll-up-summary-fields" id="id5">Implement Roll-Up Summary Fields</a></p></li>
+<li><p><a class="reference internal" href="#creating-validation-rules" id="id6">Creating Validation Rules</a></p></li>
 </ul>
 </nav>
-<section id="update-token-to-connect-to-remote-repository">
-<h2><a class="toc-backref" href="#id1" role="doc-backlink">Update token to connect to remote repository</a><a class="headerlink" href="#update-token-to-connect-to-remote-repository" title="Link to this heading">#</a></h2>
-<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span>git<span class="w"> </span>remote<span class="w"> </span>remove<span class="w"> </span>origin
-<span class="linenos">2</span>git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>origin<span class="w"> </span>https://&lt;token&gt;@github.com/&lt;user&gt;/&lt;repo&gt;.git
-<span class="linenos">3</span>git<span class="w"> </span>push<span class="w"> </span>--set-upstream<span class="w"> </span>origin<span class="w"> </span>main
-</pre></div>
+<section id="use-formula-fields">
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">Use Formula Fields</a><a class="headerlink" href="#use-formula-fields" title="Link to this heading">#</a></h2>
+<p>Example of creating a Costum Formula Field (e.g. Opportunity sum of opportunities from an account):</p>
+<ol class="arabic simple">
+<li><p>From Setup, open the <cite>Object Manager</cite> and click <code class="docutils literal notranslate"><span class="pre">Opportunity</span></code>.</p></li>
+<li><p>In the left sidebar, click <code class="docutils literal notranslate"><span class="pre">Fields</span> <span class="pre">&amp;</span> <span class="pre">Relationships</span></code>.</p></li>
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">New</span></code>.</p></li>
+<li><p>Select <code class="docutils literal notranslate"><span class="pre">Formula</span></code> and click <cite>Next</cite>.</p></li>
+<li><p>In <code class="docutils literal notranslate"><span class="pre">Field</span> <span class="pre">Label</span></code>, type <em>My Formula Field</em> (notice that Field Name populates automatically).</p></li>
+<li><p>Select the type of data you expect your formula to return.</p></li>
+<li><p>Click <cite>Next</cite>.</p></li>
+</ol>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Operator</p></th>
+<th class="head"><p>Operation</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">+</span></code>
+<code class="docutils literal notranslate"><span class="pre">-</span></code>
+<code class="docutils literal notranslate"><span class="pre">*</span></code>
+<code class="docutils literal notranslate"><span class="pre">/</span></code>
+<code class="docutils literal notranslate"><span class="pre">^</span></code>
+<code class="docutils literal notranslate"><span class="pre">(</span></code>
+<code class="docutils literal notranslate"><span class="pre">)</span></code>
+<code class="docutils literal notranslate"><span class="pre">&amp;</span></code>
+<code class="docutils literal notranslate"><span class="pre">=</span></code>
+<code class="docutils literal notranslate"><span class="pre">&lt;&gt;</span></code>
+<code class="docutils literal notranslate"><span class="pre">&lt;</span></code>
+<code class="docutils literal notranslate"><span class="pre">&gt;</span></code>
+<code class="docutils literal notranslate"><span class="pre">&lt;=</span></code>
+<code class="docutils literal notranslate"><span class="pre">&gt;=</span></code>
+<code class="docutils literal notranslate"><span class="pre">&amp;&amp;</span></code>
+<code class="docutils literal notranslate"><span class="pre">||</span></code></p></td>
+<td><p>ADD
+Subtract
+Multiply
+Divide
+Exponentiation
+Open Parenthesis
+Close Parenthesis
+Concatenate
+Equal
+Not Equal
+Less Than
+Greater Than
+Less Than or Equal
+Greater Than or Equal
+AND
+OR</p></td>
+</tr>
+</tbody>
+</table>
 </div>
+</section>
+<section id="implement-roll-up-summary-fields">
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">Implement Roll-Up Summary Fields</a><a class="headerlink" href="#implement-roll-up-summary-fields" title="Link to this heading">#</a></h2>
+<p>While formula fields calculate values using fields within a single record, roll-up summary fields calculate values
+from a set of related records, such as those in a related list. You can create roll-up summary fields that
+automatically display a value on a master record based on the values of records in a detail record. These detail
+records must be directly related to the master through a master-detail relationship.</p>
+<p>Master-detail relationships closesly link objects together so that the master record controls specific behaviors of the
+detail and subdetail record.</p>
+<p>A roll-up summary field must be defined on the object that is on the master side of a master-detail relationship.</p>
+<p>Example of creating the Summary Field (sum of opportunities from an account):</p>
+<ol class="arabic simple">
+<li><p>From Setup, open <cite>Object Manager</cite> and click <code class="docutils literal notranslate"><span class="pre">Account</span></code>.</p></li>
+<li><p>On the left sidebar, click <code class="docutils literal notranslate"><span class="pre">Fields</span> <span class="pre">&amp;</span> <span class="pre">Relationships</span></code>.</p></li>
+<li><p>Click <cite>New</cite>.</p></li>
+<li><p>Choose the <cite>Roll-Up Summary</cite> field type, and click <cite>Next</cite>.</p></li>
+<li><p>For Field Label, enter <code class="docutils literal notranslate"><span class="pre">Sum</span> <span class="pre">of</span> <span class="pre">Opportunities</span></code> and click <cite>Next</cite>.</p></li>
+<li><p>The Summarized Object is the detail object that you want to summarize. Choose <cite>Opportunities</cite>.</p></li>
+<li><p>Choose the <cite>SUM</cite> Roll-up type and choose <cite>Amount</cite> as the Field to Aggregate. If you’re unable to see Amount in Field
+to Aggregate, disable the Advanced Currency Management in your Currency Setup.</p></li>
+<li><p>Click <cite>Next</cite>, <cite>Next</cite>, and <cite>Save</cite>.</p></li>
+</ol>
+<p>Keep in mind that the types of fields you can calculate in a roll-up summary field depend on the type of calculation.
+For example:</p>
+<ul class="simple">
+<li><p>Number, currency, and percent fields are available when you select <cite>SUM</cite> as the roll-up type.</p></li>
+<li><p>Number, currency, percent, date, and date/time fields are available when you select <cite>MIN</cite> or <cite>MAX</cite> as the roll-up
+type.</p></li>
+</ul>
+</section>
+<section id="creating-validation-rules">
+<h2><a class="toc-backref" href="#id6" role="doc-backlink">Creating Validation Rules</a><a class="headerlink" href="#creating-validation-rules" title="Link to this heading">#</a></h2>
+<p>Validation rules verify that data entered by users in records meets the standards you specify, by using formulas or
+expressions, before they can save it. When the validation rule returns a value of <cite>True</cite>, this confirms that the data
+entered by the user contains an invalid value. They can also include error messages to display to users when they enter
+invalid values based on specified criteria. Using these rules effectively contributes to quality data.</p>
+<p>Validation rules can be created for objects, fields, campaign members, or case milestones.</p>
+<p>Example of creating a Validation Rule:</p>
+<ol class="arabic simple">
+<li><p>From Setup, go to <cite>Object Manager</cite> and click <code class="docutils literal notranslate"><span class="pre">Account</span></code>.</p></li>
+<li><p>In the left sidebar, click <code class="docutils literal notranslate"><span class="pre">Validation</span> <span class="pre">Rules</span></code>.</p></li>
+<li><p>Click <cite>New</cite>.</p></li>
+<li><p>Enter the following properties for your validation rule:</p>
+<ul class="simple">
+<li><p>Rule Name: Account_Number_8_Characters</p></li>
+<li><p>Error Condition Formula: LEN( AccountNumber) &lt;&gt; 8</p></li>
+</ul>
+</li>
+<li><p>Error Message: Account number must be 8 characters long.</p></li>
+<li><p>To check your formula for errors, click <cite>Check Syntax</cite>.</p></li>
+<li><p>Click <cite>Save</cite> to finish.</p></li>
+</ol>
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="id2" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
+<p><a class="reference external" href="https://trailhead.salesforce.com/content/learn/modules/point_click_business_logic?trailmix_creator_id=d3040&amp;trailmix_slug=d3040">Formulas and Validations</a></p>
+</aside>
+</aside>
 </section>
 </section>
 
@@ -403,20 +513,20 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="index.html"
+       href="admin.html"
        title="página anterior">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">anterior</p>
-        <p class="prev-next-title">Git</p>
+        <p class="prev-next-title">Salesforce Admin</p>
       </div>
     </a>
     <a class="right-next"
-       href="../python/index.html"
+       href="glossary.html"
        title="siguiente página">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">siguiente</p>
-        <p class="prev-next-title">Python</p>
+        <p class="prev-next-title">Glossary</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -436,7 +546,9 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#update-token-to-connect-to-remote-repository">Update token to connect to remote repository</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#use-formula-fields">Use Formula Fields</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implement-roll-up-summary-fields">Implement Roll-Up Summary Fields</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-validation-rules">Creating Validation Rules</a></li>
 </ul>
   </nav></div>
 
